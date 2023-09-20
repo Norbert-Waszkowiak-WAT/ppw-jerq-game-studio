@@ -1,0 +1,310 @@
+* {
+	margin: 0px;
+}
+
+@font-face {
+	font-family: Lato;
+	font-style: normal;
+	font-weight: 400;
+	src: url("https://mdn.github.io/web-fonts/LatoReg.ttf");
+}
+a.wyloguj {
+	padding-top: 20px;
+	font-size: 40px;
+	float: right;
+	clear: right;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	color: #fff;
+	font: 87.5%/1.5em 'Open Sans', sans-serif;
+	background: url(img/bg1.jpg)no-repeat center center fixed;
+	background-size: cover;
+}
+
+.account {
+	color: white;
+	text-align: center;
+}
+
+.form-wrapper {
+	width: 400px;
+	height: 370px;
+	position: absolute;
+	top: 50%;
+	left: 48%;
+	margin: -184px 0px 0px -155px;
+	background: rgba(94, 94, 94, 0.6);
+	padding: 15px 25px;
+	border-radius: 5px;
+	box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.6), inset 0px 1px 0px rgba(255, 255, 255, 0.04);
+}
+
+.form-item {
+	width: 100%;
+}
+
+
+h3 {
+	font-size: 25px;
+	font-weight: 640;
+	margin-bottom: 10px;
+	color: #e7e7e7;
+	padding: 6px;
+	font-family: 'sans-serif', 'helvetica';
+}
+
+
+
+.form-item input {
+	border: none;
+	background: transparent;
+	color: #fff;
+	margin-top: 11px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2em;
+	height: 49px;
+	padding: 0 16px;
+	width: 100%;
+	padding-left: 55px;
+
+}
+
+input[type='password'] {
+	background: transparent url("img/pass.jpg") no-repeat;
+	background-position: 10px 50%;
+	color: white;
+}
+
+input[type='text'] {
+	background: transparent url("img/user.jpg") no-repeat;
+	background-position: 10px 50%;
+	color: white;
+
+}
+
+.form-item input:focus {
+	outline: none;
+	border: 1.4px solid #cfecf0;
+}
+
+.button-panel {
+	margin-bottom: 20px;
+	padding-top: 10px;
+	width: 100%;
+}
+
+.button-panel .button {
+	background: white;
+	border: none;
+	color: black;
+	cursor: pointer;
+	height: 50px;
+	font-family: 'helvetica', 'Open Sans', sans-serif;
+	font-size: 1.2em;
+	text-align: center;
+	text-transform: uppercase;
+	transition: background 0.6s linear;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.button:hover {
+	background: gold;
+}
+
+.form-item input,
+.button-panel .button {
+	border-radius: 2px
+}
+
+.logout {
+	text-align: center;
+	margin-top: 50% !important;
+}
+
+.logout a {
+	color: #fff;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+.logout a:hover {
+	color: #cab6bf;
+}
+
+::placeholder {
+	color: white;
+	opacity: 1;
+}
+
+table.wybor {
+	padding-top: 10px;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+
+}
+
+section.tytul {
+	padding: 8px;
+	border-bottom: white solid 2px;
+	background-color: rgba(94, 94, 94, .75);
+}
+
+section {
+	padding: 8px;
+}
+
+td.big {
+	font-size: 35px;
+	text-align: center;
+}
+
+td.medium {
+	font-size: 25px;
+	text-align: center;
+	border: white solid 1px;
+}
+
+td.small {
+	padding-top: 5px;
+	font-size: 20px;
+	text-align: center;
+	background-color: rgba(94, 94, 94, .5);
+	border: white solid 1px;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 12px;
+}
+
+table.przeglad {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+
+input[type=submit] {
+	width: 80%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	font-size: 15px;
+	color: white;
+	background-color: rgba(94, 94, 94, .8);
+	border-radius: 12px;
+}
+
+p.logout {
+	font-size: 30px;
+}
+
+input[type=button].info {
+	border: none;
+	background: none;
+	font-size: 25px;
+	color: white;
+}
+
+.button {
+	transition-duration: 0.4s;
+}
+
+input.wpis {
+	background-color: rgba(94, 94, 94, .5);
+}
+
+textarea {
+	background-color: rgba(94, 94, 94, .5);
+}
+
+select {
+	color: white;
+	background-color: rgba(94, 94, 94, .5);
+}
+
+.gray {
+	background-color: rgb(94, 94, 94);
+}
+
+input[type='submit'].wpis {
+	width: 270px;
+	height: 70px;
+	font-size: 35px;
+	text-align: center;
+	background-color: rgba(173, 173, 173, 0.6);
+}
+
+nav {
+	float: left;
+	padding-top: 15px;
+	margin-left: 5px;
+	margin-right: auto;
+	clear: right;
+	width: 20%;
+	font-size: 40px;
+	background-color: rgba(94, 94, 94, .7);
+	border: solid white 2px;
+}
+
+h4 {
+	color: white;
+}
+
+h3 {
+	color: white;
+	background-color: rgba(69, 69, 69, .7);
+	border: solid 2px white;
+}
+
+td.kup {
+	background-color: rgba(69, 69, 69, .7);
+}
+
+th.kup {
+	background-color: rgba(69, 69, 69, .7);
+}
+
+table.sticky {
+	top: 5;
+	position: sticky;
+}
+
+a:link {
+	color: white;
+	text-decoration: none;
+}
+
+a:visited {
+	color: white;
+}
+
+a:hover {
+	color: gold;
+}
+
+input[type=submit].add:hover {
+	color: gold;
+	width: 100% !important;
+	background-color: white !important;
+	box-shadow: 5px 10px 100px gold !important;
+	font-weight: bold !important;
+	height: 90% !important;
+}
+
+input[type=submit].add {
+	color: white;
+	width: 100% !important;
+	height: 90% !important;
+	background-color: #252525 !important;
+	font-weight: bold !important;
+}
+
+section.verical {
+	background-color: red;
+}
