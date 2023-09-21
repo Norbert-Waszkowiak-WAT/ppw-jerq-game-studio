@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
+    public float speed = 0f;
     public float moveSpeed = 5f;
     public float sprintSpeed = 10f;
     public float crouchSpeed = 3f;
@@ -45,6 +46,7 @@ public class PlayerControl : MonoBehaviour
 
     void Update()
     {
+        speed = playerRigidBody.velocity.magnitude;
         playerIsGrounded = IsGrounded(playerHeight);
         playerIsNearGround = IsGrounded(playerHeight + nearGroundDistance);
         Vector3 movement = XZMovementCalculations();

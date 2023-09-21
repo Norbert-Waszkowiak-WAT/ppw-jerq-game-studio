@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scripts\Player\healthPointsOperator.cs" />
     <Compile Include="Assets\Scripts\Player\playerControl.cs" />
     <Compile Include="Assets\Scripts\Player\colorManager.cs" />
+    <Compile Include="Assets\Scripts\Player\AnimationQualifier.cs" />
     <Compile Include="Assets\Scripts\Player\shootingHandler.cs" />
   </ItemGroup>
   <ItemGroup>
