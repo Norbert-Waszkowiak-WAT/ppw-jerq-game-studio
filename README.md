@@ -41,7 +41,7 @@ We are two person indie studio containging me and my friend. We started creating
 <br>
 
 <br>
-## Changelog
+# Changelog
 
 * 2023-09-21
   * Added animations - walking and T-pose
