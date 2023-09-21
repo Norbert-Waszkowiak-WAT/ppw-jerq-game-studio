@@ -39,3 +39,26 @@ We are two person indie studio containging me and my friend. We started creating
 ![ing5erdiagrm](https://i.imgur.com/2BP0M9B.png)
 
 <br>
+
+<br>
+## Changelog
+
+* 2023-09-21
+  * Added animations - walking and T-pose
+  * Update README.md - Changelog added
+
+* 2023-09-18
+  * Library directory uploaded.
+
+* 2023-09-17
+  * Sprinting added.
+  * Crouching added.
+  * Map update.
+  * cave_map update.
+  * README.md update.
+
+* 2023-09-16
+  * Upload game files.
+  * Unity - first opening.
+  * README.md update.
+<br>
