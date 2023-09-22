@@ -15,7 +15,10 @@ public class colorManager : MonoBehaviour
         foreach (GameObject frame in frames)
         {
             frameRenderer = frame.GetComponent<Renderer>();
-            frameRenderer.material.color = playerColor;
+            if (frameRenderer != null )
+            {
+                frameRenderer.material.color = playerColor;
+            }   
         }
     }
 }

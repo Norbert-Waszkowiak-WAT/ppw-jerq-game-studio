@@ -40,8 +40,8 @@ public class PlayerControl : MonoBehaviour
             Camera.SetupCurrent(playerCamera); //fp mode
         }
 
-        Cursor.lockState = CursorLockMode.Locked; //hiding cursor (3d fps game)
-        Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked; //hiding cursor (3d fps game)
+        //Cursor.visible = false;
     }
 
     void Update()

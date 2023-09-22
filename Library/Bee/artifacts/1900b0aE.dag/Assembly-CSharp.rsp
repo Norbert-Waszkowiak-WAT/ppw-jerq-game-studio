@@ -120,6 +120,8 @@
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
+-r:"Assets/Alteruna/Plugins/Alteruna.Trinity.dll"
+-r:"Assets/Alteruna/Plugins/Alteruna.TrinityEditor.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Managed/UnityEngine/UnityEditor.DiagnosticsModule.dll"
@@ -352,6 +354,12 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/Alteruna/Prefabs/RoomMenu/RoomMenu.cs"
+"Assets/Alteruna/Prefabs/TextChat/TextChatSynchronizable.cs"
+"Assets/Alteruna/Scripts/Examples/ExampleAttributeRpc.cs"
+"Assets/Alteruna/Scripts/Examples/ExampleRpc.cs"
+"Assets/Alteruna/Scripts/Examples/ExampleSynchronizable.cs"
+"Assets/Alteruna/Scripts/Examples/ExamplTeransportStreamRpc.cs"
 "Assets/Scripts/Player/AnimationQualifier.cs"
 "Assets/Scripts/Player/colorManager.cs"
 "Assets/Scripts/Player/healthPointsOperator.cs"

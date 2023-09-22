@@ -58,11 +58,23 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Alteruna\Scripts\Examples\ExamplTeransportStreamRpc.cs" />
+    <Compile Include="Assets\Alteruna\Scripts\Examples\ExampleAttributeRpc.cs" />
     <Compile Include="Assets\Scripts\Player\healthPointsOperator.cs" />
+    <Compile Include="Assets\Alteruna\Scripts\Examples\ExampleSynchronizable.cs" />
     <Compile Include="Assets\Scripts\Player\playerControl.cs" />
+    <Compile Include="Assets\Alteruna\Prefabs\RoomMenu\RoomMenu.cs" />
+    <Compile Include="Assets\Alteruna\Prefabs\TextChat\TextChatSynchronizable.cs" />
     <Compile Include="Assets\Scripts\Player\colorManager.cs" />
     <Compile Include="Assets\Scripts\Player\AnimationQualifier.cs" />
     <Compile Include="Assets\Scripts\Player\shootingHandler.cs" />
+    <Compile Include="Assets\Alteruna\Scripts\Examples\ExampleRpc.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Alteruna\Plugins\Alteruna.TrinityEditor.dll" />
+    <None Include="Assets\Alteruna\Plugins\Alteruna.Trinity.xml" />
+    <None Include="Assets\Alteruna\Resources\RegisteredLicense.txt" />
+    <None Include="Assets\Alteruna\Plugins\Alteruna.Trinity.dll" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -314,11 +326,17 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
+    <Reference Include="Alteruna.TrinityEditor">
+      <HintPath>Assets\Alteruna\Plugins\Alteruna.TrinityEditor.dll</HintPath>
+    </Reference>
     <Reference Include="ReportGeneratorMerged">
       <HintPath>Library\PackageCache\com.unity.testtools.codecoverage@1.2.4\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Alteruna.Trinity">
+      <HintPath>Assets\Alteruna\Plugins\Alteruna.Trinity.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
