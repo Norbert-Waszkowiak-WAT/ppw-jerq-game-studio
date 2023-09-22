@@ -1,63 +1,119 @@
-# Future Wariors
- Future Wariors is 1vs1 fast-paced first-person-shooter game with unique abilities and many weapons. When using abilities camera turns into 3rd person mode allowing you to gorgeous animations.
+# Future Warriors
 
-<br>
+Future Warriors is a fast-paced 1vs1 first-person shooter game featuring unique abilities and an arsenal of futuristic weapons. With the inclusion of these abilities, the camera dynamically switches to a third-person perspective to showcase stunning animations.
 
-![ing5erdiagrm](https://i.imgur.com/qDHDQHc.png)
-
-<br>
+![Game Screenshot](https://i.imgur.com/qDHDQHc.png)
 
 ## Abilities
- We are planning to add many unique abilities such as:
-  - blind (similar to omen from Valorant), <br>
-  - time-stop for short period of time where player can't shoot, but can change location allowing for attack from behind, reposition or escape, <br>
-  - blink (similar to League of Legends), <br>
-  - wall raising, <br>
-  - and many more...
 
-<br>
+In Future Warriors, we have exciting plans to introduce a variety of unique abilities, including:
 
-## Wepons
- We are planning to add several futuristic weapons that will shoot laser, or lazer bullets.
+- **Blind:** Similar to Omen from Valorant.
+- **Time-Stop:** Temporarily freezes time, allowing players to reposition, attack from behind, or escape.
+- **Blink:** Inspired by abilities found in games like League of Legends.
+- **Wall Raising:** Create defensive barriers and strategic cover.
+- **Invisibility**
+- **Gravity Manipulation**
+- **Shield:** Plasma Guard
+- **Mark and Hunt:** Predator's Gaze
+- **ESP**
+- **Jetpack**
+- **Area Blast:** Disables enemy weapons and abilities temporarily.
+- **Shock Wave**
+- **Guided Missile**
+- And many more to come...
 
- <br>
+## Showcase
 
-![ing5erdiagrm](https://i.imgur.com/3qbzDHr.png)
+![Weapon Showcase](https://i.imgur.com/3qbzDHr.png)
+![Laser Rifle](https://i.imgur.com/KD2glYa.jpg)
 
-![ing5erdiagrm](https://i.imgur.com/KD2glYa.jpg)
+## List of Future Mechanics
 
-<br>
+### Abilities
 
-## Who are we?
-We are two person indie studio containging me and my friend. We started creating games in 2023 and we are planning to realise this game in next year. My nickname is Jerq and main friend is Pablo. Our studio is called ***JerQ Game Studio*** and its best game studio in the world.
+- Blink = Quantum Leap
+- Time-Stop
+- Blind
+- Wall Raising
+- Invisibility
+- Gravity Manipulation
+- Shield = Plasma Guard
+- Mark and Hunt = Predator's Gaze
+- ESP
+- Jetpack
+- Area Blast (Disables enemy weapons and abilities temporarily)
+- Shock Wave
+- Guided Missile
+
+### Animations
+
+- Unique animations for each ability
+- Crouching
+- Walking
+- Running
+- Aiming
+- Crouch-walking
+- Lying down
+- Reloading
+- Breathing while standing
+
+### Weapon Mechanics
+
+- Weapons have magazines that are divisible, allowing for tactical reloading.
+- Weapons are categorized into long-range, short-range, and melee.
+
+### Long Weapons
+
+- Linear Fusion Rifle
+- Laser Sniper Rifle (with three firing speed variations)
+- Shotgun (Circular and Linear types)
+- Assault Rifle (e.g., M4)
+- SMG (Fast speed, high fire rate, low damage, significant recoil)
+
+### Short Weapons
+
+- SMG Pistol
+- Glock
+- Revolver
+
+### Melee Weapons
+
+- Katana
+- Knife
+- Light Saber
+- Shurikens
+
+### Game Features
+
+- Mini-map
+- Minimum of 5 diverse maps
+- AI-controlled bots
+
+## Who Are We?
+
+We are a two-person indie game development studio consisting of myself (Jerq) and my friend Pablo. We embarked on our game development journey in 2023, with plans to release this exciting game in the upcoming year. Our studio, **JerQ Game Studio**, aspires to become the best game studio in the world.
 
 - [@jerqPL](https://github.com/jerqPL)
 - [@Pablo-PL](https://github.com/Pablo-PL)
 
-<br>
-
-![ing5erdiagrm](https://i.imgur.com/2BP0M9B.png)
-
-<br>
+![JerQ Game Studio](https://i.imgur.com/2BP0M9B.png)
 
 ## Changelog
 
-* 2023-09-21
-  * Added animations - walking and T-pose
-  * Update README.md - Changelog added
+- **2023-09-21**
+  - Added animations for walking and T-pose.
+  - Updated README.md to include the Changelog section.
 
-* 2023-09-18
-  * Library directory uploaded.
+- **2023-09-18**
+  - Uploaded the Library directory.
 
-* 2023-09-17
-  * Sprinting added.
-  * Crouching added.
-  * Map update.
-  * cave_map update.
-  * README.md update.
+- **2023-09-17**
+  - Added sprinting and crouching mechanics.
+  - Updated maps, including the cave_map.
+  - Updated README.md.
 
-* 2023-09-16
-  * Upload game files.
-  * Unity - first opening.
-  * README.md update.
-<br>
+- **2023-09-16**
+  - Uploaded initial game files.
+  - Began working with Unity.
+  - Updated README.md.
