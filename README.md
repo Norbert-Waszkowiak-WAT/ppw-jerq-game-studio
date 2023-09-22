@@ -101,6 +101,9 @@ We are a two-person indie game development studio consisting of myself (Jerq) an
 
 ## Changelog
 
+- **2023-09-22**
+  - Added multiplayer (only connecting to lobby).
+
 - **2023-09-21**
   - Added animations for walking and T-pose.
   - Updated README.md to include the Changelog section.
