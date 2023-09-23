@@ -361,9 +361,11 @@
 "Assets/Alteruna/Scripts/Examples/ExampleSynchronizable.cs"
 "Assets/Alteruna/Scripts/Examples/ExamplTeransportStreamRpc.cs"
 "Assets/Scripts/Player/AnimationQualifier.cs"
+"Assets/Scripts/Player/cameraRotation.cs"
 "Assets/Scripts/Player/colorManager.cs"
 "Assets/Scripts/Player/healthPointsOperator.cs"
 "Assets/Scripts/Player/playerControl.cs"
+"Assets/Scripts/Player/playerMovement.cs"
 "Assets/Scripts/Player/shootingHandler.cs"
 -langversion:9.0
 

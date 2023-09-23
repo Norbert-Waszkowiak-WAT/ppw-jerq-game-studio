@@ -61,6 +61,8 @@
     <Compile Include="Assets\Alteruna\Scripts\Examples\ExamplTeransportStreamRpc.cs" />
     <Compile Include="Assets\Alteruna\Scripts\Examples\ExampleAttributeRpc.cs" />
     <Compile Include="Assets\Scripts\Player\healthPointsOperator.cs" />
+    <Compile Include="Assets\Scripts\Player\playerMovement.cs" />
+    <Compile Include="Assets\Scripts\Player\cameraRotation.cs" />
     <Compile Include="Assets\Alteruna\Scripts\Examples\ExampleSynchronizable.cs" />
     <Compile Include="Assets\Scripts\Player\playerControl.cs" />
     <Compile Include="Assets\Alteruna\Prefabs\RoomMenu\RoomMenu.cs" />

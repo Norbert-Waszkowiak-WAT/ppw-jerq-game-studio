@@ -31,11 +31,29 @@ public class PlayerControl : MonoBehaviour
     private KeyCode sprintKey = KeyCode.LeftShift;
     private KeyCode crouchKey = KeyCode.LeftControl;
 
+    private Alteruna.Avatar avatar;
+
     private void Start()
     {
+        avatar = GetComponent<Alteruna.Avatar>();
+
+        /*if (avatar != null && !avatar.IsOwner)
+            return;*/
+
         playerRigidBody = GetComponent<Rigidbody>();
 
-        if (playerCamera == null && playerCamera.enabled)
+        int childCount = transform.childCount;
+
+        for (int i = 0; i < childCount; i++)
+        {
+            if (transform.GetChild(i).tag == "playerCamera")
+            {
+                playerCamera = transform.GetChild(i).GetComponent<Camera>();
+                break;
+            }
+        }
+
+        if (playerCamera != null && playerCamera.enabled)
         {
             Camera.SetupCurrent(playerCamera); //fp mode
         }
@@ -46,6 +64,9 @@ public class PlayerControl : MonoBehaviour
 
     void Update()
     {
+        /*if (avatar != null && !avatar.IsOwner)
+            return;*/
+
         speed = playerRigidBody.velocity.magnitude;
         playerIsGrounded = IsGrounded(playerHeight);
         playerIsNearGround = IsGrounded(playerHeight + nearGroundDistance);
@@ -58,35 +79,44 @@ public class PlayerControl : MonoBehaviour
         {
             inAirSpeedMultiplicator = inAirMultiplicator;
         }
-    
+
+        Vector3 newVelocity = Vector3.zero; // Initialize a new velocity vector
+
         if (Input.GetKey(sprintKey))
         {
-            playerRigidBody.velocity = new Vector3(movement.x * sprintSpeed * inAirSpeedMultiplicator, movement.y, movement.z * sprintSpeed * inAirSpeedMultiplicator);
+            newVelocity = new Vector3(movement.x * sprintSpeed * inAirSpeedMultiplicator, movement.y, movement.z * sprintSpeed * inAirSpeedMultiplicator);
             isSprinting = true;
             isCrouching = false;
         }
         else if (Input.GetKey(crouchKey))
         {
-            playerRigidBody.velocity = new Vector3(movement.x * sprintSpeed * inAirSpeedMultiplicator, movement.y, movement.z * crouchSpeed * inAirSpeedMultiplicator);
+            newVelocity = new Vector3(movement.x * sprintSpeed * inAirSpeedMultiplicator, movement.y, movement.z * crouchSpeed * inAirSpeedMultiplicator);
             isCrouching = true;
             isSprinting = false;
-        } else
+        }
+        else
         {
-            playerRigidBody.velocity = new Vector3(movement.x * sprintSpeed * inAirSpeedMultiplicator, movement.y, movement.z * moveSpeed * inAirSpeedMultiplicator);
+            // Gradually interpolate the player's velocity towards zero when no keys are pressed
+            newVelocity = Vector3.Lerp(playerRigidBody.velocity, Vector3.zero, 0.1f * Time.deltaTime);
             isSprinting = false;
             isCrouching = false;
         }
 
+        // Apply the new velocity
+        playerRigidBody.velocity = newVelocity;
+
         RotationCalculations();
         transform.localRotation = Quaternion.Euler(0f, rotationY, 0f);
 
-        if (playerCamera != null) 
+        if (playerCamera != null)
         {
             playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0f, 0f);
         }
 
         Jumping();
     }
+
+
 
     Vector3 XZMovementCalculations()
     {
@@ -105,11 +135,17 @@ public class PlayerControl : MonoBehaviour
     {
         if (Input.GetKeyDown(jumpKey) && playerIsGrounded)
         {
-            Vector3 jumpVector = Vector3.up * jumpForce; //jump upwards
+            Vector3 jumpDirection = playerRigidBody.velocity.normalized;
+
+            jumpDirection += Vector3.up * 0.6f;
+            jumpDirection.Normalize();
+
+            Vector3 jumpVector = jumpDirection * jumpForce;
 
             playerRigidBody.AddForce(jumpVector, ForceMode.Impulse);
         }
     }
+
 
     void RotationCalculations()
     {

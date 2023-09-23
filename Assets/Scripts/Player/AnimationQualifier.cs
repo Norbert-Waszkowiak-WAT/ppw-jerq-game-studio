@@ -7,6 +7,9 @@ public class AnimationQualifier : MonoBehaviour
     public float speedTreshold;
     public GameObject player;
 
+    public bool walkingAllowed;
+    public bool tPoseAllowed;
+
     private Animator playerAnimator;
     private PlayerControl playerControl;
 
@@ -24,13 +27,13 @@ public class AnimationQualifier : MonoBehaviour
     {
         if (playerAnimator != null && playerControl != null) 
         {
-            if (playerControl.speed > speedTreshold && !walkingSignalSended) 
+            if (playerControl.speed > speedTreshold && !walkingSignalSended && walkingAllowed) 
             {
                 playerAnimator.SetTrigger("Walk");
                 walkingSignalSended = true;
                 tPoseSignalSended = false;
             }
-            else if(playerControl.speed < speedTreshold && !tPoseSignalSended)
+            else if(playerControl.speed < speedTreshold && !tPoseSignalSended && tPoseAllowed)
             {
                 playerAnimator.SetTrigger("T-Pose");
                 walkingSignalSended = false;

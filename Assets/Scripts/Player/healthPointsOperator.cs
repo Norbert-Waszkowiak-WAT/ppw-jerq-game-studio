@@ -6,8 +6,21 @@ public class healthPointsOperator : MonoBehaviour
 {
     public float healthPoints = 100f;
 
+    private Alteruna.Avatar avatar;
+
+    void Start()
+    {
+        avatar = GetComponent<Alteruna.Avatar>();
+
+        if (avatar != null && avatar.IsOwner)
+            return;
+    }
+
     void Update()
     {
+        if (avatar != null && avatar.IsOwner)
+            return;
+
         if (healthPoints <= 0)
         {
             Destroy(gameObject);
