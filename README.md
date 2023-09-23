@@ -101,6 +101,12 @@ We are a two-person indie game development studio consisting of myself (Jerq) an
 
 ## Changelog
 
+- **2023-09-23**
+  - Gravitation finnaly works.
+  - Temporary removed multiplayer.
+  - Temporary removed animations.
+  - Temporary changed player model to capsule.
+
 - **2023-09-22**
   - Added multiplayer (only connecting to lobby).
 
