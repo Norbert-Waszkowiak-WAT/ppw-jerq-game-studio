@@ -101,7 +101,12 @@ We are a two-person indie game development studio consisting of myself (Jerq) an
 
 ## Changelog
 
+- **2023-09-24**
+  - Added minimap.
+  - Restored sprinting and crouching.
+
 - **2023-09-23**
+  - Snappy movement.
   - Gravitation finnaly works.
   - Temporarly removed multiplayer.
   - Temporarly removed animations.
