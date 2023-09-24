@@ -8,10 +8,14 @@ ScriptsOnlyBuild:
     - Alteruna.TransformSynchronizable
     Assembly-CSharp.dll:
     - Alteruna.RoomMenu
+    - PlayerCam
     - PlayerControl
+    - PlayerMovement
     - colorManager
     - healthPointsOperator
+    - minimapCameraMovement
     - shootingHandler
+    - spownPoint
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -27,6 +31,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     - UnityEngine.UI.Mask
+    - UnityEngine.UI.RawImage
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Text
@@ -88,6 +93,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 84
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 104
@@ -101,43 +108,53 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1574}
     - Class: 114
-      Script: {instanceID: 2180}
+      Script: {instanceID: 1804}
     - Class: 114
       Script: {instanceID: 2182}
     - Class: 114
-      Script: {instanceID: 2186}
+      Script: {instanceID: 2184}
     - Class: 114
-      Script: {instanceID: 2194}
+      Script: {instanceID: 2188}
     - Class: 114
-      Script: {instanceID: 2264}
+      Script: {instanceID: 2196}
     - Class: 114
-      Script: {instanceID: 2616}
+      Script: {instanceID: 2266}
     - Class: 114
-      Script: {instanceID: 2814}
+      Script: {instanceID: 2296}
     - Class: 114
-      Script: {instanceID: 3046}
+      Script: {instanceID: 2334}
     - Class: 114
-      Script: {instanceID: 3096}
+      Script: {instanceID: 2620}
     - Class: 114
-      Script: {instanceID: 3262}
+      Script: {instanceID: 2818}
     - Class: 114
-      Script: {instanceID: 3464}
+      Script: {instanceID: 3050}
     - Class: 114
-      Script: {instanceID: 3846}
+      Script: {instanceID: 3100}
     - Class: 114
-      Script: {instanceID: 3956}
+      Script: {instanceID: 3266}
     - Class: 114
-      Script: {instanceID: 5252}
+      Script: {instanceID: 3468}
     - Class: 114
-      Script: {instanceID: 6002}
+      Script: {instanceID: 3850}
     - Class: 114
-      Script: {instanceID: 6010}
+      Script: {instanceID: 3960}
     - Class: 114
-      Script: {instanceID: 6404}
+      Script: {instanceID: 5256}
     - Class: 114
-      Script: {instanceID: 6638}
+      Script: {instanceID: 6006}
     - Class: 114
-      Script: {instanceID: 7034}
+      Script: {instanceID: 6014}
+    - Class: 114
+      Script: {instanceID: 6408}
+    - Class: 114
+      Script: {instanceID: 6416}
+    - Class: 114
+      Script: {instanceID: 6644}
+    - Class: 114
+      Script: {instanceID: 7040}
+    - Class: 114
+      Script: {instanceID: 52418}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -215,6 +232,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnCollisionStayMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 6be13be731600af76b1bc985327c4efc
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerMovement
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -343,6 +366,12 @@ ScriptsOnlyBuild:
     className: RoomMenu
   - hash:
       serializedVersion: 2
+      Hash: c607c236b09b4f11a017eea7eab6fd03
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerCam
+  - hash:
+      serializedVersion: 2
       Hash: 6f67dd406ddfc18c9b3f8a90725c6266
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -451,7 +480,7 @@ ScriptsOnlyBuild:
     className: UnityOnDropdownValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 172cb0c6543e5ebff275a0a5366bdaf1
+      Hash: 219e9f7044346546e0950dbf2b0cae37
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: shootingHandler
@@ -931,6 +960,12 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 71668efd4d92a44ca6246fb490c3a8b4
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: minimapCameraMovement
+  - hash:
+      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1127,6 +1162,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 96dc5b42febf4fb1f92d3cb46ef8ddba
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: spownPoint
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

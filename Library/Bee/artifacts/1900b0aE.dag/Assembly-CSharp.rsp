@@ -368,6 +368,7 @@
 "Assets/Scripts/Player/playerControl.cs"
 "Assets/Scripts/Player/playerMovement.cs"
 "Assets/Scripts/Player/shootingHandler.cs"
+"Assets/Scripts/Player/spownPoint.cs"
 -langversion:9.0
 
 /deterministic

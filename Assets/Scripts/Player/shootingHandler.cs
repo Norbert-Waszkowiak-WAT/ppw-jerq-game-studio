@@ -8,10 +8,11 @@ public class shootingHandler : MonoBehaviour
     public GameObject weapon;
     public float bulletSpeed = 100f;
     public Camera playerCamera;
+    public float timeToDestroy = 5f;
 
     private KeyCode shootingKey = KeyCode.Mouse0;
     private Transform bulletSpown;
-    private float timeToDestroy = 5f;
+    
 
     private Alteruna.Avatar avatar;
 
