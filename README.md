@@ -101,6 +101,9 @@ We are a two-person indie game development studio consisting of myself (Jerq) an
 
 ## Changelog
 
+- **2023-09-24**
+  - Added minimap.
+
 - **2023-09-23**
   - Gravitation finnaly works.
   - Temporarly removed multiplayer.
