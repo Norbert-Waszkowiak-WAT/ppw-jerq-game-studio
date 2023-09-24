@@ -360,6 +360,7 @@
 "Assets/Alteruna/Scripts/Examples/ExampleRpc.cs"
 "Assets/Alteruna/Scripts/Examples/ExampleSynchronizable.cs"
 "Assets/Alteruna/Scripts/Examples/ExamplTeransportStreamRpc.cs"
+"Assets/Scripts/Camera/minimapCameraMovement.cs"
 "Assets/Scripts/Player/AnimationQualifier.cs"
 "Assets/Scripts/Player/cameraRotation.cs"
 "Assets/Scripts/Player/colorManager.cs"

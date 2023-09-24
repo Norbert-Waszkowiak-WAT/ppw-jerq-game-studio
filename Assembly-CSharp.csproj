@@ -68,6 +68,7 @@
     <Compile Include="Assets\Alteruna\Prefabs\RoomMenu\RoomMenu.cs" />
     <Compile Include="Assets\Alteruna\Prefabs\TextChat\TextChatSynchronizable.cs" />
     <Compile Include="Assets\Scripts\Player\colorManager.cs" />
+    <Compile Include="Assets\Scripts\Camera\minimapCameraMovement.cs" />
     <Compile Include="Assets\Scripts\Player\AnimationQualifier.cs" />
     <Compile Include="Assets\Scripts\Player\shootingHandler.cs" />
     <Compile Include="Assets\Alteruna\Scripts\Examples\ExampleRpc.cs" />

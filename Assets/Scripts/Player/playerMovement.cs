@@ -6,51 +6,54 @@ using System.Threading;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [Header("Movement")]
     public float moveSpeed;
+    public float sprintSpeed;
+    public float crouchSpeed;
+
+    public float movementSpeed;
 
     public float groundDrag;
-
     public float jumpForce;
     public float jumpCooldown;
     public float airMultiplier;
+
     public bool readyToJump;
+    public bool isCrouching;
+    public bool isSprinting;
 
-    [HideInInspector] public float walkSpeed;
-    [HideInInspector] public float sprintSpeed;
-
-    [Header("Keybinds")]
     public KeyCode jumpKey = KeyCode.Space;
+    public KeyCode crouchKey = KeyCode.LeftControl;
+    public KeyCode sprintKey = KeyCode.LeftShift;
 
-    [Header("Ground Check")]
     public float playerHeight;
     public LayerMask whatIsGround;
     public bool grounded;
 
-    float horizontalInput;
-    float verticalInput;
+    private float horizontalInput;
+    private float verticalInput;
 
-    Vector3 moveDirection;
+    private Vector3 moveDirection;
 
-    Rigidbody rb;
-
-    [HideInInspector] public TextMeshProUGUI text_speed;
+    private Rigidbody rb;
 
     public float sensX;
 
-    public float yRotation;
+    private float yRotation;
 
     public float sensY;
 
-    public float xRotation;
+    private float xRotation;
 
-    public Camera playerCamera;
+    private Camera playerCamera;
 
     public float jumpHelper;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+
+        playerCamera = GetComponentInChildren<Camera>();
+
 
         if (playerCamera != null && playerCamera.enabled)
         {
@@ -92,19 +95,48 @@ public class PlayerMovement : MonoBehaviour
     {
         Rotate();
 
-        // ground check
         grounded = IsGrounded(playerHeight);
 
         MyInput();
         SpeedControl();
 
-        // handle drag
         if (grounded)
+        {
             rb.drag = groundDrag;
+        }
         else
+        {
             rb.drag = 0;
+        }
 
-        
+        CheckForSprintCrouch();
+    }
+
+    private void CheckForSprintCrouch()
+    {
+        if (Input.GetKey(sprintKey))
+        {
+            isSprinting = true;
+            isCrouching = false;
+        } else if (Input.GetKey(crouchKey))
+        {
+            isCrouching = true;
+            isSprinting = false;
+        } else
+        {
+            isCrouching = false;
+            isSprinting = false;
+        }
+
+        movementSpeed = moveSpeed;
+        if (isSprinting)
+        {
+            movementSpeed = sprintSpeed;
+        }
+        else if (isCrouching)
+        {
+            movementSpeed = crouchSpeed;
+        }
     }
 
     private void Rotate()
@@ -132,7 +164,6 @@ public class PlayerMovement : MonoBehaviour
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
 
-        // when to jump
         if (Input.GetKey(jumpKey) && readyToJump && grounded)
         {
             readyToJump = false;
@@ -145,33 +176,35 @@ public class PlayerMovement : MonoBehaviour
 
     private void MovePlayer()
     {
-        // calculate movement direction
         moveDirection = transform.forward * verticalInput + transform.right * horizontalInput;
 
-        // on ground
-        if (grounded)
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+        
 
-        // in air
+        // in air worster movement
+        if (grounded)
+        {
+            rb.AddForce(moveDirection.normalized * movementSpeed * 10f, ForceMode.Force);
+        } 
         else if (!grounded)
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
+        {
+            rb.AddForce(moveDirection.normalized * movementSpeed * 10f * airMultiplier, ForceMode.Force);
+        }
     }
 
     private void SpeedControl()
     {
         Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
 
-        // limit velocity if needed
-        if (flatVel.magnitude > moveSpeed)
+        // limitation of velocity
+        if (flatVel.magnitude > movementSpeed)
         {
-            Vector3 limitedVel = flatVel.normalized * moveSpeed;
+            Vector3 limitedVel = flatVel.normalized * movementSpeed;
             rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
         }
     }
 
     private void Jump()
     {
-        // reset y velocity
         rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
 
         rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
