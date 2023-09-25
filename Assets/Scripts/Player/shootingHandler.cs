@@ -12,17 +12,9 @@ public class shootingHandler : MonoBehaviour
 
     private KeyCode shootingKey = KeyCode.Mouse0;
     private Transform bulletSpown;
-    
-
-    private Alteruna.Avatar avatar;
 
     void Start()
     {
-        avatar = GetComponent<Alteruna.Avatar>();
-
-        if (avatar != null && avatar.IsOwner)
-            return;
-
         int childCount = transform.childCount;
 
         for (int i = 0; i < childCount; i++)
@@ -50,9 +42,6 @@ public class shootingHandler : MonoBehaviour
 
     void Update()
     {
-        if (avatar != null && avatar.IsOwner)
-            return;
-
         if (bulletSpown != null && Input.GetKey(shootingKey) && playerCamera != null)
         {
             Quaternion spawnRotation = Quaternion.Euler(new Vector3(playerCamera.transform.eulerAngles.x, bulletSpown.transform.eulerAngles.y, bulletSpown.transform.eulerAngles.z)); //shoot where camer is looking

@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 using System.Threading;
+using Photon.Pun;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -44,12 +44,22 @@ public class PlayerMovement : MonoBehaviour
 
     private float xRotation;
 
-    private Camera playerCamera;
+    public Camera playerCamera;
 
     public float jumpHelper;
 
+    public Vector3 networkPosition;
+    public Quaternion networkRotation;
+    private PhotonView photonView;
+
     private void Start()
     {
+        photonView = GetComponent<PhotonView>();
+        if (!photonView.IsMine)
+        {
+            enabled = false;
+        }
+
         rb = GetComponent<Rigidbody>();
 
         playerCamera = GetComponentInChildren<Camera>();
@@ -60,12 +70,27 @@ public class PlayerMovement : MonoBehaviour
             Camera.SetupCurrent(playerCamera); //fp mode
         }
 
-        //Cursor.lockState = CursorLockMode.Locked; //hiding cursor (3d fps game)
-        //Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked; //hiding cursor (3d fps game)
+        Cursor.visible = false;
 
         readyToJump = true;
     }
 
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+        if (stream.IsWriting)
+        {
+            // This is the local player, send data to others
+            stream.SendNext(transform.position);
+            stream.SendNext(transform.rotation);
+        }
+        else
+        {
+            // This is a remote player, receive data from the network
+            networkPosition = (Vector3)stream.ReceiveNext();
+            networkRotation = (Quaternion)stream.ReceiveNext();
+        }
+    }
     public float GetDistanceToGround()
     {
         float raycastDistance = 20f;
@@ -93,23 +118,31 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        Rotate();
-
-        grounded = IsGrounded(playerHeight);
-
-        MyInput();
-        SpeedControl();
-
-        if (grounded)
+        if (photonView.IsMine)
         {
-            rb.drag = groundDrag;
-        }
-        else
+            Rotate();
+            grounded = IsGrounded(playerHeight);
+
+            MyInput();
+            SpeedControl();
+
+            if (grounded)
+            {
+                rb.drag = groundDrag;
+            }
+            else
+            {
+                rb.drag = 0;
+            }
+
+            CheckForSprintCrouch();
+        } else
         {
-            rb.drag = 0;
+            transform.position = Vector3.Lerp(transform.position, networkPosition, Time.deltaTime * 10);
+            transform.rotation = Quaternion.Lerp(transform.rotation, networkRotation, Time.deltaTime * 10);
         }
 
-        CheckForSprintCrouch();
+
     }
 
     private void CheckForSprintCrouch()

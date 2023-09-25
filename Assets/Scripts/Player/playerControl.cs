@@ -31,15 +31,8 @@ public class PlayerControl : MonoBehaviour
     private KeyCode sprintKey = KeyCode.LeftShift;
     private KeyCode crouchKey = KeyCode.LeftControl;
 
-    private Alteruna.Avatar avatar;
-
     private void Start()
     {
-        avatar = GetComponent<Alteruna.Avatar>();
-
-        /*if (avatar != null && !avatar.IsOwner)
-            return;*/
-
         playerRigidBody = GetComponent<Rigidbody>();
 
         int childCount = transform.childCount;
@@ -64,9 +57,6 @@ public class PlayerControl : MonoBehaviour
 
     void Update()
     {
-        /*if (avatar != null && !avatar.IsOwner)
-            return;*/
-
         speed = playerRigidBody.velocity.magnitude;
         playerIsGrounded = IsGrounded(playerHeight);
         playerIsNearGround = IsGrounded(playerHeight + nearGroundDistance);
