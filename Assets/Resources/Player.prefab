@@ -149,11 +149,12 @@ GameObject:
   - component: {fileID: 2740734562966400491}
   - component: {fileID: 5531693996254664853}
   - component: {fileID: 5354870202001145479}
-  - component: {fileID: 4036735424957404638}
   - component: {fileID: 637918081602367111}
   - component: {fileID: 2002224211001052749}
   - component: {fileID: 3671898675043358196}
   - component: {fileID: -1804975172405756082}
+  - component: {fileID: 4279724573716572274}
+  - component: {fileID: 1976834637594058238}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -243,23 +244,6 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 112
   m_CollisionDetection: 1
---- !u!114 &4036735424957404638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8888647286696063164}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31e69346d2cf00044aa12655c010da8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 0}
-  weapon: {fileID: 2950410811715838588}
-  bulletSpeed: 300
-  playerCamera: {fileID: 1654298435498008109}
-  timeToDestroy: 5
 --- !u!114 &637918081602367111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -340,6 +324,34 @@ MonoBehaviour:
   InLocalSpace: 0
   Interpolate: 1
   SlerpPosition: 0
+--- !u!114 &4279724573716572274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8888647286696063164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eed45eea14db95841bd6046aca47ee48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  range: 100
+  fpsCam: {fileID: 1654298435498008109}
+--- !u!114 &1976834637594058238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8888647286696063164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f903083dd4e6d3f4888f3d784b85a0a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!1 &9080497833299470101
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,11 +532,6 @@ PrefabInstance:
 --- !u!4 &2574413760164477126 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 60d56559b6db8e14aaf0691a23971dee, type: 3}
-  m_PrefabInstance: {fileID: 2607758807715438381}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2950410811715838588 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 60d56559b6db8e14aaf0691a23971dee, type: 3}
   m_PrefabInstance: {fileID: 2607758807715438381}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &6777367941117616231 stripped

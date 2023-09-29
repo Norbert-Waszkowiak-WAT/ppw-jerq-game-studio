@@ -412,7 +412,9 @@
 "Assets/Scripts/Player/playerControl.cs"
 "Assets/Scripts/Player/playerMovement.cs"
 "Assets/Scripts/Player/shootingHandler.cs"
+"Assets/Scripts/Player/shootingWithRaycasts.cs"
 "Assets/Scripts/Player/spownPoint.cs"
+"Assets/Scripts/Player/Target.cs"
 "Assets/Scripts/UI/readInput.cs"
 -langversion:9.0
 
