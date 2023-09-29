@@ -1,10 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using System.Threading;
-using Photon.Pun;
+using Unity.Netcode;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : NetworkBehaviour
 {
     public float moveSpeed;
     public float sprintSpeed;
@@ -50,16 +47,15 @@ public class PlayerMovement : MonoBehaviour
 
     public Vector3 networkPosition;
     public Quaternion networkRotation;
-    private PhotonView photonView;
 
+
+    private void Awake()
+    {
+        if (!IsOwner) return;
+    }
     private void Start()
     {
-        photonView = GetComponent<PhotonView>();
-        if (!photonView.IsMine)
-        {
-            enabled = false;
-        }
-
+        if (!IsOwner) return;
         rb = GetComponent<Rigidbody>();
 
         playerCamera = GetComponentInChildren<Camera>();
@@ -70,27 +66,12 @@ public class PlayerMovement : MonoBehaviour
             Camera.SetupCurrent(playerCamera); //fp mode
         }
 
-        Cursor.lockState = CursorLockMode.Locked; //hiding cursor (3d fps game)
-        Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked; //hiding cursor (3d fps game)
+        //Cursor.visible = false;
 
         readyToJump = true;
     }
 
-    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
-    {
-        if (stream.IsWriting)
-        {
-            // This is the local player, send data to others
-            stream.SendNext(transform.position);
-            stream.SendNext(transform.rotation);
-        }
-        else
-        {
-            // This is a remote player, receive data from the network
-            networkPosition = (Vector3)stream.ReceiveNext();
-            networkRotation = (Quaternion)stream.ReceiveNext();
-        }
-    }
     public float GetDistanceToGround()
     {
         float raycastDistance = 20f;
@@ -118,31 +99,27 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        if (photonView.IsMine)
+        if (!IsOwner)
         {
-            Rotate();
-            grounded = IsGrounded(playerHeight);
+            return;
+        }
+        
+        Rotate();
+        grounded = IsGrounded(playerHeight);
 
-            MyInput();
-            SpeedControl();
+        MyInput();
+        SpeedControl();
 
-            if (grounded)
-            {
-                rb.drag = groundDrag;
-            }
-            else
-            {
-                rb.drag = 0;
-            }
-
-            CheckForSprintCrouch();
-        } else
+        if (grounded)
         {
-            transform.position = Vector3.Lerp(transform.position, networkPosition, Time.deltaTime * 10);
-            transform.rotation = Quaternion.Lerp(transform.rotation, networkRotation, Time.deltaTime * 10);
+            rb.drag = groundDrag;
+        }
+        else
+        {
+            rb.drag = 0;
         }
 
-
+        CheckForSprintCrouch();
     }
 
     private void CheckForSprintCrouch()
@@ -189,6 +166,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (!IsOwner) return;
         MovePlayer();
     }
 

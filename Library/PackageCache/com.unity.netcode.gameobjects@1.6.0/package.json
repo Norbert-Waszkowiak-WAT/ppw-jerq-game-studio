@@ -1,0 +1,30 @@
+{
+  "name": "com.unity.netcode.gameobjects",
+  "displayName": "Netcode for GameObjects",
+  "description": "Netcode for GameObjects is a high-level netcode SDK that provides networking capabilities to GameObject/MonoBehaviour workflows within Unity and sits on top of underlying transport layer.",
+  "version": "1.6.0",
+  "unity": "2020.3",
+  "dependencies": {
+    "com.unity.nuget.mono-cecil": "1.10.1",
+    "com.unity.transport": "1.3.4"
+  },
+  "_upm": {
+    "changelog": "### Added\n\n- Added a protected virtual method `NetworkTransform.OnInitialize(ref NetworkTransformState replicatedState)` that just returns the replicated state reference.\n  \n### Fixed\n\n- Fixed  issue where invoking `NetworkManager.Shutdown` within `NetworkManager.OnClientStopped` or `NetworkManager.OnServerStopped` would force `NetworkManager.ShutdownInProgress` to remain true after completing the shutdown process. (#2661)\n- Fixed issue with client synchronization of position when using half precision and the delta position reaches the maximum value and is collapsed on the host prior to being forwarded to the non-owner clients. (#2636)\n- Fixed issue with scale not synchronizing properly depending upon the spawn order of NetworkObjects. (#2636)\n- Fixed issue position was not properly transitioning between ownership changes with an owner authoritative NetworkTransform. (#2636)\n- Fixed issue where a late joining non-owner client could update an owner authoritative NetworkTransform if ownership changed without any updates to position prior to the non-owner client joining. (#2636)\n\n### Changed"
+  },
+  "upmCi": {
+    "footprint": "58b37aee2ff0caec7a160473c56e62119d3b760a"
+  },
+  "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.netcode.gameobjects@1.6/manual/index.html",
+  "repository": {
+    "url": "https://github.com/Unity-Technologies/com.unity.netcode.gameobjects.git",
+    "type": "git",
+    "revision": "4ee8da05b439a5b8f76ee6d008221c6d58b7965a"
+  },
+  "samples": [
+    {
+      "displayName": "Bootstrap",
+      "description": "A lightweight sample to get started",
+      "path": "Samples~/Bootstrap"
+    }
+  ]
+}
