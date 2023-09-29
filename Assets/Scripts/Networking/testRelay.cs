@@ -7,6 +7,7 @@ using Unity.Services.Core;
 using Unity.Services.Relay;
 using Unity.Services.Relay.Models;
 using UnityEngine;
+using Unity.Networking.Transport.Relay;
 
 public class testRelay : MonoBehaviour
 {
@@ -42,14 +43,11 @@ public class testRelay : MonoBehaviour
 
             SaveToFile(joinCode);
 
-            NetworkManager.Singleton.GetComponent<UnityTransport>().SetHostRelayData(
-                allocation.RelayServer.IpV4,
-                (ushort) allocation.RelayServer.Port,
-                allocation.AllocationIdBytes,
-                allocation.Key,
-                allocation.ConnectionData
-            );
-            
+            RelayServerData relayServerData = new RelayServerData(allocation, "dtls");
+
+            NetworkManager.Singleton.GetComponent<UnityTransport>().SetRelayServerData(relayServerData);
+
+
             NetworkManager.Singleton.StartHost();
         } catch (RelayServiceException e)
         {
@@ -66,15 +64,9 @@ public class testRelay : MonoBehaviour
             JoinAllocation joinAllocation = await RelayService.Instance.JoinAllocationAsync(joinCode);
             await RelayService.Instance.JoinAllocationAsync(joinCode);
 
-            NetworkManager.Singleton.GetComponent<UnityTransport>().SetClientRelayData(
-                joinAllocation.RelayServer.IpV4,
-                (ushort)joinAllocation.RelayServer.Port,
-                joinAllocation.AllocationIdBytes,
-                joinAllocation.Key,
-                joinAllocation.ConnectionData,
-                new byte[0], // Provide an appropriate value for hostConnectionData here if needed
-                false // Set the value of useUtp according to your requirements
-            );
+            RelayServerData relayServerData = new RelayServerData(joinAllocation, "dtls");
+
+            NetworkManager.Singleton.GetComponent<UnityTransport>().SetRelayServerData(relayServerData);
             //player isnt spowning
 
             NetworkManager.Singleton.StartClient();
