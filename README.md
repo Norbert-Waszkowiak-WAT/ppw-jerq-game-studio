@@ -102,7 +102,7 @@ We are a two-person indie game development studio consisting of myself (Jerq) an
 ## Changelog
 
 - **2023-09-25**
-  - Multiplayer is working!
+  - Multiplayer is working! (not...)
 
 - **2023-09-24**
   - Teleporting to spawnpoint after death.     
