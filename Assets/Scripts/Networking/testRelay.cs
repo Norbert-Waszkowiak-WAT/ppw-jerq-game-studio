@@ -11,6 +11,8 @@ using Unity.Networking.Transport.Relay;
 
 public class testRelay : MonoBehaviour
 {
+
+    public GameObject joinButtons;
     private async void Start()
     {
         await UnityServices.InitializeAsync();
@@ -49,6 +51,8 @@ public class testRelay : MonoBehaviour
 
 
             NetworkManager.Singleton.StartHost();
+
+            joinButtons.SetActive(false);
         } catch (RelayServiceException e)
         {
             Debug.Log(e);
@@ -71,7 +75,7 @@ public class testRelay : MonoBehaviour
 
             NetworkManager.Singleton.StartClient();
             
-
+            joinButtons.SetActive(false);
         } catch (RelayServiceException e)
         {
             Debug.Log(e);
