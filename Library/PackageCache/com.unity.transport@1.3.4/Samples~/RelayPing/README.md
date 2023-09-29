@@ -1,11 +1,3 @@
-# Unity transport Relay Ping Sample
-
-In order to use this advanced sample, please install the jobs package from the package manager. 
-
-    From the editor : Window → Package Manager
-
-If the Package is not yet accessible from the Unity registry, you need to enable the preview packages.
-
-    From the Package Manager : press the cogs icon → Advanced Project Settings → Enable Preview Packages. 
-
-You need also to get familiar and install [the Relay SDK](https://docs.unity.com/relay/introduction.html).
+version https://git-lfs.github.com/spec/v1
+oid sha256:2d39653eafd1cf80356adca76d08255a2f8ad0a0b3bce7bb40b685d322e82baa
+size 507

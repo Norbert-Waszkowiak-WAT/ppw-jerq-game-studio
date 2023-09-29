@@ -1,10 +1,3 @@
-# Unity transport Soaker Sample
-
-In order to use this advanced sample, please install the jobs package from the package manager. 
-
-    From the editor : Window → Package Manager
-
-If the Package is not yet accessible from the Unity registry, you need to enable the preview packages.
-
-    From the Package Manager : press the cogs icon → Advanced Project Settings → Enable Preview Packages. 
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:23be70cce5765bc32b3c30cec6b4c6a68dfb8f9d091c112334f660aafce55b50
+size 397
