@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638315060786480653
+      ticks: 638315871170540126
     m_Hash: 1160454137
   m_LockFileStatus:
     m_FilePath: C:/Users/wiktor.ziedalski/Future-Wariors/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638315060786520549
+      ticks: 638315871170542050
     m_Hash: 1740950335
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
