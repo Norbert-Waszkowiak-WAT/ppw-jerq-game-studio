@@ -823,6 +823,7 @@ GameObject:
   - component: {fileID: 275423511}
   - component: {fileID: 275423513}
   - component: {fileID: 275423512}
+  - component: {fileID: 275423514}
   m_Layer: 5
   m_Name: Minimap Border
   m_TagString: Untagged
@@ -888,6 +889,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 275423510}
   m_CullTransparentMesh: 1
+--- !u!114 &275423514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275423510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ece5f7157372164888341f9d79db8fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoomInKey: 109
+  minimapCamera: {fileID: 356291603}
 --- !u!1 &346694946 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5233112405309087440, guid: 8eb27397d71599d48b29655d636e4f44, type: 3}
@@ -1064,6 +1079,7 @@ GameObject:
   - component: {fileID: 356291604}
   - component: {fileID: 356291603}
   - component: {fileID: 356291605}
+  - component: {fileID: 356291606}
   m_Layer: 0
   m_Name: Minimap Camera
   m_TagString: Untagged
@@ -1149,7 +1165,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cddc1cc174a2894bacce8c5b078d424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1905584301291383307}
+--- !u!114 &356291606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 356291602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 543426987
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 1
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
 --- !u!1 &357521443
 GameObject:
   m_ObjectHideFlags: 0
@@ -4051,11 +4086,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1602677837}
   m_SourcePrefab: {fileID: 100100000, guid: 8eb27397d71599d48b29655d636e4f44, type: 3}
---- !u!1 &1905584301291383307 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8888647286696063164, guid: dc912f56f1915774db78d8fa327cadce, type: 3}
-  m_PrefabInstance: {fileID: 8328721641146698553}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8328721641146698553
 PrefabInstance:
   m_ObjectHideFlags: 0
