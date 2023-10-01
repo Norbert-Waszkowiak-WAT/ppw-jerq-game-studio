@@ -2,22 +2,29 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp:
     - DisableCamera
+    - Fire
     - PlayerCam
     - PlayerMovement
+    - Target
     - colorManager
     - shootingHandler
+    - shootingWithRaycasts
     - spownPoint
     Assembly-CSharp.dll:
     - DisableCamera
+    - Fire
+    - MinimapCameraMovement
     - NetworkUI
     - PlayerCam
     - PlayerControl
     - PlayerMovement
     - TMPInputFieldReader
+    - Target
     - colorManager
     - healthPointsOperator
-    - minimapCameraMovement
+    - minimapZoom
     - shootingHandler
+    - shootingWithRaycasts
     - spownPoint
     - testRelay
     Unity.Multiplayer.Samples.Utilities.ClientAuthority:
@@ -150,88 +157,102 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 84
       Script: {instanceID: 0}
     - Class: 89
+      Script: {instanceID: 0}
+    - Class: 96
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 620}
-    - Class: 114
       Script: {instanceID: 622}
     - Class: 114
-      Script: {instanceID: 644}
+      Script: {instanceID: 624}
     - Class: 114
-      Script: {instanceID: 1574}
+      Script: {instanceID: 646}
     - Class: 114
-      Script: {instanceID: 1638}
+      Script: {instanceID: 1576}
     - Class: 114
-      Script: {instanceID: 1832}
+      Script: {instanceID: 1610}
     - Class: 114
-      Script: {instanceID: 1978}
+      Script: {instanceID: 1642}
     - Class: 114
-      Script: {instanceID: 2478}
+      Script: {instanceID: 1836}
     - Class: 114
-      Script: {instanceID: 2530}
+      Script: {instanceID: 1982}
     - Class: 114
-      Script: {instanceID: 2594}
+      Script: {instanceID: 2482}
     - Class: 114
-      Script: {instanceID: 2674}
+      Script: {instanceID: 2534}
     - Class: 114
-      Script: {instanceID: 2738}
+      Script: {instanceID: 2598}
     - Class: 114
-      Script: {instanceID: 3202}
+      Script: {instanceID: 2678}
     - Class: 114
-      Script: {instanceID: 3510}
+      Script: {instanceID: 2742}
     - Class: 114
-      Script: {instanceID: 3906}
+      Script: {instanceID: 3206}
     - Class: 114
-      Script: {instanceID: 4006}
+      Script: {instanceID: 3514}
     - Class: 114
-      Script: {instanceID: 4620}
+      Script: {instanceID: 3910}
     - Class: 114
-      Script: {instanceID: 5430}
+      Script: {instanceID: 4010}
     - Class: 114
-      Script: {instanceID: 5598}
+      Script: {instanceID: 4558}
     - Class: 114
-      Script: {instanceID: 5624}
+      Script: {instanceID: 4626}
     - Class: 114
-      Script: {instanceID: 5986}
+      Script: {instanceID: 4956}
     - Class: 114
-      Script: {instanceID: 6066}
+      Script: {instanceID: 5438}
     - Class: 114
-      Script: {instanceID: 6320}
+      Script: {instanceID: 5606}
     - Class: 114
-      Script: {instanceID: 6888}
+      Script: {instanceID: 5632}
     - Class: 114
-      Script: {instanceID: 7210}
+      Script: {instanceID: 5798}
     - Class: 114
-      Script: {instanceID: 8320}
+      Script: {instanceID: 5996}
     - Class: 114
-      Script: {instanceID: 8850}
+      Script: {instanceID: 6076}
     - Class: 114
-      Script: {instanceID: 9508}
+      Script: {instanceID: 6330}
     - Class: 114
-      Script: {instanceID: 9886}
+      Script: {instanceID: 6428}
     - Class: 114
-      Script: {instanceID: 9900}
+      Script: {instanceID: 6900}
     - Class: 114
-      Script: {instanceID: 11166}
+      Script: {instanceID: 7222}
     - Class: 114
-      Script: {instanceID: 11810}
+      Script: {instanceID: 7838}
     - Class: 114
-      Script: {instanceID: 11818}
+      Script: {instanceID: 8334}
     - Class: 114
-      Script: {instanceID: 11822}
+      Script: {instanceID: 8414}
     - Class: 114
-      Script: {instanceID: 11826}
+      Script: {instanceID: 8446}
     - Class: 114
-      Script: {instanceID: 28776}
+      Script: {instanceID: 8868}
     - Class: 114
-      Script: {instanceID: 28780}
+      Script: {instanceID: 9526}
+    - Class: 114
+      Script: {instanceID: 9904}
+    - Class: 114
+      Script: {instanceID: 9918}
+    - Class: 114
+      Script: {instanceID: 11186}
+    - Class: 114
+      Script: {instanceID: 28296}
+    - Class: 114
+      Script: {instanceID: 28300}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -241,6 +262,10 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -263,6 +288,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UIElements
     className: PanelRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: DisableCamera
   - hash:
       serializedVersion: 2
       Hash: 16c8cbd24a32f9d6625615e0e9098073
@@ -601,6 +632,12 @@ ScriptsOnlyBuild:
     className: PlayerQuitHandler
   - hash:
       serializedVersion: 2
+      Hash: f3deb1d9a5f7ff3aeef61dcc5364ecba
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Fire
+  - hash:
+      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
@@ -641,6 +678,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Flow
     namespaceName: Unity.VisualScripting
     className: ScriptGraphAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 4040c9b473a110858e11f3509e2dd794
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: TMPInputFieldReader
   - hash:
       serializedVersion: 2
       Hash: 0286ed84936a6e3c4dba049ae21a7b1c
@@ -739,6 +782,12 @@ ScriptsOnlyBuild:
     className: DictionaryAsset
   - hash:
       serializedVersion: 2
+      Hash: b88e8b65e1ce7f7e3326347e2387a5ca
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: minimapZoom
+  - hash:
+      serializedVersion: 2
       Hash: 6298a10412e94e11ad85ac6148c9dda1
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
@@ -773,6 +822,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnPointerClickMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 4c6753ffd66210cdca2d529b6de557c6
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: NetworkUI
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -949,6 +1004,12 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
+      Hash: 24fadc6b606d357f04a234fd7dacb946
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: shootingWithRaycasts
+  - hash:
+      serializedVersion: 2
       Hash: f6831ac80ec81c5d5b370c0ed0fee997
     assemblyName: Unity.VisualScripting.State
     namespaceName: Unity.VisualScripting
@@ -995,6 +1056,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TextMeshProUGUI
+  - hash:
+      serializedVersion: 2
+      Hash: 5a3fbe5cd4d238f7b1f8b9c27dc313f6
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Target
+  - hash:
+      serializedVersion: 2
+      Hash: c9e0147aa1952c11634cd39cd11834b1
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: testRelay
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1087,10 +1160,10 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 71668efd4d92a44ca6246fb490c3a8b4
+      Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: minimapCameraMovement
+    className: MinimapCameraMovement
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1307,32 +1380,8 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: DisableCamera
-  - hash:
-      serializedVersion: 2
-      Hash: 4c6753ffd66210cdca2d529b6de557c6
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: NetworkUI
-  - hash:
-      serializedVersion: 2
-      Hash: 4040c9b473a110858e11f3509e2dd794
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: TMPInputFieldReader
-  - hash:
-      serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: testRelay
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/wiktor.ziedalski/Future-Wariors/Builds/v 3 (networking)/Future
+  playerPath: C:/Users/jakub.pawlowski/Desktop/Project_infa/Wersje_gry/V6/Future
     Warriors.exe

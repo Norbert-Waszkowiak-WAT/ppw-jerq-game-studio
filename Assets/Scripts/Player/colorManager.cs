@@ -8,17 +8,26 @@ public class colorManager : MonoBehaviour
 
     public GameObject[] frames;
 
-    void Start()
+    void Awake()
     {
-        Renderer frameRenderer;
-
         foreach (GameObject frame in frames)
         {
-            frameRenderer = frame.GetComponent<Renderer>();
-            if (frameRenderer != null )
+            if (frame.tag == "Trail")
             {
-                frameRenderer.material.color = playerColor;
-            }   
+                TrailRenderer frameRenderer = frame.GetComponent<TrailRenderer>();
+                if (frameRenderer != null)
+                {
+                    frameRenderer.material.color = playerColor;
+                }
+            } else
+            {
+                Renderer frameRenderer;
+                frameRenderer = frame.GetComponent<Renderer>();
+                if (frameRenderer != null )
+                {
+                    frameRenderer.material.color = playerColor;
+                } 
+            }  
         }
     }
 }

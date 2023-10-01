@@ -4,7 +4,7 @@ using UnityEngine;
 public class DisableCamera : NetworkBehaviour
 { 
 
-    private void OnNetworkInstantiate()
+    private void Update()
     {
         if (!IsOwner)
         {

@@ -20,10 +20,14 @@ public class shootingWithRaycasts : MonoBehaviour
 
     private bool canShoot = true;
 
+    public GameObject gun; 
+
+    public string shootButton = "Fire1";
+
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButton("Fire1"))
+        if (Input.GetButton(shootButton))
         {
             if (canShoot)
             {
@@ -42,6 +46,7 @@ public class shootingWithRaycasts : MonoBehaviour
 
     void Shoot ()
     {
+        gun.GetComponent<Fire>().fired = true;
         if (muzzleFlash != null)
         {
             muzzleFlash.Play();
@@ -60,6 +65,7 @@ public class shootingWithRaycasts : MonoBehaviour
             }
 
             TrailRenderer trail = Instantiate(tracerEffect, firePoint.position, Quaternion.identity);
+            trail.gameObject.SetActive(true);
             StartCoroutine(SpownTrail(trail, hit.point));
         }
 

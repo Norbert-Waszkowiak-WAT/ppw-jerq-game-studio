@@ -6,6 +6,7 @@ TagManager:
   tags:
   - bullet
   - playerCamera
+  - Trail
   layers:
   - Default
   - TransparentFX
