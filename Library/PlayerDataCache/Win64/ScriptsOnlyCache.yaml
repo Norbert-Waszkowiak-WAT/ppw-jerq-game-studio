@@ -69,6 +69,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.RawImage
     - UnityEngine.UI.RectMask2D
+    - UnityEngine.UI.Slider
   serializedClasses:
     Unity.Netcode.Runtime:
     - Unity.Netcode.NetworkConfig
@@ -111,6 +112,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.ColorBlock
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
+    - UnityEngine.UI.Slider/SliderEvent
     - UnityEngine.UI.SpriteState
     UnityEngine.UIElementsModule:
     - UnityEngine.UIElements.DynamicAtlasSettings
@@ -230,6 +232,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6900}
     - Class: 114
+      Script: {instanceID: 7102}
+    - Class: 114
       Script: {instanceID: 7222}
     - Class: 114
       Script: {instanceID: 7838}
@@ -250,9 +254,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11186}
     - Class: 114
-      Script: {instanceID: 28296}
+      Script: {instanceID: 27996}
     - Class: 114
-      Script: {instanceID: 28300}
+      Script: {instanceID: 27998}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1058,13 +1062,13 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: 5a3fbe5cd4d238f7b1f8b9c27dc313f6
+      Hash: f279f92eddf27292a05947ac032c530e
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Target
   - hash:
       serializedVersion: 2
-      Hash: c9e0147aa1952c11634cd39cd11834b1
+      Hash: 8f9408c2c23c81d734b674960d384247
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: testRelay
@@ -1380,8 +1384,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: b2a99d38a6810f44acd162f4f2efc0a0
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: healthBar
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/jakub.pawlowski/Desktop/Project_infa/Wersje_gry/V6/Future
+  playerPath: C:/Users/jakub.pawlowski/Desktop/Project_infa/Wersje_gry/V7/Future
     Warriors.exe

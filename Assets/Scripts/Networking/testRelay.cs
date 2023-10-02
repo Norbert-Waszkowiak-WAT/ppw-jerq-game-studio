@@ -13,8 +13,10 @@ public class testRelay : MonoBehaviour
 {
 
     public GameObject joinButtons;
+    public GameObject minimap;
     private async void Start()
     {
+        minimap.SetActive(false);
         await UnityServices.InitializeAsync();
 
         AuthenticationService.Instance.SignedIn += () =>
@@ -53,6 +55,7 @@ public class testRelay : MonoBehaviour
             NetworkManager.Singleton.StartHost();
 
             joinButtons.SetActive(false);
+            minimap.SetActive(true);
         } catch (RelayServiceException e)
         {
             Debug.Log(e);
@@ -76,6 +79,7 @@ public class testRelay : MonoBehaviour
             NetworkManager.Singleton.StartClient();
             
             joinButtons.SetActive(false);
+            minimap.SetActive(true);
         } catch (RelayServiceException e)
         {
             Debug.Log(e);

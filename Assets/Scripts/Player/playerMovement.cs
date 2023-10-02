@@ -47,12 +47,6 @@ public class PlayerMovement : NetworkBehaviour
 
     public Vector3 networkPosition;
     public Quaternion networkRotation;
-
-
-    private void Awake()
-    {
-        if (!IsOwner) return;
-    }
     private void Start()
     {
         if (!IsOwner) return;

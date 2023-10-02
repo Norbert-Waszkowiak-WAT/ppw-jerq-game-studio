@@ -2,12 +2,22 @@ using UnityEngine;
 
 public class Target : MonoBehaviour
 {
-    public float health = 50f;
+
+    public float maxHealth = 150f;
+    public float currentHealth = 150f;
+
+    public healthBar healthBar;
+
+    void Awake ()
+    {
+        healthBar.SetMaxHealth(maxHealth);
+    }
 
     public void TakeDamage (float amount)
     {
-        health -= amount;
-        if (health <= 0f)
+        currentHealth -= amount;
+        healthBar.SetHealth(currentHealth);
+        if (currentHealth <= 0f)
         {
             Die();
         }

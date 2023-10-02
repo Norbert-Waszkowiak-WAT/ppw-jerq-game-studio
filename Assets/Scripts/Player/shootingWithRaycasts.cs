@@ -2,8 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.Netcode;
 
-public class shootingWithRaycasts : MonoBehaviour
+public class shootingWithRaycasts : NetworkBehaviour
 {
     public Transform firePoint;
     public ParticleSystem muzzleFlash;
@@ -27,6 +28,7 @@ public class shootingWithRaycasts : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!IsOwner) return;
         if (Input.GetButton(shootButton))
         {
             if (canShoot)

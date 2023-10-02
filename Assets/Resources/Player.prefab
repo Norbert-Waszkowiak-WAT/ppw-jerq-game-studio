@@ -84,13 +84,40 @@ TrailRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1
+        value: 0.74654406
         inSlope: 0
         outSlope: 0
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.3279797
+        value: 0.45806447
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.6132725
+        value: 0.25068617
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.97886914
+        value: 0.4009207
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -105,7 +132,7 @@ TrailRenderer:
       key6: {r: 0, g: 0, b: 0, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
       ctime0: 0
-      ctime1: 65535
+      ctime1: 64957
       ctime2: 0
       ctime3: 0
       ctime4: 0
@@ -113,8 +140,8 @@ TrailRenderer:
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 65342
-      atime2: 0
+      atime1: 64957
+      atime2: 64957
       atime3: 0
       atime4: 0
       atime5: 0
@@ -445,7 +472,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 0.8
+  m_Time: 0.2
   m_PreviewTimeScale: 1
   m_Parameters:
     serializedVersion: 3
@@ -502,7 +529,7 @@ TrailRenderer:
     textureScale: {x: 10, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
-  m_MinVertexDistance: 0.8
+  m_MinVertexDistance: 0.2
   m_MaskInteraction: 0
   m_Autodestruct: 0
   m_Emitting: 1
@@ -747,7 +774,7 @@ MonoBehaviour:
   fpsCam: {fileID: 1654298435498008109}
   fireRate: 15
   gun: {fileID: 2950410811715838588}
-  shootKey: 323
+  shootButton: Fire1
 --- !u!114 &1976834637594058238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -760,7 +787,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f903083dd4e6d3f4888f3d784b85a0a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
+  health: 150
 --- !u!1 &9080497833299470101
 GameObject:
   m_ObjectHideFlags: 0
