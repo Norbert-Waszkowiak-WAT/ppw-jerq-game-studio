@@ -1,22 +1,30 @@
+using Unity.Netcode;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Target : MonoBehaviour
+public class Target : NetworkBehaviour
 {
 
     public float maxHealth = 150f;
     public float currentHealth = 150f;
 
     public healthBar healthBar;
-
-    void Awake ()
+    
+    public void Awake ()
     {
-        healthBar.SetMaxHealth(maxHealth);
+        if (healthBar != null)
+        {
+            healthBar.SetMaxHealth(maxHealth);
+            healthBar.SetHealth(maxHealth);
+        }
+        
     }
+    
 
     public void TakeDamage (float amount)
     {
         currentHealth -= amount;
-        healthBar.SetHealth(currentHealth);
+        if (healthBar != null)  healthBar.SetHealth(currentHealth);
         if (currentHealth <= 0f)
         {
             Die();
@@ -25,6 +33,6 @@ public class Target : MonoBehaviour
 
     void Die ()
     {
-        Destroy(gameObject);
+        NetworkObject.Destroy(gameObject);
     }
 }

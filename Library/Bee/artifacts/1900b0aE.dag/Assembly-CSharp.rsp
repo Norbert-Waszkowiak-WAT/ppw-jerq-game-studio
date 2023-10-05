@@ -417,6 +417,7 @@
 "Assets/Scripts/Player/shootingWithRaycasts.cs"
 "Assets/Scripts/Player/spownPoint.cs"
 "Assets/Scripts/Player/Target.cs"
+"Assets/Scripts/UI/displayHealth.cs"
 "Assets/Scripts/UI/healthBar.cs"
 "Assets/Scripts/UI/readInput.cs"
 -langversion:9.0

@@ -21,6 +21,8 @@ ScriptsOnlyBuild:
     - TMPInputFieldReader
     - Target
     - colorManager
+    - displayHealth
+    - healthBar
     - healthPointsOperator
     - minimapZoom
     - shootingHandler
@@ -41,6 +43,8 @@ ScriptsOnlyBuild:
     - Unity.Netcode.NetworkObject
     - Unity.Netcode.NetworkPrefabsList
     - Unity.Netcode.Transports.UTP.UnityTransport
+    Unity.PlasticSCM.Editor.dll:
+    - Unity.PlasticSCM.Editor.PlasticWindow
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro:
@@ -174,89 +178,93 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 622}
+      Script: {instanceID: 626}
     - Class: 114
-      Script: {instanceID: 624}
+      Script: {instanceID: 628}
     - Class: 114
-      Script: {instanceID: 646}
+      Script: {instanceID: 650}
     - Class: 114
-      Script: {instanceID: 1576}
+      Script: {instanceID: 1580}
     - Class: 114
-      Script: {instanceID: 1610}
+      Script: {instanceID: 1614}
     - Class: 114
-      Script: {instanceID: 1642}
+      Script: {instanceID: 1646}
     - Class: 114
-      Script: {instanceID: 1836}
+      Script: {instanceID: 1840}
     - Class: 114
-      Script: {instanceID: 1982}
+      Script: {instanceID: 1986}
     - Class: 114
-      Script: {instanceID: 2482}
+      Script: {instanceID: 2486}
     - Class: 114
-      Script: {instanceID: 2534}
+      Script: {instanceID: 2538}
     - Class: 114
-      Script: {instanceID: 2598}
+      Script: {instanceID: 2602}
     - Class: 114
-      Script: {instanceID: 2678}
+      Script: {instanceID: 2682}
     - Class: 114
-      Script: {instanceID: 2742}
+      Script: {instanceID: 2746}
     - Class: 114
-      Script: {instanceID: 3206}
+      Script: {instanceID: 3210}
     - Class: 114
-      Script: {instanceID: 3514}
+      Script: {instanceID: 3518}
     - Class: 114
-      Script: {instanceID: 3910}
+      Script: {instanceID: 3914}
     - Class: 114
-      Script: {instanceID: 4010}
+      Script: {instanceID: 4014}
     - Class: 114
-      Script: {instanceID: 4558}
+      Script: {instanceID: 4562}
     - Class: 114
-      Script: {instanceID: 4626}
+      Script: {instanceID: 4630}
     - Class: 114
-      Script: {instanceID: 4956}
+      Script: {instanceID: 4960}
     - Class: 114
-      Script: {instanceID: 5438}
+      Script: {instanceID: 5442}
     - Class: 114
-      Script: {instanceID: 5606}
+      Script: {instanceID: 5610}
     - Class: 114
-      Script: {instanceID: 5632}
+      Script: {instanceID: 5636}
     - Class: 114
-      Script: {instanceID: 5798}
+      Script: {instanceID: 5802}
     - Class: 114
-      Script: {instanceID: 5996}
+      Script: {instanceID: 6000}
     - Class: 114
-      Script: {instanceID: 6076}
+      Script: {instanceID: 6080}
     - Class: 114
-      Script: {instanceID: 6330}
+      Script: {instanceID: 6334}
     - Class: 114
-      Script: {instanceID: 6428}
+      Script: {instanceID: 6432}
     - Class: 114
-      Script: {instanceID: 6900}
+      Script: {instanceID: 6904}
     - Class: 114
-      Script: {instanceID: 7102}
+      Script: {instanceID: 7106}
     - Class: 114
-      Script: {instanceID: 7222}
+      Script: {instanceID: 7226}
     - Class: 114
-      Script: {instanceID: 7838}
+      Script: {instanceID: 7842}
     - Class: 114
-      Script: {instanceID: 8334}
+      Script: {instanceID: 8338}
     - Class: 114
-      Script: {instanceID: 8414}
+      Script: {instanceID: 8418}
     - Class: 114
-      Script: {instanceID: 8446}
+      Script: {instanceID: 8450}
     - Class: 114
-      Script: {instanceID: 8868}
+      Script: {instanceID: 8580}
     - Class: 114
-      Script: {instanceID: 9526}
+      Script: {instanceID: 8874}
     - Class: 114
-      Script: {instanceID: 9904}
+      Script: {instanceID: 9532}
     - Class: 114
-      Script: {instanceID: 9918}
+      Script: {instanceID: 9910}
     - Class: 114
-      Script: {instanceID: 11186}
+      Script: {instanceID: 9924}
     - Class: 114
-      Script: {instanceID: 27996}
+      Script: {instanceID: 11192}
     - Class: 114
-      Script: {instanceID: 27998}
+      Script: {instanceID: 30784}
+    - Class: 114
+      Script: {instanceID: 30786}
+    - Class: 114
+      Script: {instanceID: 38258}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1074,6 +1082,12 @@ ScriptsOnlyBuild:
     className: testRelay
   - hash:
       serializedVersion: 2
+      Hash: 9886242413265fdbfe4fb68008aed9de
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: healthBar
+  - hash:
+      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1386,12 +1400,12 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: b2a99d38a6810f44acd162f4f2efc0a0
+      Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: healthBar
+    className: displayHealth
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/jakub.pawlowski/Desktop/Project_infa/Wersje_gry/V7/Future
+  playerPath: C:/Users/wiktor.ziedalski/Future-Wariors/Builds/v 4.1 (health)/Future
     Warriors.exe

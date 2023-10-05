@@ -37,7 +37,12 @@ public class shootingWithRaycasts : NetworkBehaviour
                 canShoot = false;
                 StartCoroutine(ShootDelay());
             }
-        } 
+        }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            gameObject.transform.GetComponent<Target>().TakeDamage(damage);
+        }
     }
 
     IEnumerator ShootDelay()
@@ -66,9 +71,12 @@ public class shootingWithRaycasts : NetworkBehaviour
                 target.TakeDamage(damage);
             }
 
-            TrailRenderer trail = Instantiate(tracerEffect, firePoint.position, Quaternion.identity);
-            trail.gameObject.SetActive(true);
-            StartCoroutine(SpownTrail(trail, hit.point));
+            if (tracerEffect != null)
+            {
+                TrailRenderer trail = Instantiate(tracerEffect, firePoint.position, Quaternion.identity);
+                trail.gameObject.SetActive(true);
+                StartCoroutine(SpownTrail(trail, hit.point));
+            }
         }
 
         IEnumerator SpownTrail(TrailRenderer trail, Vector3 hitPoint)
@@ -82,10 +90,14 @@ public class shootingWithRaycasts : NetworkBehaviour
                 yield return null;
             }
             trail.transform.position = hitPoint;
-            ParticleSystem newImpactEffect = Instantiate(impactEffect, hitPoint, Quaternion.LookRotation(hit.normal));
-
+            if (impactEffect != null)
+            {
+                ParticleSystem newImpactEffect = Instantiate(impactEffect, hitPoint, Quaternion.LookRotation(hit.normal));
+                Destroy(newImpactEffect, 1f);
+            }
+            
             Destroy(trail.gameObject, trail.time);
-            Destroy(newImpactEffect, 1f);
+            
         }
     }
 }
