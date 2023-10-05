@@ -101,8 +101,11 @@ We are a two-person indie game development studio consisting of myself (Jerq) an
 
 ## Changelog
 
+- **2023-10-05**
+  - Healthbar now automaticly connect to player on this engine and displays max HP correctly but hitting only works for host (in repair).
+
 - **2023-10-02**
-  - Added healthbar.
+  - Added healthbar (not working).
 
 - **2023-10-01**
   - Added shooting sounds.
