@@ -49,7 +49,6 @@ public class PlayerMovement : NetworkBehaviour
     public Quaternion networkRotation;
     private void Start()
     {
-        if (!IsOwner) return;
         rb = GetComponent<Rigidbody>();
 
         playerCamera = GetComponentInChildren<Camera>();
@@ -93,11 +92,6 @@ public class PlayerMovement : NetworkBehaviour
 
     private void Update()
     {
-        if (!IsOwner)
-        {
-            return;
-        }
-        
         Rotate();
         grounded = IsGrounded(playerHeight);
 

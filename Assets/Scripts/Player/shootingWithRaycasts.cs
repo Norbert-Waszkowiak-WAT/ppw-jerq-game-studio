@@ -41,7 +41,7 @@ public class shootingWithRaycasts : NetworkBehaviour
 
         if (Input.GetKeyDown(KeyCode.P))
         {
-            gameObject.transform.GetComponent<Target>().TakeDamage(damage);
+            gameObject.transform.GetComponent<Target>().TakeDamageClientRpc(damage);
         }
     }
 
@@ -66,9 +66,14 @@ public class shootingWithRaycasts : NetworkBehaviour
             Debug.Log(hit.transform.name);
 
             Target target = hit.transform.GetComponent<Target>();
+
+
             if (target != null)
             {
-                target.TakeDamage(damage);
+                Debug.LogError("target" + target.ToString());
+                Debug.LogError("target" + target.currentHealth);
+                target.TakeDamageClientRpc(damage);
+                Debug.LogError("after TakeDamageClientRpc");
             }
 
             if (tracerEffect != null)
@@ -77,6 +82,8 @@ public class shootingWithRaycasts : NetworkBehaviour
                 trail.gameObject.SetActive(true);
                 StartCoroutine(SpownTrail(trail, hit.point));
             }
+
+            Debug.LogError(hit.transform.name);
         }
 
         IEnumerator SpownTrail(TrailRenderer trail, Vector3 hitPoint)

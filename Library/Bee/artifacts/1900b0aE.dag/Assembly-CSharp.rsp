@@ -403,6 +403,7 @@
 "Assets/Scripts/Camera/minimapCameraMovement.cs"
 "Assets/Scripts/Camera/minimapZoom.cs"
 "Assets/Scripts/Guns/Fire.cs"
+"Assets/Scripts/Networking/disableNotLocal.cs"
 "Assets/Scripts/Networking/NetworkUI.cs"
 "Assets/Scripts/Networking/testRelay.cs"
 "Assets/Scripts/Player/AnimationQualifier.cs"

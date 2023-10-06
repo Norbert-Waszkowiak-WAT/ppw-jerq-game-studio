@@ -7,6 +7,7 @@ ScriptsOnlyBuild:
     - PlayerMovement
     - Target
     - colorManager
+    - disableNotLocal
     - shootingHandler
     - shootingWithRaycasts
     - spownPoint
@@ -21,6 +22,7 @@ ScriptsOnlyBuild:
     - TMPInputFieldReader
     - Target
     - colorManager
+    - disableNotLocal
     - displayHealth
     - healthBar
     - healthPointsOperator
@@ -178,81 +180,85 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 626}
+      Script: {instanceID: 622}
     - Class: 114
-      Script: {instanceID: 628}
+      Script: {instanceID: 624}
     - Class: 114
-      Script: {instanceID: 650}
+      Script: {instanceID: 646}
     - Class: 114
-      Script: {instanceID: 1580}
+      Script: {instanceID: 1576}
     - Class: 114
-      Script: {instanceID: 1614}
+      Script: {instanceID: 1610}
     - Class: 114
-      Script: {instanceID: 1646}
+      Script: {instanceID: 1642}
     - Class: 114
-      Script: {instanceID: 1840}
+      Script: {instanceID: 1836}
     - Class: 114
-      Script: {instanceID: 1986}
+      Script: {instanceID: 1982}
     - Class: 114
-      Script: {instanceID: 2486}
+      Script: {instanceID: 2482}
     - Class: 114
-      Script: {instanceID: 2538}
+      Script: {instanceID: 2534}
     - Class: 114
-      Script: {instanceID: 2602}
+      Script: {instanceID: 2598}
     - Class: 114
-      Script: {instanceID: 2682}
+      Script: {instanceID: 2678}
     - Class: 114
-      Script: {instanceID: 2746}
+      Script: {instanceID: 2742}
     - Class: 114
-      Script: {instanceID: 3210}
+      Script: {instanceID: 3206}
     - Class: 114
-      Script: {instanceID: 3518}
+      Script: {instanceID: 3514}
     - Class: 114
-      Script: {instanceID: 3914}
+      Script: {instanceID: 3910}
     - Class: 114
-      Script: {instanceID: 4014}
+      Script: {instanceID: 4010}
     - Class: 114
-      Script: {instanceID: 4562}
+      Script: {instanceID: 4558}
     - Class: 114
-      Script: {instanceID: 4630}
+      Script: {instanceID: 4626}
     - Class: 114
-      Script: {instanceID: 4960}
+      Script: {instanceID: 4956}
     - Class: 114
-      Script: {instanceID: 5442}
+      Script: {instanceID: 5438}
     - Class: 114
-      Script: {instanceID: 5610}
+      Script: {instanceID: 5606}
     - Class: 114
-      Script: {instanceID: 5636}
+      Script: {instanceID: 5632}
     - Class: 114
-      Script: {instanceID: 5802}
+      Script: {instanceID: 5798}
     - Class: 114
-      Script: {instanceID: 6000}
+      Script: {instanceID: 5996}
     - Class: 114
-      Script: {instanceID: 6080}
+      Script: {instanceID: 6076}
     - Class: 114
-      Script: {instanceID: 6334}
+      Script: {instanceID: 6330}
     - Class: 114
-      Script: {instanceID: 6432}
+      Script: {instanceID: 6428}
     - Class: 114
-      Script: {instanceID: 6904}
+      Script: {instanceID: 6900}
     - Class: 114
-      Script: {instanceID: 7106}
+      Script: {instanceID: 7102}
     - Class: 114
-      Script: {instanceID: 7226}
+      Script: {instanceID: 7222}
     - Class: 114
-      Script: {instanceID: 7842}
+      Script: {instanceID: 7838}
     - Class: 114
-      Script: {instanceID: 8338}
+      Script: {instanceID: 8334}
     - Class: 114
-      Script: {instanceID: 8418}
+      Script: {instanceID: 8414}
     - Class: 114
-      Script: {instanceID: 8450}
+      Script: {instanceID: 8446}
     - Class: 114
-      Script: {instanceID: 8580}
+      Script: {instanceID: 8576}
     - Class: 114
-      Script: {instanceID: 8874}
+      Script: {instanceID: 8870}
     - Class: 114
-      Script: {instanceID: 9532}
+      Script: {instanceID: 8888}
+    - Class: 114
+      Script: {instanceID: 9530}
+    - Class: 114
+      Script: {instanceID: 9800}
     - Class: 114
       Script: {instanceID: 9910}
     - Class: 114
@@ -260,11 +266,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11192}
     - Class: 114
-      Script: {instanceID: 30784}
+      Script: {instanceID: 29458}
     - Class: 114
-      Script: {instanceID: 30786}
-    - Class: 114
-      Script: {instanceID: 38258}
+      Script: {instanceID: 29462}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1082,7 +1086,7 @@ ScriptsOnlyBuild:
     className: testRelay
   - hash:
       serializedVersion: 2
-      Hash: 9886242413265fdbfe4fb68008aed9de
+      Hash: 6e6c364da3eb49004ca24ad5af35e903
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: healthBar
@@ -1110,6 +1114,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Scrollbar
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: displayHealth
   - hash:
       serializedVersion: 2
       Hash: df70afff09fcc26f54fe08084e6042ec
@@ -1218,6 +1228,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: PositionAsUV1
+  - hash:
+      serializedVersion: 2
+      Hash: ef8a4079628566a9c194646c1c02a34d
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: disableNotLocal
   - hash:
       serializedVersion: 2
       Hash: bbd18fc68ceeefb10270c51811911485
@@ -1398,14 +1414,8 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: displayHealth
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/wiktor.ziedalski/Future-Wariors/Builds/v 4.1 (health)/Future
+  playerPath: C:/Users/wiktor.ziedalski/Future-Wariors/Builds/v 4.2 (health)/Future
     Warriors.exe

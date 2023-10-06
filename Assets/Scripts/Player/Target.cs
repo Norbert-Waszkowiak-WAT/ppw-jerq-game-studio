@@ -12,21 +12,30 @@ public class Target : NetworkBehaviour
     
     public void Awake ()
     {
-        if (healthBar != null)
-        {
-            healthBar.SetMaxHealth(maxHealth);
-            healthBar.SetHealth(maxHealth);
-        }
+       if (healthBar != null)
+       {
+           healthBar.SetMaxHealth(maxHealth);
+           healthBar.SetHealth(maxHealth);
+       }
         
     }
-    
 
-    public void TakeDamage (float amount)
+    [ClientRpc]
+    public void TakeDamageClientRpc (float amount)
     {
+        Debug.LogError("Taking damage");
         currentHealth -= amount;
-        if (healthBar != null)  healthBar.SetHealth(currentHealth);
+        Debug.LogError(currentHealth);
+        Debug.LogError(amount);
+
+        if (healthBar != null)
+        {
+            Debug.LogError("healthBar != null");
+            healthBar.SetHealth(currentHealth);
+        }
         if (currentHealth <= 0f)
         {
+            Debug.LogError("currentHealth <= 0f");
             Die();
         }
     }
