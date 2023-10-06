@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dc3818db953e9d4898250c08019e9fc, type: 3}
+  m_Name: Assault Rifle
+  m_EditorClassIdentifier: 
+  damage: 32
+  fireRate: 6.66
+  reloadSpeed: 3
+  magazineSize: 25
+  range: 60
+  bulletsPerShot: 1
+  headshotMultiplier: 1.45
+  legshotMultiplier: 0.75
+  WeaponIndex: 1
+  muzzlePosition: {x: 0, y: 0, z: 0}
+  weaponPosition: {x: 0.23, y: 0, z: 0.56}
+  weaponRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}

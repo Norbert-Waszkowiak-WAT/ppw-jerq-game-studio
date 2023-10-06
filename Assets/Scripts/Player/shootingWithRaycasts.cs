@@ -50,22 +50,28 @@ public class shootingWithRaycasts : NetworkBehaviour
         canShoot = true;
     }
 
-    void Shoot ()
+    void Shoot()
     {
         gun.GetComponent<Fire>().fired = true;
         if (muzzleFlash != null)
         {
             muzzleFlash.Play();
         }
-        // Creating a raycast
+
+        // Create a raycast
         RaycastHit hit;
+        Vector3 endPosition;
+
+        bool hitSomething = false;
+
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
-            // Debugging the raycast
+            hitSomething = true;
+
             Debug.Log(hit.transform.name);
+            endPosition = hit.point;
 
             Target target = hit.transform.GetComponent<Target>();
-
 
             if (target != null)
             {
@@ -84,36 +90,39 @@ public class shootingWithRaycasts : NetworkBehaviour
                     Debug.LogError("after TakeDamageClientRpc");
                 }
             }
-
-            if (tracerEffect != null)
-            {
-                TrailRenderer trail = Instantiate(tracerEffect, firePoint.position, Quaternion.identity);
-                trail.gameObject.SetActive(true);
-                StartCoroutine(SpownTrail(trail, hit.point));
-            }
-
-            Debug.LogError(hit.transform.name);
+        }
+        else
+        {
+            endPosition = fpsCam.transform.position + (fpsCam.transform.forward * range);
         }
 
-        IEnumerator SpownTrail(TrailRenderer trail, Vector3 hitPoint)
+        if (tracerEffect != null)
         {
-            float time = 0f;
-            Vector3 startPosition = trail.transform.position;
-            while (time < 1f)
-            {
-                trail.transform.position = Vector3.Lerp(startPosition, hitPoint, time);
-                time += Time.deltaTime / trail.time;
-                yield return null;
-            }
-            trail.transform.position = hitPoint;
-            if (impactEffect != null)
-            {
-                ParticleSystem newImpactEffect = Instantiate(impactEffect, hitPoint, Quaternion.LookRotation(hit.normal));
-                Destroy(newImpactEffect, 1f);
-            }
-            
-            Destroy(trail.gameObject, trail.time);
-            
+            TrailRenderer trail = Instantiate(tracerEffect, firePoint.position, Quaternion.identity);
+            trail.gameObject.SetActive(true);
+            StartCoroutine(SpownTrail(trail, endPosition, hitSomething));
         }
     }
+
+    IEnumerator SpownTrail(TrailRenderer trail, Vector3 endPosition, bool hitSomething)
+    {
+        float time = 0f;
+        Vector3 startPosition = trail.transform.position;
+        while (time < 1f)
+        {
+            trail.transform.position = Vector3.Lerp(startPosition, endPosition, time);
+            time += Time.deltaTime / trail.time;
+            yield return null;
+        }
+        trail.transform.position = endPosition;
+
+        if (impactEffect != null && time >= 1f && hitSomething)
+        {
+            ParticleSystem newImpactEffect = Instantiate(impactEffect, endPosition, Quaternion.identity);
+            Destroy(newImpactEffect, 1f);
+        }
+
+        Destroy(trail.gameObject, trail.time);
+    }
+
 }

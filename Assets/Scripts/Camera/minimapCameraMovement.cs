@@ -26,13 +26,9 @@ public class MinimapCameraMovement : NetworkBehaviour
         }
     }
 
-    private void Update()
+    public override void OnNetworkSpawn()
     {
-        // In Update, you can check for the player transform more efficiently.
-        if (playerTransform == null)
-        {
-            FindAndSetPlayer();
-        }
+        FindAndSetPlayer();
     }
 
     private void FindAndSetPlayer()
