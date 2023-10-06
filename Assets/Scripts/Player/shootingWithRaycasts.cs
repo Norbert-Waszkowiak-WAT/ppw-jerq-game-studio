@@ -28,7 +28,6 @@ public class shootingWithRaycasts : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!IsOwner) return;
         if (Input.GetButton(shootButton))
         {
             if (canShoot)
@@ -41,7 +40,7 @@ public class shootingWithRaycasts : NetworkBehaviour
 
         if (Input.GetKeyDown(KeyCode.P))
         {
-            gameObject.transform.GetComponent<Target>().TakeDamageClientRpc(damage);
+            gameObject.transform.GetComponent<Target>().TakeDamageServerRpc(damage);
         }
     }
 
@@ -72,8 +71,18 @@ public class shootingWithRaycasts : NetworkBehaviour
             {
                 Debug.LogError("target" + target.ToString());
                 Debug.LogError("target" + target.currentHealth);
-                target.TakeDamageClientRpc(damage);
-                Debug.LogError("after TakeDamageClientRpc");
+                if (NetworkManager.Singleton.IsServer)
+                {
+                    Debug.LogError("before TakeDamageServerRpc");
+                    target.TakeDamageClientRpc(damage);
+                    Debug.LogError("after TakeDamageServerRpc");
+                }
+                else
+                {
+                    Debug.LogError("before TakeDamageClientRpc");
+                    target.TakeDamageServerRpc(damage);
+                    Debug.LogError("after TakeDamageClientRpc");
+                }
             }
 
             if (tracerEffect != null)

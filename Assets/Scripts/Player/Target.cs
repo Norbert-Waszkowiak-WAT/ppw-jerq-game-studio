@@ -1,6 +1,5 @@
 using Unity.Netcode;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Target : NetworkBehaviour
 {
@@ -20,8 +19,28 @@ public class Target : NetworkBehaviour
         
     }
 
+    [ServerRpc(RequireOwnership = false)]
+    public void TakeDamageServerRpc (float amount)
+    {
+        Debug.LogError("Taking damage");
+        currentHealth -= amount;
+        Debug.LogError(currentHealth);
+        Debug.LogError(amount);
+
+        if (healthBar != null)
+        {
+            Debug.LogError("healthBar != null");
+            healthBar.SetHealth(currentHealth);
+        }
+        if (currentHealth <= 0f)
+        {
+            Debug.LogError("currentHealth <= 0f");
+            Die();
+        }
+    }
+
     [ClientRpc]
-    public void TakeDamageClientRpc (float amount)
+    public void TakeDamageClientRpc(float amount)
     {
         Debug.LogError("Taking damage");
         currentHealth -= amount;
