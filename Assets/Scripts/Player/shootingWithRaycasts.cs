@@ -19,23 +19,34 @@ public class shootingWithRaycasts : NetworkBehaviour
 
     public float fireRate = 15f;
 
-    private bool canShoot = true;
-
     public GameObject gun; 
 
     public string shootButton = "Fire1";
+    public KeyCode reloadButton = KeyCode.R;
+
+    public List<bool> weaponsCanShoot = new List<bool>();
+    public List<int> weaponsMagazines = new List<int>();
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetButton(shootButton))
         {
-            if (canShoot)
+            if (weaponsCanShoot[gun.GetComponent<GunStats>().thisWeapon.weaponIndex])
             {
-                Shoot();
-                canShoot = false;
-                StartCoroutine(ShootDelay());
+                if (!(weaponsMagazines[gun.GetComponent<GunStats>().thisWeapon.weaponIndex] <= 0))
+                {
+                    Shoot();
+                    weaponsMagazines[gun.GetComponent<GunStats>().thisWeapon.weaponIndex]--;
+                    weaponsCanShoot[gun.GetComponent<GunStats>().thisWeapon.weaponIndex] = false;
+                    StartCoroutine(ShootDelay());
+                }
             }
+        }
+
+        if (Input.GetKeyDown(reloadButton))
+        {
+            StartCoroutine(Reloading());
         }
 
         if (Input.GetKeyDown(KeyCode.P))
@@ -46,8 +57,33 @@ public class shootingWithRaycasts : NetworkBehaviour
 
     IEnumerator ShootDelay()
     {
+        int weaponIndex = gun.GetComponent<GunStats>().thisWeapon.weaponIndex;
         yield return new WaitForSeconds(1f / fireRate);
-        canShoot = true;
+        weaponsCanShoot[weaponIndex] = true;
+    }
+
+    IEnumerator Reloading()
+    {
+        int weaponIndex = gun.GetComponent<GunStats>().thisWeapon.weaponIndex;
+        yield return new WaitForSeconds(gun.GetComponent<GunStats>().thisWeapon.reloadSpeed);
+        weaponsMagazines[weaponIndex] = gun.GetComponent<GunStats>().thisWeapon.magazineSize;
+    }
+
+    public void WaponChanged()
+    {
+        int weaponIndex = gun.GetComponent<GunStats>().thisWeapon.weaponIndex;
+        if (weaponsCanShoot.Count < weaponIndex + 1)
+        {
+            while (weaponsCanShoot.Count < weaponIndex + 1)
+            {
+                weaponsCanShoot.Add(true);
+                weaponsMagazines.Add(-1);
+            }
+        }
+        if (weaponsMagazines[weaponIndex] == -1)
+        {
+            weaponsMagazines[weaponIndex] = gun.GetComponent<GunStats>().thisWeapon.magazineSize;
+        }
     }
 
     void Shoot()

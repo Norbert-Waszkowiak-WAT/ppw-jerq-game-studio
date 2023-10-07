@@ -15,7 +15,7 @@ public class Weapon : ScriptableObject
     public float headshotMultiplier;
     public float legshotMultiplier;
 
-    public int WeaponIndex;
+    public int weaponIndex;
 
     public Vector3 muzzlePosition;
     public Vector3 weaponPosition;

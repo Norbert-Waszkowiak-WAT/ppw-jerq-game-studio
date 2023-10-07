@@ -6,9 +6,7 @@ using UnityEngine;
 
 public class weaponsHandler : NetworkBehaviour
 {
-    public Weapon[] weapons;
-
-    public GameObject[] weaponsGameObjects;
+    public GameObject[] weapons;
 
     public int currentWeaponIndex = 0;
 
@@ -24,20 +22,25 @@ public class weaponsHandler : NetworkBehaviour
             return;
         }
 
-        weaponsGameObjects[currentWeaponIndex].SetActive(false);
-        weaponsGameObjects[currentWeaponIndex].transform.parent = transform;
-        weaponsGameObjects[currentWeaponIndex].transform.localPosition = Vector3.zero;
-        weaponsGameObjects[currentWeaponIndex].transform.localRotation = Quaternion.identity;
-        weaponsGameObjects[index].SetActive(true);
-        weaponsGameObjects[index].transform.parent = playerTransform;
-        weaponsGameObjects[index].transform.localPosition = weapons[index].weaponPosition;
-        weaponsGameObjects[index].transform.localRotation = weapons[index].weaponRotation;
+        weapons[currentWeaponIndex].SetActive(false);
+        weapons[currentWeaponIndex].transform.parent = transform;
+        weapons[currentWeaponIndex].transform.localPosition = Vector3.zero;
+        weapons[currentWeaponIndex].transform.localRotation = Quaternion.identity;
+        weapons[index].SetActive(true);
+        weapons[index].transform.parent = playerTransform;
+        weapons[index].transform.localPosition = weapons[index].GetComponent<GunStats>().thisWeapon.weaponPosition;
+        weapons[index].transform.localRotation = weapons[index].GetComponent<GunStats>().thisWeapon.weaponRotation;
 
-        playerTransform.GetComponent<shootingWithRaycasts>().gun = weaponsGameObjects[index];
+        
+        playerTransform.GetComponent<shootingWithRaycasts>().gun = weapons[index];
+        
 
-        playerTransform.GetComponent<shootingWithRaycasts>().damage = weapons[index].damage;
-        playerTransform.GetComponent<shootingWithRaycasts>().fireRate = weapons[index].fireRate;
-        playerTransform.GetComponent<shootingWithRaycasts>().range = weapons[index].range;
+        playerTransform.GetComponent<shootingWithRaycasts>().damage = weapons[index].GetComponent<GunStats>().thisWeapon.damage;
+        playerTransform.GetComponent<shootingWithRaycasts>().fireRate = weapons[index].GetComponent<GunStats>().thisWeapon.fireRate;
+        playerTransform.GetComponent<shootingWithRaycasts>().range = weapons[index].GetComponent<GunStats>().thisWeapon.range;
+
+        playerTransform.GetComponent<shootingWithRaycasts>().WaponChanged();
+
 
         currentWeaponIndex = index;
     }
@@ -52,6 +55,10 @@ public class weaponsHandler : NetworkBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             SelectWeapon(1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            SelectWeapon(2);
         }
     }
     public override void OnNetworkSpawn()
