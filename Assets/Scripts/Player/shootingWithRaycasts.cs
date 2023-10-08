@@ -19,6 +19,9 @@ public class shootingWithRaycasts : NetworkBehaviour
 
     public float fireRate = 15f;
 
+    public float headshotMultiplier;
+    public float legshotMultiplier;
+
     public GameObject gun; 
 
     public string shootButton = "Fire1";
@@ -26,11 +29,12 @@ public class shootingWithRaycasts : NetworkBehaviour
 
     public List<bool> weaponsCanShoot = new List<bool>();
     public List<int> weaponsMagazines = new List<int>();
+    public bool reloading = false;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButton(shootButton))
+        if (Input.GetButton(shootButton) && !reloading)
         {
             if (weaponsCanShoot[gun.GetComponent<GunStats>().thisWeapon.weaponIndex])
             {
@@ -44,7 +48,7 @@ public class shootingWithRaycasts : NetworkBehaviour
             }
         }
 
-        if (Input.GetKeyDown(reloadButton))
+        if (Input.GetKeyDown(reloadButton) && !reloading)
         {
             StartCoroutine(Reloading());
         }
@@ -65,7 +69,9 @@ public class shootingWithRaycasts : NetworkBehaviour
     IEnumerator Reloading()
     {
         int weaponIndex = gun.GetComponent<GunStats>().thisWeapon.weaponIndex;
+        reloading = true;
         yield return new WaitForSeconds(gun.GetComponent<GunStats>().thisWeapon.reloadSpeed);
+        reloading = false;
         weaponsMagazines[weaponIndex] = gun.GetComponent<GunStats>().thisWeapon.magazineSize;
     }
 
@@ -100,10 +106,35 @@ public class shootingWithRaycasts : NetworkBehaviour
 
         bool hitSomething = false;
 
-        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
-        {
-            hitSomething = true;
+        int layerMask = ~LayerMask.GetMask("Ignore Raycast");
 
+        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range, layerMask, QueryTriggerInteraction.Collide))
+        {
+            if (hit.transform == transform)
+            {
+                return;
+            }
+            Debug.Log(hit.collider.name);
+            Hitbox hittedHitBox = hit.collider.gameObject.GetComponent<Hitbox>();
+            float damageMultiplier = 1f;
+            if (hittedHitBox != null)
+            {
+                if (hittedHitBox.hitboxType == "head")
+                {
+                    damageMultiplier = headshotMultiplier;
+                    Debug.LogError("headshot");
+                }
+                else if (hittedHitBox.hitboxType == "leg" || hittedHitBox.hitboxType == "arm")
+                {
+                    damageMultiplier = legshotMultiplier;
+                    Debug.LogError("legshot");
+                }
+                else
+                {
+                    Debug.LogError("bodyshot");
+                }
+            }
+            hitSomething = true;
             Debug.Log(hit.transform.name);
             endPosition = hit.point;
 
@@ -111,19 +142,13 @@ public class shootingWithRaycasts : NetworkBehaviour
 
             if (target != null)
             {
-                Debug.LogError("target" + target.ToString());
-                Debug.LogError("target" + target.currentHealth);
                 if (NetworkManager.Singleton.IsServer)
                 {
-                    Debug.LogError("before TakeDamageServerRpc");
-                    target.TakeDamageClientRpc(damage);
-                    Debug.LogError("after TakeDamageServerRpc");
+                    target.TakeDamageClientRpc(Mathf.Round(damage * damageMultiplier));
                 }
                 else
                 {
-                    Debug.LogError("before TakeDamageClientRpc");
-                    target.TakeDamageServerRpc(damage);
-                    Debug.LogError("after TakeDamageClientRpc");
+                    target.TakeDamageServerRpc(Mathf.Round(damage * damageMultiplier));
                 }
             }
         }

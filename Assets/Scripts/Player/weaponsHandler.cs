@@ -38,6 +38,8 @@ public class weaponsHandler : NetworkBehaviour
         playerTransform.GetComponent<shootingWithRaycasts>().damage = weapons[index].GetComponent<GunStats>().thisWeapon.damage;
         playerTransform.GetComponent<shootingWithRaycasts>().fireRate = weapons[index].GetComponent<GunStats>().thisWeapon.fireRate;
         playerTransform.GetComponent<shootingWithRaycasts>().range = weapons[index].GetComponent<GunStats>().thisWeapon.range;
+        playerTransform.GetComponent<shootingWithRaycasts>().headshotMultiplier = weapons[index].GetComponent<GunStats>().thisWeapon.headshotMultiplier;
+        playerTransform.GetComponent<shootingWithRaycasts>().legshotMultiplier = weapons[index].GetComponent<GunStats>().thisWeapon.legshotMultiplier;
 
         playerTransform.GetComponent<shootingWithRaycasts>().WaponChanged();
 
@@ -48,6 +50,10 @@ public class weaponsHandler : NetworkBehaviour
 
     private void Update()
     {
+        if (!IsOwner)
+        {
+            return;
+        }
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             SelectWeapon(0);

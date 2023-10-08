@@ -1,7 +1,0 @@
-.unity-button-strip__button:checked {
-    background-color: #353535;
-}
-
-.unity-button-strip__button:active {
-    background-color: #353535;
-}

@@ -7,6 +7,9 @@ TagManager:
   - bullet
   - playerCamera
   - Trail
+  - movementCollider
+  - hitbox
+  - Puppet
   layers:
   - Default
   - TransparentFX
