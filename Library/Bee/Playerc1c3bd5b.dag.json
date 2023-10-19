@@ -304,13 +304,7 @@
         296,
         297,
         298,
-        299,
-        300,
-        301,
-        302,
-        303,
-        304,
-        305
+        299
       ],
       "OverwriteOutputs": false,
       "DebugActionIndex": 0
@@ -476,7 +470,7 @@
       "DisplayName": "Writing boot.config_tyr4.info",
       "ActionType": "WriteFile",
       "PayloadOffset": 83,
-      "PayloadLength": 20675,
+      "PayloadLength": 20300,
       "PayloadDebugContentSnippet": "{\"System.Object\":null,\"Bee.Tun",
       "Inputs": [],
       "Outputs": [
@@ -588,15 +582,12 @@
         "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Tools.NetStats.dll",
         "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Collections.dll",
         "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Netcode.Runtime.dll",
-        "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Samples.Utilities.RNSM.dll",
         "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Tools.MetricTestData.dll",
         "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll",
-        "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Samples.Utilities.dll",
         "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Analytics.dll",
         "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Tools.Common.dll",
         "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Profiling.Core.dll",
         "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Burst.dll",
-        "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Samples.Utilities.ClientAuthority.dll",
         "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Internal.dll",
         "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Device.dll",
         "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Tutorials.Core.dll",
@@ -1729,18 +1720,6 @@
       "DebugActionIndex": 101
     },
     {
-      "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Samples.Utilities.RNSM.dll",
-      "DisplayName": "Copying Unity.Multiplayer.Samples.Utilities.RNSM.dll",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Samples.Utilities.RNSM.dll"
-      ],
-      "Outputs": [
-        "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Samples.Utilities.RNSM.dll"
-      ],
-      "DebugActionIndex": 102
-    },
-    {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.MetricTestData.dll",
       "DisplayName": "Copying Unity.Multiplayer.Tools.MetricTestData.dll",
       "ActionType": "CopyFiles",
@@ -1750,7 +1729,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.MetricTestData.dll"
       ],
-      "DebugActionIndex": 103
+      "DebugActionIndex": 102
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.TextMeshPro.dll",
@@ -1762,19 +1741,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.TextMeshPro.dll"
       ],
-      "DebugActionIndex": 104
-    },
-    {
-      "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Samples.Utilities.dll",
-      "DisplayName": "Copying Unity.Multiplayer.Samples.Utilities.dll",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Samples.Utilities.dll"
-      ],
-      "Outputs": [
-        "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Samples.Utilities.dll"
-      ],
-      "DebugActionIndex": 105
+      "DebugActionIndex": 103
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Analytics.dll",
@@ -1786,7 +1753,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Analytics.dll"
       ],
-      "DebugActionIndex": 106
+      "DebugActionIndex": 104
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.Common.dll",
@@ -1798,7 +1765,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.Common.dll"
       ],
-      "DebugActionIndex": 107
+      "DebugActionIndex": 105
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Profiling.Core.dll",
@@ -1810,7 +1777,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Profiling.Core.dll"
       ],
-      "DebugActionIndex": 108
+      "DebugActionIndex": 106
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Burst.dll",
@@ -1822,19 +1789,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Burst.dll"
       ],
-      "DebugActionIndex": 109
-    },
-    {
-      "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Samples.Utilities.ClientAuthority.dll",
-      "DisplayName": "Copying Unity.Multiplayer.Samples.Utilities.ClientAuthority.dll",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Samples.Utilities.ClientAuthority.dll"
-      ],
-      "Outputs": [
-        "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Samples.Utilities.ClientAuthority.dll"
-      ],
-      "DebugActionIndex": 110
+      "DebugActionIndex": 107
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Internal.dll",
@@ -1846,7 +1801,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Internal.dll"
       ],
-      "DebugActionIndex": 111
+      "DebugActionIndex": 108
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Device.dll",
@@ -1858,7 +1813,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Device.dll"
       ],
-      "DebugActionIndex": 112
+      "DebugActionIndex": 109
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Tutorials.Core.dll",
@@ -1870,7 +1825,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Tutorials.Core.dll"
       ],
-      "DebugActionIndex": 113
+      "DebugActionIndex": 110
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Threading.dll",
@@ -1882,7 +1837,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Threading.dll"
       ],
-      "DebugActionIndex": 114
+      "DebugActionIndex": 111
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.VisualScripting.Core.dll",
@@ -1894,7 +1849,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.VisualScripting.Core.dll"
       ],
-      "DebugActionIndex": 115
+      "DebugActionIndex": 112
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.QoS.dll",
@@ -1906,7 +1861,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.QoS.dll"
       ],
-      "DebugActionIndex": 116
+      "DebugActionIndex": 113
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.NetworkProfiler.Runtime.dll",
@@ -1918,7 +1873,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.NetworkProfiler.Runtime.dll"
       ],
-      "DebugActionIndex": 117
+      "DebugActionIndex": 114
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.UI.dll",
@@ -1930,7 +1885,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.UI.dll"
       ],
-      "DebugActionIndex": 118
+      "DebugActionIndex": 115
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Telemetry.dll",
@@ -1942,7 +1897,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Telemetry.dll"
       ],
-      "DebugActionIndex": 119
+      "DebugActionIndex": 116
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.Adapters.Ngo1.dll",
@@ -1954,7 +1909,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.Adapters.Ngo1.dll"
       ],
-      "DebugActionIndex": 120
+      "DebugActionIndex": 117
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Timeline.dll",
@@ -1966,7 +1921,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Timeline.dll"
       ],
-      "DebugActionIndex": 121
+      "DebugActionIndex": 118
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.NetStatsMonitor.Implementation.dll",
@@ -1978,7 +1933,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.NetStatsMonitor.Implementation.dll"
       ],
-      "DebugActionIndex": 122
+      "DebugActionIndex": 119
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.Initialization.dll",
@@ -1990,7 +1945,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.Initialization.dll"
       ],
-      "DebugActionIndex": 123
+      "DebugActionIndex": 120
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.Adapters.dll",
@@ -2002,7 +1957,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.Adapters.dll"
       ],
-      "DebugActionIndex": 124
+      "DebugActionIndex": 121
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Authentication.dll",
@@ -2014,7 +1969,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Authentication.dll"
       ],
-      "DebugActionIndex": 125
+      "DebugActionIndex": 122
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Mathematics.dll",
@@ -2026,7 +1981,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Mathematics.dll"
       ],
-      "DebugActionIndex": 126
+      "DebugActionIndex": 123
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.MetricTypes.dll",
@@ -2038,7 +1993,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.MetricTypes.dll"
       ],
-      "DebugActionIndex": 127
+      "DebugActionIndex": 124
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Registration.dll",
@@ -2050,7 +2005,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Registration.dll"
       ],
-      "DebugActionIndex": 128
+      "DebugActionIndex": 125
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.VisualScripting.State.dll",
@@ -2062,7 +2017,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.VisualScripting.State.dll"
       ],
-      "DebugActionIndex": 129
+      "DebugActionIndex": 126
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.NetStatsReporting.dll",
@@ -2074,7 +2029,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.NetStatsReporting.dll"
       ],
-      "DebugActionIndex": 130
+      "DebugActionIndex": 127
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.MetricEvents.dll",
@@ -2086,7 +2041,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.MetricEvents.dll"
       ],
-      "DebugActionIndex": 131
+      "DebugActionIndex": 128
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.NetStatsMonitor.Component.dll",
@@ -2098,7 +2053,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.NetStatsMonitor.Component.dll"
       ],
-      "DebugActionIndex": 132
+      "DebugActionIndex": 129
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Collections.LowLevel.ILSupport.dll",
@@ -2110,7 +2065,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Collections.LowLevel.ILSupport.dll"
       ],
-      "DebugActionIndex": 133
+      "DebugActionIndex": 130
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll",
@@ -2122,7 +2077,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll"
       ],
-      "DebugActionIndex": 134
+      "DebugActionIndex": 131
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Burst.Unsafe.dll",
@@ -2134,7 +2089,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Burst.Unsafe.dll"
       ],
-      "DebugActionIndex": 135
+      "DebugActionIndex": 132
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Newtonsoft.Json.dll",
@@ -2146,7 +2101,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Newtonsoft.Json.dll"
       ],
-      "DebugActionIndex": 136
+      "DebugActionIndex": 133
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/System.Runtime.dll",
@@ -2158,7 +2113,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/System.Runtime.dll"
       ],
-      "DebugActionIndex": 137
+      "DebugActionIndex": 134
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/netstandard.dll",
@@ -2170,7 +2125,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/netstandard.dll"
       ],
-      "DebugActionIndex": 138
+      "DebugActionIndex": 135
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Mono.Security.dll",
@@ -2182,7 +2137,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Mono.Security.dll"
       ],
-      "DebugActionIndex": 139
+      "DebugActionIndex": 136
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/System.ComponentModel.Composition.dll",
@@ -2194,7 +2149,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/System.ComponentModel.Composition.dll"
       ],
-      "DebugActionIndex": 140
+      "DebugActionIndex": 137
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/System.Configuration.dll",
@@ -2206,7 +2161,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/System.Configuration.dll"
       ],
-      "DebugActionIndex": 141
+      "DebugActionIndex": 138
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/System.Core.dll",
@@ -2218,7 +2173,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/System.Core.dll"
       ],
-      "DebugActionIndex": 142
+      "DebugActionIndex": 139
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/System.Data.DataSetExtensions.dll",
@@ -2230,7 +2185,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/System.Data.DataSetExtensions.dll"
       ],
-      "DebugActionIndex": 143
+      "DebugActionIndex": 140
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/System.Data.dll",
@@ -2242,7 +2197,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/System.Data.dll"
       ],
-      "DebugActionIndex": 144
+      "DebugActionIndex": 141
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/System.Drawing.dll",
@@ -2254,7 +2209,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/System.Drawing.dll"
       ],
-      "DebugActionIndex": 145
+      "DebugActionIndex": 142
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/System.EnterpriseServices.dll",
@@ -2266,7 +2221,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/System.EnterpriseServices.dll"
       ],
-      "DebugActionIndex": 146
+      "DebugActionIndex": 143
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/System.IO.Compression.FileSystem.dll",
@@ -2278,7 +2233,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/System.IO.Compression.FileSystem.dll"
       ],
-      "DebugActionIndex": 147
+      "DebugActionIndex": 144
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/System.IO.Compression.dll",
@@ -2290,7 +2245,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/System.IO.Compression.dll"
       ],
-      "DebugActionIndex": 148
+      "DebugActionIndex": 145
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/System.Net.Http.dll",
@@ -2302,7 +2257,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/System.Net.Http.dll"
       ],
-      "DebugActionIndex": 149
+      "DebugActionIndex": 146
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/System.Numerics.dll",
@@ -2314,7 +2269,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/System.Numerics.dll"
       ],
-      "DebugActionIndex": 150
+      "DebugActionIndex": 147
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/System.Runtime.Serialization.dll",
@@ -2326,7 +2281,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/System.Runtime.Serialization.dll"
       ],
-      "DebugActionIndex": 151
+      "DebugActionIndex": 148
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/System.Security.dll",
@@ -2338,7 +2293,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/System.Security.dll"
       ],
-      "DebugActionIndex": 152
+      "DebugActionIndex": 149
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/System.ServiceModel.Internals.dll",
@@ -2350,7 +2305,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/System.ServiceModel.Internals.dll"
       ],
-      "DebugActionIndex": 153
+      "DebugActionIndex": 150
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/System.Transactions.dll",
@@ -2362,7 +2317,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/System.Transactions.dll"
       ],
-      "DebugActionIndex": 154
+      "DebugActionIndex": 151
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/System.Xml.Linq.dll",
@@ -2374,7 +2329,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/System.Xml.Linq.dll"
       ],
-      "DebugActionIndex": 155
+      "DebugActionIndex": 152
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/System.Xml.dll",
@@ -2386,7 +2341,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/System.Xml.dll"
       ],
-      "DebugActionIndex": 156
+      "DebugActionIndex": 153
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/System.dll",
@@ -2398,7 +2353,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/System.dll"
       ],
-      "DebugActionIndex": 157
+      "DebugActionIndex": 154
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/mscorlib.dll",
@@ -2410,7 +2365,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/mscorlib.dll"
       ],
-      "DebugActionIndex": 158
+      "DebugActionIndex": 155
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.AIModule.pdb",
@@ -2422,7 +2377,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.AIModule.pdb"
       ],
-      "DebugActionIndex": 159
+      "DebugActionIndex": 156
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.ARModule.pdb",
@@ -2434,7 +2389,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.ARModule.pdb"
       ],
-      "DebugActionIndex": 160
+      "DebugActionIndex": 157
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.AccessibilityModule.pdb",
@@ -2446,7 +2401,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.AccessibilityModule.pdb"
       ],
-      "DebugActionIndex": 161
+      "DebugActionIndex": 158
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.AndroidJNIModule.pdb",
@@ -2458,7 +2413,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.AndroidJNIModule.pdb"
       ],
-      "DebugActionIndex": 162
+      "DebugActionIndex": 159
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.AnimationModule.pdb",
@@ -2470,7 +2425,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.AnimationModule.pdb"
       ],
-      "DebugActionIndex": 163
+      "DebugActionIndex": 160
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.AssetBundleModule.pdb",
@@ -2482,7 +2437,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.AssetBundleModule.pdb"
       ],
-      "DebugActionIndex": 164
+      "DebugActionIndex": 161
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.AudioModule.pdb",
@@ -2494,7 +2449,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.AudioModule.pdb"
       ],
-      "DebugActionIndex": 165
+      "DebugActionIndex": 162
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.ClothModule.pdb",
@@ -2506,7 +2461,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.ClothModule.pdb"
       ],
-      "DebugActionIndex": 166
+      "DebugActionIndex": 163
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.ClusterInputModule.pdb",
@@ -2518,7 +2473,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.ClusterInputModule.pdb"
       ],
-      "DebugActionIndex": 167
+      "DebugActionIndex": 164
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.ClusterRendererModule.pdb",
@@ -2530,7 +2485,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.ClusterRendererModule.pdb"
       ],
-      "DebugActionIndex": 168
+      "DebugActionIndex": 165
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.ContentLoadModule.pdb",
@@ -2542,7 +2497,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.ContentLoadModule.pdb"
       ],
-      "DebugActionIndex": 169
+      "DebugActionIndex": 166
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.CoreModule.pdb",
@@ -2554,7 +2509,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.CoreModule.pdb"
       ],
-      "DebugActionIndex": 170
+      "DebugActionIndex": 167
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.CrashReportingModule.pdb",
@@ -2566,7 +2521,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.CrashReportingModule.pdb"
       ],
-      "DebugActionIndex": 171
+      "DebugActionIndex": 168
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.DSPGraphModule.pdb",
@@ -2578,7 +2533,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.DSPGraphModule.pdb"
       ],
-      "DebugActionIndex": 172
+      "DebugActionIndex": 169
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.DirectorModule.pdb",
@@ -2590,7 +2545,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.DirectorModule.pdb"
       ],
-      "DebugActionIndex": 173
+      "DebugActionIndex": 170
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.GIModule.pdb",
@@ -2602,7 +2557,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.GIModule.pdb"
       ],
-      "DebugActionIndex": 174
+      "DebugActionIndex": 171
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.GameCenterModule.pdb",
@@ -2614,7 +2569,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.GameCenterModule.pdb"
       ],
-      "DebugActionIndex": 175
+      "DebugActionIndex": 172
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.GridModule.pdb",
@@ -2626,7 +2581,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.GridModule.pdb"
       ],
-      "DebugActionIndex": 176
+      "DebugActionIndex": 173
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.HotReloadModule.pdb",
@@ -2638,7 +2593,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.HotReloadModule.pdb"
       ],
-      "DebugActionIndex": 177
+      "DebugActionIndex": 174
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.IMGUIModule.pdb",
@@ -2650,7 +2605,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.IMGUIModule.pdb"
       ],
-      "DebugActionIndex": 178
+      "DebugActionIndex": 175
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.ImageConversionModule.pdb",
@@ -2662,7 +2617,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.ImageConversionModule.pdb"
       ],
-      "DebugActionIndex": 179
+      "DebugActionIndex": 176
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.InputLegacyModule.pdb",
@@ -2674,7 +2629,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.InputLegacyModule.pdb"
       ],
-      "DebugActionIndex": 180
+      "DebugActionIndex": 177
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.InputModule.pdb",
@@ -2686,7 +2641,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.InputModule.pdb"
       ],
-      "DebugActionIndex": 181
+      "DebugActionIndex": 178
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.JSONSerializeModule.pdb",
@@ -2698,7 +2653,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.JSONSerializeModule.pdb"
       ],
-      "DebugActionIndex": 182
+      "DebugActionIndex": 179
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.LocalizationModule.pdb",
@@ -2710,7 +2665,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.LocalizationModule.pdb"
       ],
-      "DebugActionIndex": 183
+      "DebugActionIndex": 180
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.NVIDIAModule.pdb",
@@ -2722,7 +2677,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.NVIDIAModule.pdb"
       ],
-      "DebugActionIndex": 184
+      "DebugActionIndex": 181
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.ParticleSystemModule.pdb",
@@ -2734,7 +2689,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.ParticleSystemModule.pdb"
       ],
-      "DebugActionIndex": 185
+      "DebugActionIndex": 182
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.PerformanceReportingModule.pdb",
@@ -2746,7 +2701,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.PerformanceReportingModule.pdb"
       ],
-      "DebugActionIndex": 186
+      "DebugActionIndex": 183
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.Physics2DModule.pdb",
@@ -2758,7 +2713,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.Physics2DModule.pdb"
       ],
-      "DebugActionIndex": 187
+      "DebugActionIndex": 184
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.PhysicsModule.pdb",
@@ -2770,7 +2725,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.PhysicsModule.pdb"
       ],
-      "DebugActionIndex": 188
+      "DebugActionIndex": 185
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.ProfilerModule.pdb",
@@ -2782,7 +2737,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.ProfilerModule.pdb"
       ],
-      "DebugActionIndex": 189
+      "DebugActionIndex": 186
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.PropertiesModule.pdb",
@@ -2794,7 +2749,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.PropertiesModule.pdb"
       ],
-      "DebugActionIndex": 190
+      "DebugActionIndex": 187
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.pdb",
@@ -2806,7 +2761,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.pdb"
       ],
-      "DebugActionIndex": 191
+      "DebugActionIndex": 188
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.ScreenCaptureModule.pdb",
@@ -2818,7 +2773,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.ScreenCaptureModule.pdb"
       ],
-      "DebugActionIndex": 192
+      "DebugActionIndex": 189
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.SharedInternalsModule.pdb",
@@ -2830,7 +2785,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.SharedInternalsModule.pdb"
       ],
-      "DebugActionIndex": 193
+      "DebugActionIndex": 190
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.SpriteMaskModule.pdb",
@@ -2842,7 +2797,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.SpriteMaskModule.pdb"
       ],
-      "DebugActionIndex": 194
+      "DebugActionIndex": 191
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.SpriteShapeModule.pdb",
@@ -2854,7 +2809,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.SpriteShapeModule.pdb"
       ],
-      "DebugActionIndex": 195
+      "DebugActionIndex": 192
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.StreamingModule.pdb",
@@ -2866,7 +2821,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.StreamingModule.pdb"
       ],
-      "DebugActionIndex": 196
+      "DebugActionIndex": 193
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.SubstanceModule.pdb",
@@ -2878,7 +2833,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.SubstanceModule.pdb"
       ],
-      "DebugActionIndex": 197
+      "DebugActionIndex": 194
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.SubsystemsModule.pdb",
@@ -2890,7 +2845,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.SubsystemsModule.pdb"
       ],
-      "DebugActionIndex": 198
+      "DebugActionIndex": 195
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.TLSModule.pdb",
@@ -2902,7 +2857,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.TLSModule.pdb"
       ],
-      "DebugActionIndex": 199
+      "DebugActionIndex": 196
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.TerrainModule.pdb",
@@ -2914,7 +2869,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.TerrainModule.pdb"
       ],
-      "DebugActionIndex": 200
+      "DebugActionIndex": 197
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.TerrainPhysicsModule.pdb",
@@ -2926,7 +2881,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.TerrainPhysicsModule.pdb"
       ],
-      "DebugActionIndex": 201
+      "DebugActionIndex": 198
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.TextCoreFontEngineModule.pdb",
@@ -2938,7 +2893,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.TextCoreFontEngineModule.pdb"
       ],
-      "DebugActionIndex": 202
+      "DebugActionIndex": 199
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.TextCoreTextEngineModule.pdb",
@@ -2950,7 +2905,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.TextCoreTextEngineModule.pdb"
       ],
-      "DebugActionIndex": 203
+      "DebugActionIndex": 200
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.TextRenderingModule.pdb",
@@ -2962,7 +2917,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.TextRenderingModule.pdb"
       ],
-      "DebugActionIndex": 204
+      "DebugActionIndex": 201
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.TilemapModule.pdb",
@@ -2974,7 +2929,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.TilemapModule.pdb"
       ],
-      "DebugActionIndex": 205
+      "DebugActionIndex": 202
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.UIElementsModule.pdb",
@@ -2986,7 +2941,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.UIElementsModule.pdb"
       ],
-      "DebugActionIndex": 206
+      "DebugActionIndex": 203
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.UIModule.pdb",
@@ -2998,7 +2953,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.UIModule.pdb"
       ],
-      "DebugActionIndex": 207
+      "DebugActionIndex": 204
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.UmbraModule.pdb",
@@ -3010,7 +2965,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.UmbraModule.pdb"
       ],
-      "DebugActionIndex": 208
+      "DebugActionIndex": 205
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.pdb",
@@ -3022,7 +2977,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.pdb"
       ],
-      "DebugActionIndex": 209
+      "DebugActionIndex": 206
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.UnityAnalyticsModule.pdb",
@@ -3034,7 +2989,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.UnityAnalyticsModule.pdb"
       ],
-      "DebugActionIndex": 210
+      "DebugActionIndex": 207
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.UnityConnectModule.pdb",
@@ -3046,7 +3001,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.UnityConnectModule.pdb"
       ],
-      "DebugActionIndex": 211
+      "DebugActionIndex": 208
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.UnityCurlModule.pdb",
@@ -3058,7 +3013,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.UnityCurlModule.pdb"
       ],
-      "DebugActionIndex": 212
+      "DebugActionIndex": 209
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.UnityTestProtocolModule.pdb",
@@ -3070,7 +3025,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.UnityTestProtocolModule.pdb"
       ],
-      "DebugActionIndex": 213
+      "DebugActionIndex": 210
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.pdb",
@@ -3082,7 +3037,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.pdb"
       ],
-      "DebugActionIndex": 214
+      "DebugActionIndex": 211
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.UnityWebRequestAudioModule.pdb",
@@ -3094,7 +3049,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.UnityWebRequestAudioModule.pdb"
       ],
-      "DebugActionIndex": 215
+      "DebugActionIndex": 212
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.UnityWebRequestModule.pdb",
@@ -3106,7 +3061,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.UnityWebRequestModule.pdb"
       ],
-      "DebugActionIndex": 216
+      "DebugActionIndex": 213
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.UnityWebRequestTextureModule.pdb",
@@ -3118,7 +3073,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.UnityWebRequestTextureModule.pdb"
       ],
-      "DebugActionIndex": 217
+      "DebugActionIndex": 214
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.UnityWebRequestWWWModule.pdb",
@@ -3130,7 +3085,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.UnityWebRequestWWWModule.pdb"
       ],
-      "DebugActionIndex": 218
+      "DebugActionIndex": 215
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.VFXModule.pdb",
@@ -3142,7 +3097,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.VFXModule.pdb"
       ],
-      "DebugActionIndex": 219
+      "DebugActionIndex": 216
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.VRModule.pdb",
@@ -3154,7 +3109,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.VRModule.pdb"
       ],
-      "DebugActionIndex": 220
+      "DebugActionIndex": 217
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.VehiclesModule.pdb",
@@ -3166,7 +3121,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.VehiclesModule.pdb"
       ],
-      "DebugActionIndex": 221
+      "DebugActionIndex": 218
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.VideoModule.pdb",
@@ -3178,7 +3133,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.VideoModule.pdb"
       ],
-      "DebugActionIndex": 222
+      "DebugActionIndex": 219
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.VirtualTexturingModule.pdb",
@@ -3190,7 +3145,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.VirtualTexturingModule.pdb"
       ],
-      "DebugActionIndex": 223
+      "DebugActionIndex": 220
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.WindModule.pdb",
@@ -3202,7 +3157,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.WindModule.pdb"
       ],
-      "DebugActionIndex": 224
+      "DebugActionIndex": 221
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.XRModule.pdb",
@@ -3214,7 +3169,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.XRModule.pdb"
       ],
-      "DebugActionIndex": 225
+      "DebugActionIndex": 222
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.pdb",
@@ -3226,7 +3181,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.pdb"
       ],
-      "DebugActionIndex": 226
+      "DebugActionIndex": 223
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Assembly-CSharp.pdb",
@@ -3238,7 +3193,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Assembly-CSharp.pdb"
       ],
-      "DebugActionIndex": 227
+      "DebugActionIndex": 224
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Environments.Internal.pdb",
@@ -3250,7 +3205,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Environments.Internal.pdb"
       ],
-      "DebugActionIndex": 228
+      "DebugActionIndex": 225
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.pdb",
@@ -3262,7 +3217,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.pdb"
       ],
-      "DebugActionIndex": 229
+      "DebugActionIndex": 226
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.NetworkSolutionInterface.pdb",
@@ -3274,7 +3229,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.NetworkSolutionInterface.pdb"
       ],
-      "DebugActionIndex": 230
+      "DebugActionIndex": 227
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Networking.pdb",
@@ -3286,7 +3241,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Networking.pdb"
       ],
-      "DebugActionIndex": 231
+      "DebugActionIndex": 228
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Networking.Transport.pdb",
@@ -3298,7 +3253,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Networking.Transport.pdb"
       ],
-      "DebugActionIndex": 232
+      "DebugActionIndex": 229
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.VisualScripting.Flow.pdb",
@@ -3310,7 +3265,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.VisualScripting.Flow.pdb"
       ],
-      "DebugActionIndex": 233
+      "DebugActionIndex": 230
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Netcode.Components.pdb",
@@ -3322,7 +3277,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Netcode.Components.pdb"
       ],
-      "DebugActionIndex": 234
+      "DebugActionIndex": 231
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.NetStatsMonitor.Configuration.pdb",
@@ -3334,7 +3289,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.NetStatsMonitor.Configuration.pdb"
       ],
-      "DebugActionIndex": 235
+      "DebugActionIndex": 232
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Scheduler.pdb",
@@ -3346,7 +3301,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Scheduler.pdb"
       ],
-      "DebugActionIndex": 236
+      "DebugActionIndex": 233
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Environments.pdb",
@@ -3358,7 +3313,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Environments.pdb"
       ],
-      "DebugActionIndex": 237
+      "DebugActionIndex": 234
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Relay.pdb",
@@ -3370,7 +3325,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Relay.pdb"
       ],
-      "DebugActionIndex": 238
+      "DebugActionIndex": 235
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Configuration.pdb",
@@ -3382,7 +3337,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Configuration.pdb"
       ],
-      "DebugActionIndex": 239
+      "DebugActionIndex": 236
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.NetStats.pdb",
@@ -3394,7 +3349,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.NetStats.pdb"
       ],
-      "DebugActionIndex": 240
+      "DebugActionIndex": 237
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Collections.pdb",
@@ -3406,7 +3361,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Collections.pdb"
       ],
-      "DebugActionIndex": 241
+      "DebugActionIndex": 238
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Netcode.Runtime.pdb",
@@ -3418,19 +3373,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Netcode.Runtime.pdb"
       ],
-      "DebugActionIndex": 242
-    },
-    {
-      "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Samples.Utilities.RNSM.pdb",
-      "DisplayName": "Copying Unity.Multiplayer.Samples.Utilities.RNSM.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Samples.Utilities.RNSM.pdb"
-      ],
-      "Outputs": [
-        "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Samples.Utilities.RNSM.pdb"
-      ],
-      "DebugActionIndex": 243
+      "DebugActionIndex": 239
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.MetricTestData.pdb",
@@ -3442,7 +3385,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.MetricTestData.pdb"
       ],
-      "DebugActionIndex": 244
+      "DebugActionIndex": 240
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.TextMeshPro.pdb",
@@ -3454,19 +3397,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.TextMeshPro.pdb"
       ],
-      "DebugActionIndex": 245
-    },
-    {
-      "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Samples.Utilities.pdb",
-      "DisplayName": "Copying Unity.Multiplayer.Samples.Utilities.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Samples.Utilities.pdb"
-      ],
-      "Outputs": [
-        "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Samples.Utilities.pdb"
-      ],
-      "DebugActionIndex": 246
+      "DebugActionIndex": 241
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Analytics.pdb",
@@ -3478,7 +3409,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Analytics.pdb"
       ],
-      "DebugActionIndex": 247
+      "DebugActionIndex": 242
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.Common.pdb",
@@ -3490,7 +3421,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.Common.pdb"
       ],
-      "DebugActionIndex": 248
+      "DebugActionIndex": 243
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Profiling.Core.pdb",
@@ -3502,7 +3433,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Profiling.Core.pdb"
       ],
-      "DebugActionIndex": 249
+      "DebugActionIndex": 244
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Burst.pdb",
@@ -3514,19 +3445,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Burst.pdb"
       ],
-      "DebugActionIndex": 250
-    },
-    {
-      "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Samples.Utilities.ClientAuthority.pdb",
-      "DisplayName": "Copying Unity.Multiplayer.Samples.Utilities.ClientAuthority.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Samples.Utilities.ClientAuthority.pdb"
-      ],
-      "Outputs": [
-        "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Samples.Utilities.ClientAuthority.pdb"
-      ],
-      "DebugActionIndex": 251
+      "DebugActionIndex": 245
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Internal.pdb",
@@ -3538,7 +3457,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Internal.pdb"
       ],
-      "DebugActionIndex": 252
+      "DebugActionIndex": 246
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Device.pdb",
@@ -3550,7 +3469,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Device.pdb"
       ],
-      "DebugActionIndex": 253
+      "DebugActionIndex": 247
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Tutorials.Core.pdb",
@@ -3562,7 +3481,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Tutorials.Core.pdb"
       ],
-      "DebugActionIndex": 254
+      "DebugActionIndex": 248
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Threading.pdb",
@@ -3574,7 +3493,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Threading.pdb"
       ],
-      "DebugActionIndex": 255
+      "DebugActionIndex": 249
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.VisualScripting.Core.pdb",
@@ -3586,7 +3505,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.VisualScripting.Core.pdb"
       ],
-      "DebugActionIndex": 256
+      "DebugActionIndex": 250
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.QoS.pdb",
@@ -3598,7 +3517,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.QoS.pdb"
       ],
-      "DebugActionIndex": 257
+      "DebugActionIndex": 251
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.NetworkProfiler.Runtime.pdb",
@@ -3610,7 +3529,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.NetworkProfiler.Runtime.pdb"
       ],
-      "DebugActionIndex": 258
+      "DebugActionIndex": 252
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.UI.pdb",
@@ -3622,7 +3541,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/UnityEngine.UI.pdb"
       ],
-      "DebugActionIndex": 259
+      "DebugActionIndex": 253
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Telemetry.pdb",
@@ -3634,7 +3553,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Telemetry.pdb"
       ],
-      "DebugActionIndex": 260
+      "DebugActionIndex": 254
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.Adapters.Ngo1.pdb",
@@ -3646,7 +3565,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.Adapters.Ngo1.pdb"
       ],
-      "DebugActionIndex": 261
+      "DebugActionIndex": 255
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Timeline.pdb",
@@ -3658,7 +3577,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Timeline.pdb"
       ],
-      "DebugActionIndex": 262
+      "DebugActionIndex": 256
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.NetStatsMonitor.Implementation.pdb",
@@ -3670,7 +3589,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.NetStatsMonitor.Implementation.pdb"
       ],
-      "DebugActionIndex": 263
+      "DebugActionIndex": 257
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.Initialization.pdb",
@@ -3682,7 +3601,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.Initialization.pdb"
       ],
-      "DebugActionIndex": 264
+      "DebugActionIndex": 258
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.Adapters.pdb",
@@ -3694,7 +3613,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.Adapters.pdb"
       ],
-      "DebugActionIndex": 265
+      "DebugActionIndex": 259
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Authentication.pdb",
@@ -3706,7 +3625,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Authentication.pdb"
       ],
-      "DebugActionIndex": 266
+      "DebugActionIndex": 260
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Mathematics.pdb",
@@ -3718,7 +3637,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Mathematics.pdb"
       ],
-      "DebugActionIndex": 267
+      "DebugActionIndex": 261
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.MetricTypes.pdb",
@@ -3730,7 +3649,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.MetricTypes.pdb"
       ],
-      "DebugActionIndex": 268
+      "DebugActionIndex": 262
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Registration.pdb",
@@ -3742,7 +3661,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Services.Core.Registration.pdb"
       ],
-      "DebugActionIndex": 269
+      "DebugActionIndex": 263
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.VisualScripting.State.pdb",
@@ -3754,7 +3673,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.VisualScripting.State.pdb"
       ],
-      "DebugActionIndex": 270
+      "DebugActionIndex": 264
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.NetStatsReporting.pdb",
@@ -3766,7 +3685,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.NetStatsReporting.pdb"
       ],
-      "DebugActionIndex": 271
+      "DebugActionIndex": 265
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.MetricEvents.pdb",
@@ -3778,7 +3697,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.MetricEvents.pdb"
       ],
-      "DebugActionIndex": 272
+      "DebugActionIndex": 266
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.NetStatsMonitor.Component.pdb",
@@ -3790,7 +3709,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Unity.Multiplayer.Tools.NetStatsMonitor.Component.pdb"
       ],
-      "DebugActionIndex": 273
+      "DebugActionIndex": 267
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Managed/Newtonsoft.Json.pdb",
@@ -3802,14 +3721,14 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Managed/Newtonsoft.Json.pdb"
       ],
-      "DebugActionIndex": 274
+      "DebugActionIndex": 268
     },
     {
       "Annotation": "GenerateNativePluginsForAssemblies Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker",
       "DisplayName": "Running Burst Compiler",
       "ActionType": "RunRPCCommand",
-      "PayloadOffset": 20881,
-      "PayloadLength": 19617,
+      "PayloadOffset": 20506,
+      "PayloadLength": 19242,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Da",
       "Action": "GenerateNativePluginsForAssemblies",
       "Inputs": [
@@ -3897,15 +3816,12 @@
         "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Tools.NetStats.dll",
         "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Collections.dll",
         "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Netcode.Runtime.dll",
-        "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Samples.Utilities.RNSM.dll",
         "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Tools.MetricTestData.dll",
         "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll",
-        "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Samples.Utilities.dll",
         "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Analytics.dll",
         "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Tools.Common.dll",
         "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Profiling.Core.dll",
         "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Burst.dll",
-        "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Samples.Utilities.ClientAuthority.dll",
         "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Internal.dll",
         "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Services.Core.Device.dll",
         "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Tutorials.Core.dll",
@@ -3987,7 +3903,7 @@
           "Recurse": 1
         }
       ],
-      "DebugActionIndex": 275
+      "DebugActionIndex": 269
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Plugins/x86_64/lib_burst_generated.dll",
@@ -4000,9 +3916,9 @@
         "Builds/v 5 (networking)/Future Warriors_Data/Plugins/x86_64/lib_burst_generated.dll"
       ],
       "ToBuildDependencies": [
-        275
+        269
       ],
-      "DebugActionIndex": 276
+      "DebugActionIndex": 270
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Plugins/x86_64/lib_burst_generated.pdb",
@@ -4015,22 +3931,22 @@
         "Builds/v 5 (networking)/Future Warriors_Data/Plugins/x86_64/lib_burst_generated.pdb"
       ],
       "ToBuildDependencies": [
-        275
+        269
       ],
-      "DebugActionIndex": 277
+      "DebugActionIndex": 271
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info",
       "DisplayName": "Writing app.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 40587,
+      "PayloadOffset": 39837,
       "PayloadLength": 30,
       "PayloadDebugContentSnippet": "DefaultCompany\nFuture Warriors",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info"
       ],
-      "DebugActionIndex": 278
+      "DebugActionIndex": 272
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/app.info",
@@ -4043,9 +3959,9 @@
         "Builds/v 5 (networking)/Future Warriors_Data/app.info"
       ],
       "ToBuildDependencies": [
-        278
+        272
       ],
-      "DebugActionIndex": 279
+      "DebugActionIndex": 273
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors_Data/Resources/unity default resources",
@@ -4057,7 +3973,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors_Data/Resources/unity default resources"
       ],
-      "DebugActionIndex": 280
+      "DebugActionIndex": 274
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/Future Warriors.exe",
@@ -4069,7 +3985,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/Future Warriors.exe"
       ],
-      "DebugActionIndex": 281
+      "DebugActionIndex": 275
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll",
@@ -4081,7 +3997,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll"
       ],
-      "DebugActionIndex": 282
+      "DebugActionIndex": 276
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll",
@@ -4093,7 +4009,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll"
       ],
-      "DebugActionIndex": 283
+      "DebugActionIndex": 277
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser",
@@ -4105,7 +4021,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 284
+      "DebugActionIndex": 278
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx",
@@ -4117,7 +4033,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 285
+      "DebugActionIndex": 279
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/2.0/machine.config",
@@ -4129,7 +4045,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/2.0/machine.config"
       ],
-      "DebugActionIndex": 286
+      "DebugActionIndex": 280
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/2.0/settings.map",
@@ -4141,7 +4057,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/2.0/settings.map"
       ],
-      "DebugActionIndex": 287
+      "DebugActionIndex": 281
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/2.0/web.config",
@@ -4153,7 +4069,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/2.0/web.config"
       ],
-      "DebugActionIndex": 288
+      "DebugActionIndex": 282
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser",
@@ -4165,7 +4081,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 289
+      "DebugActionIndex": 283
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx",
@@ -4177,7 +4093,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 290
+      "DebugActionIndex": 284
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/4.0/machine.config",
@@ -4189,7 +4105,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/4.0/machine.config"
       ],
-      "DebugActionIndex": 291
+      "DebugActionIndex": 285
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/4.0/settings.map",
@@ -4201,7 +4117,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/4.0/settings.map"
       ],
-      "DebugActionIndex": 292
+      "DebugActionIndex": 286
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/4.0/web.config",
@@ -4213,7 +4129,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/4.0/web.config"
       ],
-      "DebugActionIndex": 293
+      "DebugActionIndex": 287
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser",
@@ -4225,7 +4141,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 294
+      "DebugActionIndex": 288
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx",
@@ -4237,7 +4153,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 295
+      "DebugActionIndex": 289
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/4.5/machine.config",
@@ -4249,7 +4165,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/4.5/machine.config"
       ],
-      "DebugActionIndex": 296
+      "DebugActionIndex": 290
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/4.5/settings.map",
@@ -4261,7 +4177,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/4.5/settings.map"
       ],
-      "DebugActionIndex": 297
+      "DebugActionIndex": 291
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/4.5/web.config",
@@ -4273,7 +4189,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/4.5/web.config"
       ],
-      "DebugActionIndex": 298
+      "DebugActionIndex": 292
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/browscap.ini",
@@ -4285,7 +4201,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/browscap.ini"
       ],
-      "DebugActionIndex": 299
+      "DebugActionIndex": 293
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/config",
@@ -4297,7 +4213,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/config"
       ],
-      "DebugActionIndex": 300
+      "DebugActionIndex": 294
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/mconfig/config.xml",
@@ -4309,7 +4225,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/MonoBleedingEdge/etc/mono/mconfig/config.xml"
       ],
-      "DebugActionIndex": 301
+      "DebugActionIndex": 295
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/UnityCrashHandler64.exe",
@@ -4321,7 +4237,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/UnityCrashHandler64.exe"
       ],
-      "DebugActionIndex": 302
+      "DebugActionIndex": 296
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/UnityPlayer.dll",
@@ -4333,7 +4249,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/UnityPlayer.dll"
       ],
-      "DebugActionIndex": 303
+      "DebugActionIndex": 297
     },
     {
       "Annotation": "CopyFiles Builds/v 5 (networking)/WinPixEventRuntime.dll",
@@ -4345,7 +4261,7 @@
       "Outputs": [
         "Builds/v 5 (networking)/WinPixEventRuntime.dll"
       ],
-      "DebugActionIndex": 304
+      "DebugActionIndex": 298
     },
     {
       "Annotation": "Player",
@@ -4619,14 +4535,14 @@
         266,
         267,
         268,
-        269,
         270,
         271,
-        272,
         273,
         274,
+        275,
         276,
         277,
+        278,
         279,
         280,
         281,
@@ -4646,16 +4562,10 @@
         295,
         296,
         297,
-        298,
-        299,
-        300,
-        301,
-        302,
-        303,
-        304
+        298
       ],
       "OverwriteOutputs": false,
-      "DebugActionIndex": 305
+      "DebugActionIndex": 299
     }
   ],
   "FileSignatures": [
@@ -5076,15 +4986,6 @@
       "File": "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Mathematics.pdb"
     },
     {
-      "File": "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Samples.Utilities.ClientAuthority.pdb"
-    },
-    {
-      "File": "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Samples.Utilities.pdb"
-    },
-    {
-      "File": "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Samples.Utilities.RNSM.pdb"
-    },
-    {
       "File": "C:/Users/wiktor.ziedalski/Future-Wariors/Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Tools.Adapters.Ngo1.pdb"
     },
     {
@@ -5283,7 +5184,7 @@
   ],
         "NamedNodes": {
           "all_tundra_nodes": 0,
-          "Player": 305
+          "Player": 299
         }
 ,  "DefaultNodes": [
     0

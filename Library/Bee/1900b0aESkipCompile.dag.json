@@ -27,7 +27,7 @@
       "DisplayName": "Writing 6097564273297756792.rsp",
       "ActionType": "WriteFile",
       "PayloadOffset": 83,
-      "PayloadLength": 8516,
+      "PayloadLength": 8162,
       "PayloadDebugContentSnippet": "-a=\"C:\\Users\\wiktor.ziedalski\\",
       "Inputs": [],
       "Outputs": [
@@ -46,9 +46,6 @@
         "Library/ScriptAssemblies/Unity.Burst.dll",
         "Library/ScriptAssemblies/Unity.Collections.dll",
         "Library/ScriptAssemblies/Unity.Mathematics.dll",
-        "Library/ScriptAssemblies/Unity.Multiplayer.Samples.Utilities.ClientAuthority.dll",
-        "Library/ScriptAssemblies/Unity.Multiplayer.Samples.Utilities.dll",
-        "Library/ScriptAssemblies/Unity.Multiplayer.Samples.Utilities.RNSM.dll",
         "Library/ScriptAssemblies/Unity.Multiplayer.Tools.Adapters.dll",
         "Library/ScriptAssemblies/Unity.Multiplayer.Tools.Adapters.Ngo1.dll",
         "Library/ScriptAssemblies/Unity.Multiplayer.Tools.Common.dll",
@@ -302,15 +299,6 @@
     },
     {
       "File": "Library/ScriptAssemblies/Unity.Mathematics.dll"
-    },
-    {
-      "File": "Library/ScriptAssemblies/Unity.Multiplayer.Samples.Utilities.ClientAuthority.dll"
-    },
-    {
-      "File": "Library/ScriptAssemblies/Unity.Multiplayer.Samples.Utilities.dll"
-    },
-    {
-      "File": "Library/ScriptAssemblies/Unity.Multiplayer.Samples.Utilities.RNSM.dll"
     },
     {
       "File": "Library/ScriptAssemblies/Unity.Multiplayer.Tools.Adapters.dll"

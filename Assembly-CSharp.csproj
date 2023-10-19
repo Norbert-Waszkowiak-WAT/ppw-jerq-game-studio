@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\Player\playerControl.cs" />
     <Compile Include="Assets\Scripts\Player\f5Cam.cs" />
     <Compile Include="Assets\Scripts\Guns\Fire.cs" />
+    <Compile Include="Assets\Scripts\Menu\menuButtons.cs" />
     <Compile Include="Assets\Scripts\Player\DisableCamera.cs" />
     <Compile Include="Assets\Scripts\Player\colorManager.cs" />
     <Compile Include="Assets\Scripts\Camera\minimapCameraMovement.cs" />
@@ -373,6 +374,15 @@
     </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>Library\PackageCache\com.unity.nuget.mono-cecil@1.11.4\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Android.Types">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Android.Gradle">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Gradle.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Android.GradleProject">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.GradleProject.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -797,9 +807,6 @@
     <Reference Include="Unity.Netcode.Editor.PackageChecker">
       <HintPath>Library\ScriptAssemblies\Unity.Netcode.Editor.PackageChecker.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Multiplayer.Samples.Utilities.RNSM">
-      <HintPath>Library\ScriptAssemblies\Unity.Multiplayer.Samples.Utilities.RNSM.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Multiplayer.Tools.MetricTestData">
       <HintPath>Library\ScriptAssemblies\Unity.Multiplayer.Tools.MetricTestData.dll</HintPath>
     </Reference>
@@ -808,9 +815,6 @@
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Multiplayer.Samples.Utilities">
-      <HintPath>Library\ScriptAssemblies\Unity.Multiplayer.Samples.Utilities.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Services.Core.Analytics">
       <HintPath>Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
@@ -844,9 +848,6 @@
     </Reference>
     <Reference Include="Unity.Burst">
       <HintPath>Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Multiplayer.Samples.Utilities.ClientAuthority">
-      <HintPath>Library\ScriptAssemblies\Unity.Multiplayer.Samples.Utilities.ClientAuthority.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
