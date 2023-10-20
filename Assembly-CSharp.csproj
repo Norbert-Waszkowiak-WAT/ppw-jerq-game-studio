@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\Player\DisableCamera.cs" />
     <Compile Include="Assets\Scripts\Player\colorManager.cs" />
     <Compile Include="Assets\Scripts\Camera\minimapCameraMovement.cs" />
+    <Compile Include="Assets\Scripts\UI\tmpSceneChnage.cs" />
     <Compile Include="Assets\Scripts\Player\AnimationQualifier.cs" />
     <Compile Include="Assets\Scripts\Player\Target.cs" />
     <Compile Include="Assets\Data\Guns\GunStats.cs" />

@@ -428,6 +428,7 @@
 "Assets/Scripts/UI/displayHealth.cs"
 "Assets/Scripts/UI/healthBar.cs"
 "Assets/Scripts/UI/readInput.cs"
+"Assets/Scripts/UI/tmpSceneChnage.cs"
 -langversion:9.0
 
 /deterministic

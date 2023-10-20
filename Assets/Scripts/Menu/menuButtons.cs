@@ -1,6 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class menuButtons : MonoBehaviour
 {
@@ -19,5 +18,10 @@ public class menuButtons : MonoBehaviour
     public void ShowHideSettingsOptions()
     {
         settingsOptions.active = !settingsOptions.active;
+    }
+
+    public void ChangeToMultiplayer()
+    {
+        SceneManager.LoadScene("Game Scene");
     }
 }

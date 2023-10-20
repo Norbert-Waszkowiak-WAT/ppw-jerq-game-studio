@@ -14,14 +14,46 @@ ScriptsOnlyBuild:
     - shootingWithRaycasts
     - spownPoint
     Assembly-CSharp.dll:
+    - DisableCamera
+    - Fire
+    - GunStats
+    - Hitbox
+    - MinimapCameraMovement
+    - NetworkUI
+    - PlayerCam
+    - PlayerControl
+    - PlayerMovement
+    - TMPInputFieldReader
+    - Target
+    - Unity.Multiplayer.Samples.Utilities.ClientAuthority.ClientNetworkTransform
+    - Weapon
+    - colorManager
+    - disableNotLocal
+    - displayHealth
+    - f5Cam
+    - healthBar
     - menuButtons
+    - minimapZoom
+    - shootingHandler
+    - shootingWithRaycasts
+    - spownPoint
+    - testRelay
+    - tmpSceneChnage
+    - weaponsHandler
     Unity.Netcode.Components:
+    - Unity.Netcode.Components.NetworkRigidbody
+    Unity.Netcode.Components.dll:
     - Unity.Netcode.Components.NetworkRigidbody
     Unity.Netcode.Editor.dll:
     - Unity.Netcode.Editor.Configuration.NetcodeForGameObjectsProjectSettings
     Unity.Netcode.Runtime:
     - Unity.Netcode.NetworkObject
     - Unity.Netcode.NetworkPrefabsList
+    Unity.Netcode.Runtime.dll:
+    - Unity.Netcode.NetworkManager
+    - Unity.Netcode.NetworkObject
+    - Unity.Netcode.NetworkPrefabsList
+    - Unity.Netcode.Transports.UTP.UnityTransport
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro:
@@ -31,20 +63,16 @@ ScriptsOnlyBuild:
     - TMPro.TMP_StyleSheet
     Unity.TextMeshPro.dll:
     - TMPro.TMP_FontAsset
+    - TMPro.TMP_InputField
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
-    Unity.Timeline.Editor.dll:
-    - TimelinePreferences
-    - TimelineProjectSettings
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -57,10 +85,17 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.RawImage
+    - UnityEngine.UI.RectMask2D
+    - UnityEngine.UI.Slider
   serializedClasses:
     Unity.Netcode.Runtime:
+    - Unity.Netcode.NetworkConfig
     - Unity.Netcode.NetworkPrefab
+    - Unity.Netcode.NetworkPrefabs
+    - Unity.Netcode.Transports.UTP.UnityTransport/ConnectionAddressData
+    - Unity.Netcode.Transports.UTP.UnityTransport/SimulatorParameters
     Unity.TextMeshPro:
     - TMPro.FaceInfo_Legacy
     - TMPro.FontAssetCreationSettings
@@ -71,6 +106,11 @@ ScriptsOnlyBuild:
     - TMPro.TMP_GlyphAdjustmentRecord
     - TMPro.TMP_GlyphPairAdjustmentRecord
     - TMPro.TMP_GlyphValueRecord
+    - TMPro.TMP_InputField/OnChangeEvent
+    - TMPro.TMP_InputField/SelectionEvent
+    - TMPro.TMP_InputField/SubmitEvent
+    - TMPro.TMP_InputField/TextSelectionEvent
+    - TMPro.TMP_InputField/TouchScreenKeyboardEvent
     - TMPro.TMP_Sprite
     - TMPro.TMP_SpriteCharacter
     - TMPro.TMP_SpriteGlyph
@@ -91,6 +131,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.ColorBlock
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
+    - UnityEngine.UI.Slider/SliderEvent
     - UnityEngine.UI.SpriteState
     UnityEngine.UIElementsModule:
     - UnityEngine.UIElements.DynamicAtlasSettings
@@ -105,8 +146,17 @@ ScriptsOnlyBuild:
     - UnityEngine.UIElements.StyleValueHandle
   methodsToPreserve:
   - assembly: Assembly-CSharp
+    fullTypeName: testRelay
+    methodName: CreateRelay
+  - assembly: Assembly-CSharp
+    fullTypeName: tmpSceneChnage
+    methodName: ChangeToMenu
+  - assembly: Assembly-CSharp
     fullTypeName: menuButtons
     methodName: ShowHideSettingsOptions
+  - assembly: Assembly-CSharp
+    fullTypeName: menuButtons
+    methodName: ChangeToMultiplayer
   - assembly: Assembly-CSharp
     fullTypeName: menuButtons
     methodName: ShowHideSettingsOptions
@@ -120,7 +170,7 @@ ScriptsOnlyBuild:
     fullTypeName: menuButtons
     methodName: ShowHidePLayOptions
   sceneClasses:
-    Assets/Scenes/Menu Scene.unity:
+    Assets/Scenes/Game Scene.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -143,11 +193,25 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 84
       Script: {instanceID: 0}
     - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 96
       Script: {instanceID: 0}
@@ -166,9 +230,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16690}
     - Class: 114
+      Script: {instanceID: 16884}
+    - Class: 114
       Script: {instanceID: 17028}
     - Class: 114
+      Script: {instanceID: 17152}
+    - Class: 114
       Script: {instanceID: 17580}
+    - Class: 114
+      Script: {instanceID: 17644}
     - Class: 114
       Script: {instanceID: 17650}
     - Class: 114
@@ -184,9 +254,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 19054}
     - Class: 114
+      Script: {instanceID: 19600}
+    - Class: 114
       Script: {instanceID: 19668}
     - Class: 114
+      Script: {instanceID: 19998}
+    - Class: 114
+      Script: {instanceID: 20266}
+    - Class: 114
+      Script: {instanceID: 20644}
+    - Class: 114
       Script: {instanceID: 20670}
+    - Class: 114
+      Script: {instanceID: 20836}
     - Class: 114
       Script: {instanceID: 21034}
     - Class: 114
@@ -194,9 +274,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 21368}
     - Class: 114
-      Script: {instanceID: 22254}
+      Script: {instanceID: 21466}
     - Class: 114
-      Script: {instanceID: 22344}
+      Script: {instanceID: 21938}
+    - Class: 114
+      Script: {instanceID: 22136}
+    - Class: 114
+      Script: {instanceID: 22254}
     - Class: 114
       Script: {instanceID: 22870}
     - Class: 114
@@ -204,13 +288,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 23138}
     - Class: 114
+      Script: {instanceID: 23206}
+    - Class: 114
       Script: {instanceID: 23366}
     - Class: 114
       Script: {instanceID: 23446}
     - Class: 114
+      Script: {instanceID: 23478}
+    - Class: 114
+      Script: {instanceID: 23608}
+    - Class: 114
       Script: {instanceID: 23902}
     - Class: 114
+      Script: {instanceID: 23920}
+    - Class: 114
+      Script: {instanceID: 24562}
+    - Class: 114
       Script: {instanceID: 24832}
+    - Class: 114
+      Script: {instanceID: 24942}
+    - Class: 114
+      Script: {instanceID: 24956}
     - Class: 114
       Script: {instanceID: 26222}
     - Class: 114
@@ -218,9 +316,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 26512}
     - Class: 114
-      Script: {instanceID: 29050}
+      Script: {instanceID: 32894}
     - Class: 114
-      Script: {instanceID: 29054}
+      Script: {instanceID: 88586}
+    - Class: 114
+      Script: {instanceID: 88590}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -236,6 +336,63 @@ ScriptsOnlyBuild:
     - Class: 198
       Script: {instanceID: 0}
     - Class: 199
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Menu Scene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 84
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 16690}
+    - Class: 114
+      Script: {instanceID: 17790}
+    - Class: 114
+      Script: {instanceID: 18252}
+    - Class: 114
+      Script: {instanceID: 18560}
+    - Class: 114
+      Script: {instanceID: 19054}
+    - Class: 114
+      Script: {instanceID: 22254}
+    - Class: 114
+      Script: {instanceID: 22344}
+    - Class: 114
+      Script: {instanceID: 23138}
+    - Class: 114
+      Script: {instanceID: 23366}
+    - Class: 114
+      Script: {instanceID: 23902}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -1336,8 +1493,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: tmpSceneChnage
   platform: 19
   scenePathNames:
+  - Assets/Scenes/Game Scene.unity
   - Assets/Scenes/Menu Scene.unity
-  playerPath: C:/Users/wiktor.ziedalski/Future-Wariors/Builds/v 5 (networking)/Future
-    Warriors.exe
+  playerPath: C:/Users/wiktor.ziedalski/Future-Wariors/Builds/v 6 (UI)/Future Warriors.exe
