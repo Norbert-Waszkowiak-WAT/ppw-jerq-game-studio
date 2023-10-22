@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scripts\Player\weaponsHandler.cs" />
     <Compile Include="Assets\Scripts\Networking\ClientNetworkTransform.cs" />
     <Compile Include="Assets\Scripts\UI\readInput.cs" />
+    <Compile Include="Assets\Scripts\UI\playerRotate.cs" />
     <Compile Include="Assets\Scripts\Networking\NetworkUI.cs" />
     <Compile Include="Assets\Scripts\Networking\disableNotLocal.cs" />
     <Compile Include="Assets\Scripts\Networking\testRelay.cs" />
