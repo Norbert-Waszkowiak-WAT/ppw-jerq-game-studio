@@ -27,12 +27,15 @@ ScriptsOnlyBuild:
     - Target
     - Unity.Multiplayer.Samples.Utilities.ClientAuthority.ClientNetworkTransform
     - Weapon
+    - addMaterialsToPlayerInMenu
     - colorManager
     - disableNotLocal
     - displayHealth
     - f5Cam
     - healthBar
     - menuButtons
+    - menuPlayerAnimation
+    - menuPlayerMaterials
     - minimapZoom
     - shootingHandler
     - shootingWithRaycasts
@@ -71,8 +74,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -146,11 +151,14 @@ ScriptsOnlyBuild:
     - UnityEngine.UIElements.StyleValueHandle
   methodsToPreserve:
   - assembly: Assembly-CSharp
-    fullTypeName: testRelay
-    methodName: CreateRelay
+    fullTypeName: menuButtons
+    methodName: OpenUrl
   - assembly: Assembly-CSharp
-    fullTypeName: tmpSceneChnage
-    methodName: ChangeToMenu
+    fullTypeName: menuButtons
+    methodName: ChangeToMainMenuFromCustomize
+  - assembly: Assembly-CSharp
+    fullTypeName: menuButtons
+    methodName: ChangeToCustomize
   - assembly: Assembly-CSharp
     fullTypeName: menuButtons
     methodName: ShowHideSettingsOptions
@@ -158,8 +166,14 @@ ScriptsOnlyBuild:
     fullTypeName: menuButtons
     methodName: ChangeToMultiplayer
   - assembly: Assembly-CSharp
+    fullTypeName: menuPlayerMaterials
+    methodName: NextMaterial
+  - assembly: Assembly-CSharp
     fullTypeName: menuButtons
     methodName: ShowHideSettingsOptions
+  - assembly: Assembly-CSharp
+    fullTypeName: menuPlayerAnimation
+    methodName: NextAnimation
   - assembly: Assembly-CSharp
     fullTypeName: menuButtons
     methodName: ShowHidePLayOptions
@@ -169,6 +183,12 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: menuButtons
     methodName: ShowHidePLayOptions
+  - assembly: Assembly-CSharp
+    fullTypeName: testRelay
+    methodName: CreateRelay
+  - assembly: Assembly-CSharp
+    fullTypeName: tmpSceneChnage
+    methodName: ChangeToMenu
   sceneClasses:
     Assets/Scenes/Game Scene.unity:
     - Class: 1
@@ -188,8 +208,6 @@ ScriptsOnlyBuild:
     - Class: 43
       Script: {instanceID: 0}
     - Class: 48
-      Script: {instanceID: 0}
-    - Class: 49
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
@@ -220,107 +238,91 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 626}
+      Script: {instanceID: 16660}
     - Class: 114
-      Script: {instanceID: 628}
+      Script: {instanceID: 16692}
     - Class: 114
-      Script: {instanceID: 650}
+      Script: {instanceID: 16886}
     - Class: 114
-      Script: {instanceID: 16658}
+      Script: {instanceID: 17030}
     - Class: 114
-      Script: {instanceID: 16690}
+      Script: {instanceID: 17126}
     - Class: 114
-      Script: {instanceID: 16884}
+      Script: {instanceID: 17156}
     - Class: 114
-      Script: {instanceID: 17028}
+      Script: {instanceID: 17648}
     - Class: 114
-      Script: {instanceID: 17152}
+      Script: {instanceID: 17654}
     - Class: 114
-      Script: {instanceID: 17580}
+      Script: {instanceID: 17730}
     - Class: 114
-      Script: {instanceID: 17644}
+      Script: {instanceID: 17794}
     - Class: 114
-      Script: {instanceID: 17650}
+      Script: {instanceID: 18256}
     - Class: 114
-      Script: {instanceID: 17726}
+      Script: {instanceID: 18564}
     - Class: 114
-      Script: {instanceID: 17790}
+      Script: {instanceID: 18958}
     - Class: 114
-      Script: {instanceID: 18252}
+      Script: {instanceID: 19058}
     - Class: 114
-      Script: {instanceID: 18560}
+      Script: {instanceID: 19604}
     - Class: 114
-      Script: {instanceID: 18954}
+      Script: {instanceID: 19672}
     - Class: 114
-      Script: {instanceID: 19054}
+      Script: {instanceID: 20002}
     - Class: 114
-      Script: {instanceID: 19600}
+      Script: {instanceID: 20270}
     - Class: 114
-      Script: {instanceID: 19668}
+      Script: {instanceID: 20648}
     - Class: 114
-      Script: {instanceID: 19998}
+      Script: {instanceID: 20840}
     - Class: 114
-      Script: {instanceID: 20266}
+      Script: {instanceID: 21038}
     - Class: 114
-      Script: {instanceID: 20644}
+      Script: {instanceID: 21372}
     - Class: 114
-      Script: {instanceID: 20670}
+      Script: {instanceID: 21470}
     - Class: 114
-      Script: {instanceID: 20836}
+      Script: {instanceID: 21942}
     - Class: 114
-      Script: {instanceID: 21034}
+      Script: {instanceID: 22140}
     - Class: 114
-      Script: {instanceID: 21114}
+      Script: {instanceID: 22258}
     - Class: 114
-      Script: {instanceID: 21368}
+      Script: {instanceID: 22874}
     - Class: 114
-      Script: {instanceID: 21466}
+      Script: {instanceID: 23084}
     - Class: 114
-      Script: {instanceID: 21938}
+      Script: {instanceID: 23144}
     - Class: 114
-      Script: {instanceID: 22136}
+      Script: {instanceID: 23212}
     - Class: 114
-      Script: {instanceID: 22254}
+      Script: {instanceID: 23372}
     - Class: 114
-      Script: {instanceID: 22870}
+      Script: {instanceID: 23452}
     - Class: 114
-      Script: {instanceID: 23080}
+      Script: {instanceID: 23484}
     - Class: 114
-      Script: {instanceID: 23138}
+      Script: {instanceID: 23614}
     - Class: 114
-      Script: {instanceID: 23206}
+      Script: {instanceID: 23908}
     - Class: 114
-      Script: {instanceID: 23366}
+      Script: {instanceID: 23926}
     - Class: 114
-      Script: {instanceID: 23446}
+      Script: {instanceID: 24568}
     - Class: 114
-      Script: {instanceID: 23478}
+      Script: {instanceID: 24838}
     - Class: 114
-      Script: {instanceID: 23608}
+      Script: {instanceID: 24948}
     - Class: 114
-      Script: {instanceID: 23902}
+      Script: {instanceID: 24962}
     - Class: 114
-      Script: {instanceID: 23920}
+      Script: {instanceID: 26228}
     - Class: 114
-      Script: {instanceID: 24562}
+      Script: {instanceID: 26294}
     - Class: 114
-      Script: {instanceID: 24832}
-    - Class: 114
-      Script: {instanceID: 24942}
-    - Class: 114
-      Script: {instanceID: 24956}
-    - Class: 114
-      Script: {instanceID: 26222}
-    - Class: 114
-      Script: {instanceID: 26288}
-    - Class: 114
-      Script: {instanceID: 26512}
-    - Class: 114
-      Script: {instanceID: 32894}
-    - Class: 114
-      Script: {instanceID: 88586}
-    - Class: 114
-      Script: {instanceID: 88590}
+      Script: {instanceID: 26518}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -354,9 +356,21 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
       Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
     - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 74
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -364,35 +378,103 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 96
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16690}
+      Script: {instanceID: 628}
     - Class: 114
-      Script: {instanceID: 17790}
+      Script: {instanceID: 630}
     - Class: 114
-      Script: {instanceID: 18252}
+      Script: {instanceID: 652}
     - Class: 114
-      Script: {instanceID: 18560}
+      Script: {instanceID: 16660}
     - Class: 114
-      Script: {instanceID: 19054}
+      Script: {instanceID: 16692}
     - Class: 114
-      Script: {instanceID: 22254}
+      Script: {instanceID: 17030}
     - Class: 114
-      Script: {instanceID: 22344}
+      Script: {instanceID: 17584}
     - Class: 114
-      Script: {instanceID: 23138}
+      Script: {instanceID: 17654}
     - Class: 114
-      Script: {instanceID: 23366}
+      Script: {instanceID: 17730}
     - Class: 114
-      Script: {instanceID: 23902}
+      Script: {instanceID: 17794}
+    - Class: 114
+      Script: {instanceID: 18256}
+    - Class: 114
+      Script: {instanceID: 18564}
+    - Class: 114
+      Script: {instanceID: 18958}
+    - Class: 114
+      Script: {instanceID: 19058}
+    - Class: 114
+      Script: {instanceID: 19672}
+    - Class: 114
+      Script: {instanceID: 20674}
+    - Class: 114
+      Script: {instanceID: 21038}
+    - Class: 114
+      Script: {instanceID: 21118}
+    - Class: 114
+      Script: {instanceID: 21372}
+    - Class: 114
+      Script: {instanceID: 22258}
+    - Class: 114
+      Script: {instanceID: 22348}
+    - Class: 114
+      Script: {instanceID: 22874}
+    - Class: 114
+      Script: {instanceID: 23084}
+    - Class: 114
+      Script: {instanceID: 23124}
+    - Class: 114
+      Script: {instanceID: 23144}
+    - Class: 114
+      Script: {instanceID: 23372}
+    - Class: 114
+      Script: {instanceID: 23452}
+    - Class: 114
+      Script: {instanceID: 23908}
+    - Class: 114
+      Script: {instanceID: 24838}
+    - Class: 114
+      Script: {instanceID: 26228}
+    - Class: 114
+      Script: {instanceID: 26294}
+    - Class: 114
+      Script: {instanceID: 26518}
+    - Class: 114
+      Script: {instanceID: 34228}
+    - Class: 114
+      Script: {instanceID: 34232}
+    - Class: 114
+      Script: {instanceID: 55462}
+    - Class: 114
+      Script: {instanceID: 70794}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 137
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -479,6 +561,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseExitMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: tmpSceneChnage
   - hash:
       serializedVersion: 2
       Hash: 7f8cfaa8500a9ef83f3815c593b7e87f
@@ -1057,7 +1145,7 @@ ScriptsOnlyBuild:
     className: SceneObjectGuid
   - hash:
       serializedVersion: 2
-      Hash: 32d024b80c5603e7bb23bfc8eaba0096
+      Hash: 1811487d0fac3fe6e92828ab5fd220ad
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: menuButtons
@@ -1115,6 +1203,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Netcode.Components
     namespaceName: Unity.Netcode.Components
     className: NetworkRigidbody
+  - hash:
+      serializedVersion: 2
+      Hash: e0b88e07fa74cb6856c40f8508f8f7d5
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: addMaterialsToPlayerInMenu
   - hash:
       serializedVersion: 2
       Hash: 6a356b04c25c0bb008c1b24bf8b0f996
@@ -1495,12 +1589,18 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
+      Hash: 65c5c55c1a1de45fb73f9d2d2f025414
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: tmpSceneChnage
+    className: menuPlayerAnimation
+  - hash:
+      serializedVersion: 2
+      Hash: 5d3b6073e180963b5d4ce0dccb15286d
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: menuPlayerMaterials
   platform: 19
   scenePathNames:
-  - Assets/Scenes/Game Scene.unity
   - Assets/Scenes/Menu Scene.unity
-  playerPath: C:/Users/wiktor.ziedalski/Future-Wariors/Builds/v 6 (UI)/Future Warriors.exe
+  - Assets/Scenes/Game Scene.unity
+  playerPath: C:/Users/wiktor.ziedalski/Future-Wariors/Builds/v 6.2 (UI)/Future Warriors.exe

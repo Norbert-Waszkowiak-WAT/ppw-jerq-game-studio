@@ -75,7 +75,7 @@ public class PlayerMovement : NetworkBehaviour
             return hit.distance;
         }
 
-        return Mathf.Infinity;
+        return 20f;
     }
 
     bool IsGrounded(float height)
