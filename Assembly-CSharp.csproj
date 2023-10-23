@@ -59,14 +59,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Player\weaponsHandler.cs" />
+    <Compile Include="Assets\Scripts\Player\Singleplayer Versions\TargetSingleplayer.cs" />
     <Compile Include="Assets\Scripts\Networking\ClientNetworkTransform.cs" />
     <Compile Include="Assets\Scripts\UI\readInput.cs" />
     <Compile Include="Assets\Scripts\UI\playerRotate.cs" />
     <Compile Include="Assets\Scripts\Networking\NetworkUI.cs" />
+    <Compile Include="Assets\Scripts\Player\Singleplayer Versions\escMenu.cs" />
+    <Compile Include="Assets\Scripts\Player\Singleplayer Versions\playerMovementSingleplayer.cs" />
     <Compile Include="Assets\Scripts\Networking\disableNotLocal.cs" />
     <Compile Include="Assets\Scripts\Networking\testRelay.cs" />
     <Compile Include="Assets\Scripts\Player\healthPointsOperator.cs" />
     <Compile Include="Assets\Scripts\Player\playerMovement.cs" />
+    <Compile Include="Assets\Scripts\Player\Singleplayer Versions\shootingWithRaycastsSingleplayer.cs" />
     <Compile Include="Assets\Scripts\Menu\menuPlayerAnimation.cs" />
     <Compile Include="Assets\Scripts\Player\cameraRotation.cs" />
     <Compile Include="Assets\Scripts\Menu\menuPlayerMaterials.cs" />
@@ -80,6 +84,8 @@
     <Compile Include="Assets\Scripts\Camera\minimapCameraMovement.cs" />
     <Compile Include="Assets\Scripts\UI\tmpSceneChnage.cs" />
     <Compile Include="Assets\Scripts\Player\AnimationQualifier.cs" />
+    <Compile Include="Assets\Scripts\Player\Singleplayer Versions\weaponsHandlerSingleplayer.cs" />
+    <Compile Include="Assets\Scripts\Player\Singleplayer Versions\minimapCameraMovementSingleplayer.cs" />
     <Compile Include="Assets\Scripts\Player\Target.cs" />
     <Compile Include="Assets\Data\Guns\GunStats.cs" />
     <Compile Include="Assets\Scripts\Player\shootingWithRaycasts.cs" />

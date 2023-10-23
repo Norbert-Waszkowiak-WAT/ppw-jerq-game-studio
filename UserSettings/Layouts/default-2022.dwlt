@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 780.8
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -118,7 +118,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 5615
+  controlID: 24623
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 5616
+  controlID: 24624
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 50}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 5617
+  controlID: 24625
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 5618
+  controlID: 24626
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -439,9 +439,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: c2700000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: fc5bffff445cffff8e66ffffdc68ffff7e6fffffc86fffffee78ffff387bffff187cffff627cffffc286ffff1089fffff490fffffa90ffffae95fffffa95ffff5aa0ffffaea2ffffa0c3ffffcee2ffff28fbfffff8690000a06a0000a86a0000026c000040c1000048c100006cc1000084c200005cc4000002c5000062e6000082e9000030ea00004cea0000a4ea0000
+      m_ExpandedIDs: 225afcff6a5afcfff66cfcffa675fcff0078fcfff078fcff3879fcffe48cfcff9495fcffee97fcff72b9fcffbcb9fcff6acdfcff18d6fcff72d8fcff9cdefcffe6defcff38e9fcff9cebfcffc6d1fdffc8d1fdffced1fdffd2d6fdff6cdafdffeae9fdff6034ffff6834ffff9239ffffee5affff367affff02ceffff16ceffff18ceffffa6d1fffff0f0ffff1ef4ffff28fbffff2afbffff2c360100303601006a370100fe37010040390100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -808,9 +808,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 363.69772, y: 136.80199, z: -284.47134}
+    m_Target: {x: 328.8615, y: 206.68945, z: 2.58716}
     speed: 2
-    m_Value: {x: 363.69772, y: 136.80199, z: -284.47134}
+    m_Value: {x: 328.8615, y: 206.68945, z: 2.58716}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -860,9 +860,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 171.98987
+    m_Target: 202.41663
     speed: 2
-    m_Value: 171.98987
+    m_Value: 202.41663
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -880,7 +880,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewRotation: {x: -0.009125673, y: 0.98324454, z: -0.17466713, w: -0.051371332}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -1100,7 +1100,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Menu/Buttons
+    - Assets/Scripts/Player/Singleplayer Versions
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1108,16 +1108,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Menu/Buttons
+  - Assets/Scripts/Player/Singleplayer Versions
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\wiktor.ziedalski\Future-Wariors
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: c2700000
-    m_LastClickedID: 28866
-    m_ExpandedIDs: 000000004270000044700000467000006070000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 167}
+    m_SelectedIDs: 96920000
+    m_LastClickedID: 37526
+    m_ExpandedIDs: 00000000a4710000a6710000a8710000ec71000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1145,7 +1145,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000042700000447000004670000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000a4710000a6710000a871000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
