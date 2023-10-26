@@ -30,5 +30,9 @@ public class f5Cam : MonoBehaviour
                 isFp = true;
             }
         }
+
+        //camera gameobject
+        GameObject gameObject = Camera.current.gameObject;
+
     }
 }

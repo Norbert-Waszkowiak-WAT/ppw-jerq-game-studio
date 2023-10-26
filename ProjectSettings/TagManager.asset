@@ -10,6 +10,7 @@ TagManager:
   - movementCollider
   - hitbox
   - Puppet
+  - AIbot
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - Map
   - Water
   - UI
-  - 
+  - Player
   - 
   - 
   - 

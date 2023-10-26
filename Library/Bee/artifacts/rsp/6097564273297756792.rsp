@@ -1,4 +1,5 @@
 -a="C:\Users\wiktor.ziedalski\Future-Wariors\Library\ScriptAssemblies\Assembly-CSharp.dll"
+-a="C:\Users\wiktor.ziedalski\Future-Wariors\Library\ScriptAssemblies\Unity.AI.Navigation.dll"
 -a="C:\Users\wiktor.ziedalski\Future-Wariors\Library\ScriptAssemblies\Unity.Burst.dll"
 -a="C:\Users\wiktor.ziedalski\Future-Wariors\Library\ScriptAssemblies\Unity.Collections.dll"
 -a="C:\Users\wiktor.ziedalski\Future-Wariors\Library\ScriptAssemblies\Unity.Mathematics.dll"
