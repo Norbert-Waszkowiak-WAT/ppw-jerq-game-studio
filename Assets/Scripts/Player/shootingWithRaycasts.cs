@@ -34,7 +34,7 @@ public class shootingWithRaycasts : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButton(shootButton) && !reloading)
+        if (Input.GetButton(shootButton) && !reloading && gun != null)
         {
             if (weaponsCanShoot[gun.GetComponent<GunStats>().thisWeapon.weaponIndex])
             {

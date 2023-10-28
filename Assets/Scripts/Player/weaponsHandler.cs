@@ -67,27 +67,4 @@ public class weaponsHandler : NetworkBehaviour
             SelectWeapon(2);
         }
     }
-    public override void OnNetworkSpawn()
-    {
-        FindAndSetPlayer();
-        SelectWeapon(currentWeaponIndex);
-    }
-
-    private void FindAndSetPlayer()
-    {
-        // Find the player GameObject with the "Player" tag.
-        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
-
-        foreach (GameObject p in players)
-        {
-            NetworkObject networkObject = p.GetComponent<NetworkObject>();
-
-            if (networkObject != null && networkObject.OwnerClientId == OwnerClientId)
-            {
-                // Set the playerTransform if it's owned by the local client.
-                playerTransform = p.transform;
-                break;
-            }
-        }
-    }
 }

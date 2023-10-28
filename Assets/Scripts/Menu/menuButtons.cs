@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,6 +9,9 @@ public class menuButtons : MonoBehaviour
     public GameObject customizeMenu;
     public GameObject mainMenu;
     public GameObject singleplayerMenu;
+
+    public GameObject dataTransferObject;
+    public addMaterialsToPlayerInMenu addMaterialsToPlayerInMenu;
 
     public string gitURL = "https://github.com/Norbert-Waszkowiak-WAT/ppw-jerq-game-studio";
     public void Quit()
@@ -27,7 +31,14 @@ public class menuButtons : MonoBehaviour
 
     public void ChangeToMultiplayer()
     {
-        SceneManager.LoadScene("Game Scene");
+        List<Material> materials = dataTransferObject.GetComponent<dataTransfer>().materials;
+        materials = new List<Material>();
+        materials.Add(addMaterialsToPlayerInMenu.mat1);
+        materials.Add(addMaterialsToPlayerInMenu.mat2);
+        materials.Add(addMaterialsToPlayerInMenu.mat3);
+        dataTransferObject.GetComponent<dataTransfer>().materials = materials;
+        DontDestroyOnLoad(dataTransferObject);
+        //SceneManager.LoadScene("Multiplayer Scene");
     }
 
     public void StartSingleplayer()

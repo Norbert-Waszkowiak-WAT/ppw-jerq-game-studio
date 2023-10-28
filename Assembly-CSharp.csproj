@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\Networking\ClientNetworkTransform.cs" />
     <Compile Include="Assets\Scripts\UI\readInput.cs" />
     <Compile Include="Assets\Scripts\UI\playerRotate.cs" />
+    <Compile Include="Assets\Scripts\Menu\dataTransfer.cs" />
     <Compile Include="Assets\Scripts\Networking\NetworkUI.cs" />
     <Compile Include="Assets\Scripts\Player\Singleplayer Versions\escMenu.cs" />
     <Compile Include="Assets\Scripts\Player\Singleplayer Versions\playerMovementSingleplayer.cs" />
@@ -840,11 +841,11 @@
     <Reference Include="Unity.Multiplayer.Tools.NetworkProfiler.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Multiplayer.Tools.NetworkProfiler.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
       <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Multiplayer.Tools.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Multiplayer.Tools.Editor.dll</HintPath>

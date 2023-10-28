@@ -95,7 +95,7 @@ public class testRelay : MonoBehaviour
         {
             // Write the string to the file
             File.WriteAllText(filePath, toSave);
-            Debug.Log("File saved successfully to: " + filePath);
+            Debug.LogError("File saved successfully to: " + filePath);
         }
         catch (Exception e)
         {

@@ -3789,6 +3789,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 851528361}
   m_CullTransparentMesh: 1
+--- !u!1 &860513770
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 860513771}
+  - component: {fileID: 860513772}
+  m_Layer: 0
+  m_Name: Data Transfer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &860513771
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860513770}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &860513772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860513770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2db911a455b5f2745976481fb1a820c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materials: []
 --- !u!1 &874127727 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -580056466731647394, guid: dcdcc937b436f4c49814a512605e0877, type: 3}
@@ -11386,6 +11431,8 @@ MonoBehaviour:
   customizeMenu: {fileID: 233642130}
   mainMenu: {fileID: 254652055}
   singleplayerMenu: {fileID: 1776412061}
+  dataTransferObject: {fileID: 860513770}
+  addMaterialsToPlayerInMenu: {fileID: 2131753946}
   gitURL: https://github.com/Norbert-Waszkowiak-WAT/ppw-jerq-game-studio
 --- !u!4 &2131753945
 Transform:
@@ -11576,6 +11623,7 @@ MonoBehaviour:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 860513771}
   - {fileID: 363925015}
   - {fileID: 1025402007}
   - {fileID: 1917265558}

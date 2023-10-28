@@ -411,6 +411,7 @@
 "Assets/Scripts/Camera/minimapZoom.cs"
 "Assets/Scripts/Guns/Fire.cs"
 "Assets/Scripts/Menu/addMaterialsToPlayerInMenu.cs"
+"Assets/Scripts/Menu/dataTransfer.cs"
 "Assets/Scripts/Menu/menuButtons.cs"
 "Assets/Scripts/Menu/menuPlayerAnimation.cs"
 "Assets/Scripts/Menu/menuPlayerMaterials.cs"
