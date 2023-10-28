@@ -1,0 +1,18 @@
+{
+    "name": "unity-websocket-sharp",
+    "rootNamespace": "UnityWebSocketSharp",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [
+        "WebGL"
+    ],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "!WIRE_EXCLUDE_WEBSOCKETSHARP"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

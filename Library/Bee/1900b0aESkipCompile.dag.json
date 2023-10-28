@@ -27,7 +27,7 @@
       "DisplayName": "Writing 6097564273297756792.rsp",
       "ActionType": "WriteFile",
       "PayloadOffset": 83,
-      "PayloadLength": 8257,
+      "PayloadLength": 8690,
       "PayloadDebugContentSnippet": "-a=\"C:\\Users\\wiktor.ziedalski\\",
       "Inputs": [],
       "Outputs": [
@@ -78,16 +78,18 @@
         "Library/ScriptAssemblies/Unity.Services.Core.Scheduler.dll",
         "Library/ScriptAssemblies/Unity.Services.Core.Telemetry.dll",
         "Library/ScriptAssemblies/Unity.Services.Core.Threading.dll",
+        "Library/ScriptAssemblies/Unity.Services.Lobbies.dll",
         "Library/ScriptAssemblies/Unity.Services.QoS.dll",
         "Library/ScriptAssemblies/Unity.Services.Relay.dll",
+        "Library/ScriptAssemblies/Unity.Services.Wire.Internal.dll",
         "Library/ScriptAssemblies/Unity.TextMeshPro.dll",
         "Library/ScriptAssemblies/Unity.Timeline.dll",
-        "Library/ScriptAssemblies/Unity.Tutorials.Core.dll",
         "Library/ScriptAssemblies/Unity.VisualScripting.Core.dll",
         "Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll",
         "Library/ScriptAssemblies/Unity.VisualScripting.State.dll",
         "Library/ScriptAssemblies/UnityEngine.TestRunner.dll",
         "Library/ScriptAssemblies/UnityEngine.UI.dll",
+        "Library/ScriptAssemblies/unity-websocket-sharp.dll",
         "Library/PackageCache/com.unity.burst@1.8.8/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll",
         "Library/PackageCache/com.unity.burst@1.8.8/Unity.Burst.CodeGen/Unity.Burst.Cecil.Mdb.dll",
         "Library/PackageCache/com.unity.burst@1.8.8/Unity.Burst.CodeGen/Unity.Burst.Cecil.Pdb.dll",
@@ -100,6 +102,7 @@
         "Library/PackageCache/com.unity.nuget.mono-cecil@1.11.4/Mono.Cecil.Pdb.dll",
         "Library/PackageCache/com.unity.nuget.mono-cecil@1.11.4/Mono.Cecil.Rocks.dll",
         "Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime/Newtonsoft.Json.dll",
+        "Library/PackageCache/com.unity.services.wire@1.2.0/Plugins/websocket-sharp.dll",
         "Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll",
         "Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll",
         "Library/Bee/artifacts/rsp/6097564273297756792.rsp"
@@ -284,6 +287,9 @@
       "File": "Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime/Newtonsoft.Json.dll"
     },
     {
+      "File": "Library/PackageCache/com.unity.services.wire@1.2.0/Plugins/websocket-sharp.dll"
+    },
+    {
       "File": "Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll"
     },
     {
@@ -291,6 +297,9 @@
     },
     {
       "File": "Library/ScriptAssemblies/Assembly-CSharp.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/unity-websocket-sharp.dll"
     },
     {
       "File": "Library/ScriptAssemblies/Unity.AI.Navigation.dll"
@@ -398,19 +407,22 @@
       "File": "Library/ScriptAssemblies/Unity.Services.Core.Threading.dll"
     },
     {
+      "File": "Library/ScriptAssemblies/Unity.Services.Lobbies.dll"
+    },
+    {
       "File": "Library/ScriptAssemblies/Unity.Services.QoS.dll"
     },
     {
       "File": "Library/ScriptAssemblies/Unity.Services.Relay.dll"
     },
     {
+      "File": "Library/ScriptAssemblies/Unity.Services.Wire.Internal.dll"
+    },
+    {
       "File": "Library/ScriptAssemblies/Unity.TextMeshPro.dll"
     },
     {
       "File": "Library/ScriptAssemblies/Unity.Timeline.dll"
-    },
-    {
-      "File": "Library/ScriptAssemblies/Unity.Tutorials.Core.dll"
     },
     {
       "File": "Library/ScriptAssemblies/Unity.VisualScripting.Core.dll"

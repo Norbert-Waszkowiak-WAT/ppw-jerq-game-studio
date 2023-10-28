@@ -1,4 +1,9 @@
 using System.Collections.Generic;
+using TMPro;
+using Unity.Services.Authentication;
+using Unity.Services.Core;
+using Unity.Services.Lobbies;
+using Unity.Services.Lobbies.Models;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,9 +14,12 @@ public class menuButtons : MonoBehaviour
     public GameObject customizeMenu;
     public GameObject mainMenu;
     public GameObject singleplayerMenu;
+    public GameObject multiplayerMenu;
 
     public GameObject dataTransferObject;
     public addMaterialsToPlayerInMenu addMaterialsToPlayerInMenu;
+
+    public lobbyHandler lobbyHandlerInstance;
 
     public string gitURL = "https://github.com/Norbert-Waszkowiak-WAT/ppw-jerq-game-studio";
     public void Quit()
@@ -57,6 +65,7 @@ public class menuButtons : MonoBehaviour
         playOptions.active = false;
         customizeMenu.active = true;
         singleplayerMenu.active = false;
+        multiplayerMenu.active = false;
     }
 
     public void ChangeToMainMenu()
@@ -64,6 +73,7 @@ public class menuButtons : MonoBehaviour
         mainMenu.active = true;
         customizeMenu.active = false;
         singleplayerMenu.active = false;
+        multiplayerMenu.active = false;
     }
 
     public void ChangeToSingleplayerMenu()
@@ -72,5 +82,34 @@ public class menuButtons : MonoBehaviour
         playOptions.active = false;
         customizeMenu.active = false;
         singleplayerMenu.active = true;
+        multiplayerMenu.active = false;
+    }
+
+    public void ChangeToMultiplayerMenu()
+    {
+        mainMenu.active = false;
+        playOptions.active = false;
+        customizeMenu.active = false;
+        singleplayerMenu.active = false;
+        multiplayerMenu.active = true;
+        lobbyHandlerInstance.StartUnityServices();
+    }
+
+    private void Start()
+    {
+        lobbyHandlerInstance.StartUnityServices();
+    
+    }
+
+    public void CreateNewMultiplayerGame()
+    {
+        dataTransferObject.GetComponent<dataTransfer>().createNewGame = true;
+        ChangeToMultiplayer();
+    }
+
+    public void JoinMultiplayerGame()
+    {
+        dataTransferObject.GetComponent<dataTransfer>().createNewGame = false;
+        ChangeToMultiplayer();
     }
 }

@@ -1,0 +1,17 @@
+{
+    "name": "Unity.Services.Wire.Editor",
+    "references": [
+        "Unity.Services.Wire.Internal"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
