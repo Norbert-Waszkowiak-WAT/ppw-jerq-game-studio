@@ -1,0 +1,45 @@
+generatorName: csharp-unity
+outputDir: ./generated
+templateDir: ./templates
+inputSpec: ./lobby-spec.yaml
+packageName: com.unity.services.lobby
+additionalProperties:
+  unityVersion: "2020.3"
+  packageVersion: "1.1.0-pre.3"
+  unityPackageNamespace: "Unity.Services.Lobbies"
+  unityServiceName: "Lobby"
+  generateMarkdownDocumentation: false
+  usePhpStyleQueryParams: false
+  unityPackageDescription: "Enable players to find, create, and join lobbies with Lobby. Add Lobby to your multiplayer game to empower players to create the gaming experiences they want. Features include Quick Join, Public Lobby, and Private Match to allow flexibility in how players want to game with each other."
+  useUnityAuthentication: true
+  publicAccess: [models, deserializable]
+files:
+  api-names.mustache:
+    templateType: API
+    destinationFilename: Names.cs
+x-recipeEngine:
+  moveGeneratorFiles: true
+  trackedDir: ./Packages/Public/com.unity.services.lobby
+  preProcessCommands:
+    - echo "Done executing pre process commands."
+  postProcessCommands:
+    - cp -r ./generated/com.unity.services.lobby/* ../
+    - rm -r ./generated
+    # mac version - sed -i '' 's/public interface/internal interface/g' ../Runtime/Http/IDeserializable.cs # reset IDeserializable to internal
+    # mac version - sed -i '' 's/{ get; }/{ get; set; }/g' ../Runtime/Models/Lobby.cs # add Lobby properties setters
+    # mac version - sed -i '' 's/{ get; }/{ get; set; }/g' ../Runtime/Models/Player.cs # add Player properties setters
+    # mac version - sed -i '' 's/{ get; }/{ get; set; }/g' ../Runtime/Models/PlayerDataObject.cs # add PlayerDataObject properties setters
+    - sed -i 's/public interface/internal interface/g' ../Runtime/Http/IDeserializable.cs # reset IDeserializable to internal
+    - sed -i 's/{ get; }/{ get; internal set; }/g' ../Runtime/Models/Lobby.cs # add Lobby properties setters
+    - sed -i 's/{ get; }/{ get; internal set; }/g' ../Runtime/Models/Player.cs # add Player properties setters
+    - sed -i 's/Data{ get; internal set; }/Data{ get; set; }/g' ../Runtime/Models/Player.cs # Data must have a public setter
+    - sed -i 's/{ get; }/{ get; internal set; }/g' ../Runtime/Models/PlayerDataObject.cs # add PlayerDataObject properties setters
+    - sed -i 's/Value{ get; internal set; }/Value{ get; set; }/g' ../Runtime/Models/PlayerDataObject.cs # Value must have a public setter
+    - sed -i 's/JoinByCodeRequest(string lobbyCode, string password = default, Player player = default)/JoinByCodeRequest(string lobbyCode, Player player = default, string password = default)/g' ../Runtime/Models/JoinByCodeRequest.cs
+    - sed -i 's/UpdateRequest(string name = default, int? maxPlayers = default, bool? isPrivate = default, bool? isLocked = default, string password = default, Dictionary<string, DataObject> data = default, string hostId = default)/UpdateRequest(string name = default, int? maxPlayers = default, bool? isPrivate = default, bool? isLocked = default, Dictionary<string, DataObject> data = default, string hostId = default, string password = default)/g' ../Runtime/Models/UpdateRequest.cs
+    - sed -i 's/Lobby(string id = default, string lobbyCode = default, string upid = default, string environmentId = default, string name = default, int maxPlayers = default, int availableSlots = default, bool isPrivate = default, bool isLocked = default, bool hasPassword = default, List<Player> players = default, Dictionary<string, DataObject> data = default, string hostId = default, DateTime created = default, DateTime lastUpdated = default, int version = default)/Lobby(string id = default, string lobbyCode = default, string upid = default, string environmentId = default, string name = default, int maxPlayers = default, int availableSlots = default, bool isPrivate = default, bool isLocked = default, List<Player> players = default, Dictionary<string, DataObject> data = default, string hostId = default, DateTime created = default, DateTime lastUpdated = default, int version = default, bool hasPassword = default)/g' ../Runtime/Models/Lobby.cs
+    - sed -i 's/Player(string id = default, PlayerProfile profile = default, string connectionInfo = default, Dictionary<string, PlayerDataObject> data = default, string allocationId = default, DateTime joined = default, DateTime lastUpdated = default)/Player(string id = default, string connectionInfo = default, Dictionary<string, PlayerDataObject> data = default, string allocationId = default, DateTime joined = default, DateTime lastUpdated = default, PlayerProfile profile = default)/g' ../Runtime/Models/Player.cs
+    - sed -i 's/CreateRequest(string name, int maxPlayers, bool? isPrivate = false, bool? isLocked = false, Player player = default, string password = default, Dictionary<string, DataObject> data = default)/CreateRequest(string name, int maxPlayers, bool? isPrivate = false, bool? isLocked = false, Player player = default, Dictionary<string, DataObject> data = default, string password = default)/g' ../Runtime/Models/CreateRequest.cs
+    - rm ../Runtime/Models/LobbyIOneOf.cs # remove duplicate IOneOf class
+    - rm -f openapi-generator.log
+    - echo "Done executing post process commands."
