@@ -20,6 +20,7 @@
 -a="C:\Users\wiktor.ziedalski\Future-Wariors\Library\ScriptAssemblies\Unity.Netcode.Components.dll"
 -a="C:\Users\wiktor.ziedalski\Future-Wariors\Library\ScriptAssemblies\Unity.Netcode.Runtime.dll"
 -a="C:\Users\wiktor.ziedalski\Future-Wariors\Library\ScriptAssemblies\Unity.Networking.Transport.dll"
+-a="C:\Users\wiktor.ziedalski\Future-Wariors\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll"
 -a="C:\Users\wiktor.ziedalski\Future-Wariors\Library\ScriptAssemblies\Unity.Profiling.Core.dll"
 -a="C:\Users\wiktor.ziedalski\Future-Wariors\Library\ScriptAssemblies\Unity.Services.Authentication.dll"
 -a="C:\Users\wiktor.ziedalski\Future-Wariors\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll"

@@ -116,6 +116,7 @@
 -define:PUN_2_0_OR_NEWER
 -define:PUN_2_OR_NEWER
 -define:PUN_2_19_OR_NEWER
+-define:UNITY_POST_PROCESSING_STACK_V2
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/mscorlib.dll"
@@ -331,6 +332,7 @@
 -r:"Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.Netcode.Components.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.Netcode.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.Networking.Transport.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.Postprocessing.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.Profiling.Core.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.Services.Authentication.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.Services.Core.Analytics.ref.dll"
@@ -370,6 +372,7 @@
 "Assets/Scripts/Networking/lobbyContinuer.cs"
 "Assets/Scripts/Networking/lobbyHandler.cs"
 "Assets/Scripts/Networking/NetworkUI.cs"
+"Assets/Scripts/Networking/test.cs"
 "Assets/Scripts/Networking/testRelay.cs"
 "Assets/Scripts/Networking/testRelyForLobby.cs"
 "Assets/Scripts/Player/AnimationHandler.cs"
@@ -397,6 +400,7 @@
 "Assets/Scripts/Player/weaponsHandler.cs"
 "Assets/Scripts/UI/displayHealth.cs"
 "Assets/Scripts/UI/healthBar.cs"
+"Assets/Scripts/UI/New UI/mainMenuUI.cs"
 "Assets/Scripts/UI/playerRotate.cs"
 "Assets/Scripts/UI/readInput.cs"
 "Assets/Scripts/UI/tmpSceneChnage.cs"

@@ -108,6 +108,7 @@ public class lobbyListHandler : MonoBehaviour
         {
             lobbyUpdateTimer = 3.1f;
             Lobby lobby = await Lobbies.Instance.GetLobbyAsync(joinedLobby.Id);
+            Debug.Log("Lobby updated: " + lobby.Id + " " + lobby.Name + " " + lobby.LobbyCode);
             if (lobby != null)
             {
                 joinedLobby = lobby;
@@ -163,6 +164,7 @@ public class lobbyListHandler : MonoBehaviour
 
     void UpdateDisplayedLobby()
     {
+        Debug.Log(joinedLobby.Players.Count);
         foreach(GameObject player in players)
         {
             Destroy(player);
@@ -309,13 +311,23 @@ public class lobbyListHandler : MonoBehaviour
             hostLobby = lobby;
             joinedLobby = lobby;
             Debug.LogError("Lobby created: " + lobby.Id + " " + lobby.Name + " " + lobby.LobbyCode);
+            if (joinedLobby == null)
+            {
+                Debug.Log("joinedLobby is null");
+            }
+            else
+            {
+                Debug.Log("joinedLobby is not null");
+            }
         }
         catch (System.Exception e)
         {
             DisplayError(e);
         }
         HideLobbyCreation();
-        ShowCurrentLobby();
+        //ShowCurrentLobby();
+        menuButtonsInstance.ChangeToLobbyMenu();
+        UpdateDisplayedLobby();
     }
 
     private void OnKickedFromLobby()
@@ -362,6 +374,8 @@ public class lobbyListHandler : MonoBehaviour
         string lobbyId = clickedObject.GetComponent<lobbyData>().lobbyId;
         JoinLobbyById(lobbyId);
         ShowCurrentLobby();
+        menuButtonsInstance.ChangeToLobbyMenu();
+        UpdateDisplayedLobby();
     }
 
     public async void JoinLobbyById(string lobbyId)
@@ -447,7 +461,7 @@ public class lobbyListHandler : MonoBehaviour
             {
                 Debug.Log("Start Game");
                 string relayCode = await testRelayInstance.CreateRelayForLobby();
-
+                if (joinedLobby == null) Debug.Log("joinedLobby is null");
                 Lobby lobby = await Lobbies.Instance.UpdateLobbyAsync(joinedLobby.Id, new UpdateLobbyOptions
                 {
                     Data = new Dictionary<string, DataObject>
@@ -462,5 +476,18 @@ public class lobbyListHandler : MonoBehaviour
                 DisplayError(e);
             }
         }
+    }
+
+    public async void QuickJoinLobby()
+    {
+        try
+        {
+            await Lobbies.Instance.QuickJoinLobbyAsync();
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError(e);
+        }
+
     }
 }

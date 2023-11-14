@@ -15,6 +15,10 @@ public class menuButtons : MonoBehaviour
     public GameObject mainMenu;
     public GameObject singleplayerMenu;
     public GameObject multiplayerMenu;
+    public GameObject lobbyMenu;
+    public GameObject loadoutMenu;
+    public GameObject statsMenu;
+    public GameObject levelMenu;
 
     public TMP_Text playerNick;
     public TMP_InputField playerNickInputField;
@@ -85,28 +89,44 @@ public class menuButtons : MonoBehaviour
 
     public void ChangeToCustomize()
     {
-        mainMenu.active = false;
-        playOptions.active = false;
+        DisableAllMenus();
         customizeMenu.active = true;
-        singleplayerMenu.active = false;
-        multiplayerMenu.active = false;
     }
 
     public void ChangeToMainMenu()
     {
+        DisableAllMenus();
         mainMenu.active = true;
-        customizeMenu.active = false;
-        singleplayerMenu.active = false;
-        multiplayerMenu.active = false;
     }
 
     public void ChangeToSingleplayerMenu()
     {
-        mainMenu.active = false;
-        playOptions.active = false;
-        customizeMenu.active = false;
+        DisableAllMenus();
         singleplayerMenu.active = true;
-        multiplayerMenu.active = false;
+    }
+
+    public void ChangeToLobbyMenu()
+    {
+        DisableAllMenus();
+        lobbyMenu.active = true;
+    }
+
+    public void ChangeToLoadoutMenu()
+    {
+        DisableAllMenus();
+        loadoutMenu.active = true;
+    }    
+
+    public void ChangeToStatsMenu()
+    {
+        DisableAllMenus();
+        statsMenu.active = true;
+    }
+
+    public void ChangeToLevelMenu()
+    {
+        DisableAllMenus();
+        levelMenu.active = true;
     }
 
     public void ChangeToMultiplayerMenu()
@@ -116,11 +136,25 @@ public class menuButtons : MonoBehaviour
         customizeMenu.active = false;
         singleplayerMenu.active = false;
         multiplayerMenu.active = true;
+        lobbyMenu.active = false;
+        loadoutMenu.active = false;
+        statsMenu.active = false;
+        levelMenu.active = false;
+    }
+
+    public void DisableAllMenus()
+    {
+        mainMenu.active = false;
+        playOptions.active = false;
+        customizeMenu.active = false;
+        singleplayerMenu.active = false;
+        multiplayerMenu.active = false;
+        lobbyMenu.active = false;
     }
 
     private void Start()
     {
-        playerNick.text = "(ur not) KIWI" + Random.Range(0, 1000);
+        playerNick.text = System.IO.File.ReadAllText(Application.persistentDataPath + "/data.txt");
         lobbyListHandlerInstance.playerName = playerNick.text;
     }
 
@@ -149,10 +183,17 @@ public class menuButtons : MonoBehaviour
             return;
         }
         playerNick.text = playerNickInputField.text;
+        lobbyListHandlerInstance.playerName = playerNickInputField.text;
+        Debug.Log(playerNick.text);
         playerNickInputField.text = "";
         changeName.active = false;
-        lobbyListHandlerInstance.playerName = playerNick.text;
         //lobbyHandlerInstance.UpdatePlayerName(playerNick.text);
+        SaveToFile(playerNick.text);
+    }
+
+    void SaveToFile(string playerNick)
+    {
+        System.IO.File.WriteAllText(Application.persistentDataPath + "/data.txt", playerNick);
     }
 
     public void CancelPlayerNick()

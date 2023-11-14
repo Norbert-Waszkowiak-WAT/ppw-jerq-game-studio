@@ -18,6 +18,7 @@ Library\Bee\artifacts\mvdfrm\Unity.Multiplayer.Tools.NetworkSolutionInterface.re
 Library\Bee\artifacts\mvdfrm\Unity.Netcode.Components.ref.dll_0F6824CD9BD63789.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Netcode.Runtime.ref.dll_BBA641322197F2FB.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Networking.Transport.ref.dll_4B19B6E16C64B27E.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Postprocessing.Runtime.ref.dll_437F6B0549EE40AC.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Profiling.Core.ref.dll_AF4CEE1B5FF66246.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Services.Authentication.ref.dll_6FE6D1BA167AD8DF.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Services.Core.Analytics.ref.dll_B33FBA8D01A941BE.mvfrm

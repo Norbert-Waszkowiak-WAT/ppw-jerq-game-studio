@@ -18,6 +18,7 @@ public class lobbyHandler : MonoBehaviour
         playerName = "KIWI" + Random.Range(0, 1000);
         Debug.Log("Player name: " + playerName);
         StartCoroutine(HandleLobbyHeartBeat());
+
     }
 
     private void Update()

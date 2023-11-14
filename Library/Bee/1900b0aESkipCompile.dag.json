@@ -27,7 +27,7 @@
       "DisplayName": "Writing 6097564273297756792.rsp",
       "ActionType": "WriteFile",
       "PayloadOffset": 83,
-      "PayloadLength": 8690,
+      "PayloadLength": 8794,
       "PayloadDebugContentSnippet": "-a=\"C:\\Users\\wiktor.ziedalski\\",
       "Inputs": [],
       "Outputs": [
@@ -64,6 +64,7 @@
         "Library/ScriptAssemblies/Unity.Netcode.Components.dll",
         "Library/ScriptAssemblies/Unity.Netcode.Runtime.dll",
         "Library/ScriptAssemblies/Unity.Networking.Transport.dll",
+        "Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll",
         "Library/ScriptAssemblies/Unity.Profiling.Core.dll",
         "Library/ScriptAssemblies/Unity.Services.Authentication.dll",
         "Library/ScriptAssemblies/Unity.Services.Core.Analytics.dll",
@@ -363,6 +364,9 @@
     },
     {
       "File": "Library/ScriptAssemblies/Unity.Networking.Transport.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll"
     },
     {
       "File": "Library/ScriptAssemblies/Unity.Profiling.Core.dll"

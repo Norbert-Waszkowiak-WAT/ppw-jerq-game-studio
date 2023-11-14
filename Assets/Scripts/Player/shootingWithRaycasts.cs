@@ -126,7 +126,7 @@ public class shootingWithRaycasts : NetworkBehaviour
 
         bool hitSomething = false;
 
-        int layerMask = ~LayerMask.GetMask("Ignore Raycast");
+        int layerMask = ~LayerMask.GetMask("Player");
 
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range, layerMask, QueryTriggerInteraction.Collide))
         {

@@ -20,6 +20,7 @@
 -a="C:\Users\wiktor.ziedalski\Future-Wariors\Library\Bee\PlayerScriptAssemblies\Unity.Netcode.Components.dll"
 -a="C:\Users\wiktor.ziedalski\Future-Wariors\Library\Bee\PlayerScriptAssemblies\Unity.Netcode.Runtime.dll"
 -a="C:\Users\wiktor.ziedalski\Future-Wariors\Library\Bee\PlayerScriptAssemblies\Unity.Networking.Transport.dll"
+-a="C:\Users\wiktor.ziedalski\Future-Wariors\Library\Bee\PlayerScriptAssemblies\Unity.Postprocessing.Runtime.dll"
 -a="C:\Users\wiktor.ziedalski\Future-Wariors\Library\Bee\PlayerScriptAssemblies\Unity.Profiling.Core.dll"
 -a="C:\Users\wiktor.ziedalski\Future-Wariors\Library\Bee\PlayerScriptAssemblies\Unity.Services.Authentication.dll"
 -a="C:\Users\wiktor.ziedalski\Future-Wariors\Library\Bee\PlayerScriptAssemblies\Unity.Services.Core.Analytics.dll"
