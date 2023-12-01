@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{89467732-7641-F480-C5B3-0DA97AE8A6A3}</ProjectGuid>
+    <ProjectGuid>{66FE54CD-37B3-2955-B8C8-205FFCE5B898}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -58,85 +58,127 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Player\weaponsHandler.cs" />
-    <Compile Include="Assets\Scripts\Networking\lobbyHandler.cs" />
-    <Compile Include="Assets\Scripts\Menu\buttonCheck.cs" />
-    <Compile Include="Assets\Scripts\Player\Singleplayer Versions\TargetSingleplayer.cs" />
-    <Compile Include="Assets\Scripts\Networking\ClientNetworkTransform.cs" />
-    <Compile Include="Assets\Scripts\UI\readInput.cs" />
-    <Compile Include="Assets\Scripts\Player\AnimationHandler.cs" />
-    <Compile Include="Assets\Scripts\UI\playerRotate.cs" />
-    <Compile Include="Assets\Scripts\Networking\testRelyForLobby.cs" />
-    <Compile Include="Assets\Scripts\Menu\dataTransfer.cs" />
-    <Compile Include="Assets\Scripts\Networking\NetworkUI.cs" />
-    <Compile Include="Assets\Scripts\Player\Singleplayer Versions\escMenu.cs" />
-    <Compile Include="Assets\Scripts\Player\Singleplayer Versions\playerMovementSingleplayer.cs" />
-    <Compile Include="Assets\Scripts\Networking\lobbyContinuer.cs" />
-    <Compile Include="Assets\Scripts\Networking\disableNotLocal.cs" />
-    <Compile Include="Assets\Scripts\Menu\exit.cs" />
-    <Compile Include="Assets\Scripts\Player\Singleplayer Versions\AIMovement.cs" />
-    <Compile Include="Assets\Scripts\Networking\testRelay.cs" />
-    <Compile Include="Assets\Scripts\Player\healthPointsOperator.cs" />
-    <Compile Include="Assets\Scripts\Player\Singleplayer Versions\shootingWithRaycastsSingleplayer.cs" />
-    <Compile Include="Assets\Scripts\Player\playerMovement.cs" />
-    <Compile Include="Assets\Scripts\Menu\menuPlayerAnimation.cs" />
-    <Compile Include="Assets\Scripts\Menu\lobby\playerData.cs" />
-    <Compile Include="Assets\Scripts\Player\cameraRotation.cs" />
-    <Compile Include="Assets\Scripts\Menu\changeHoveredButtons.cs" />
-    <Compile Include="Assets\Scripts\Menu\menuPlayerMaterials.cs" />
-    <Compile Include="Assets\Scripts\Menu\lobbyListHandler.cs" />
-    <Compile Include="Assets\Scripts\Player\playerControl.cs" />
-    <Compile Include="Assets\Scripts\Menu\addMaterialsToPlayerInMenu.cs" />
-    <Compile Include="Assets\Scripts\Player\f5Cam.cs" />
-    <Compile Include="Assets\Scripts\Guns\Fire.cs" />
-    <Compile Include="Assets\Scripts\Menu\menuButtons.cs" />
-    <Compile Include="Assets\Scripts\Player\DisableCamera.cs" />
-    <Compile Include="Assets\Scripts\Player\colorManager.cs" />
-    <Compile Include="Assets\Scripts\Camera\minimapCameraMovement.cs" />
-    <Compile Include="Assets\Scripts\UI\tmpSceneChnage.cs" />
-    <Compile Include="Assets\Scripts\Player\AnimationQualifier.cs" />
-    <Compile Include="Assets\Scripts\Player\Singleplayer Versions\weaponsHandlerSingleplayer.cs" />
-    <Compile Include="Assets\Scripts\Player\Singleplayer Versions\minimapCameraMovementSingleplayer.cs" />
-    <Compile Include="Assets\Scripts\Player\Target.cs" />
+    <Compile Include="Assets\_Scripts\Player\playerControl.cs" />
+    <Compile Include="Assets\_Scripts\Player\shootingHandler.cs" />
+    <Compile Include="Assets\_Scripts\Player\weaponsHandlerHolder.cs" />
+    <Compile Include="Assets\_Scripts\Player\ClientNetworkBehaviour.cs" />
+    <Compile Include="Assets\_Scripts\Player\Singleplayer Versions\shootingWithRaycastsSingleplayer.cs" />
+    <Compile Include="Assets\_Scripts\Menu\optionsHandler.cs" />
+    <Compile Include="Assets\_Scripts\Player\abilitiesHandler.cs" />
+    <Compile Include="Assets\_Scripts\UI\tmpSceneChnage.cs" />
+    <Compile Include="Assets\_Scripts\Player\Singleplayer Versions\AIMovement.cs" />
+    <Compile Include="Assets\_Scripts\Menu\menuAudio.cs" />
+    <Compile Include="Assets\_Scripts\Menu\lobbyListHandler.cs" />
+    <Compile Include="Assets\_Scripts\Player\spownPoint.cs" />
+    <Compile Include="Assets\_Scripts\Menu\Menu Buttons Animations\buttonAnimatorGiver.cs" />
+    <Compile Include="Assets\_Scripts\Networking\ClientNetworkTransform.cs" />
+    <Compile Include="Assets\_Scripts\Player\f5Cam.cs" />
+    <Compile Include="Assets\_Scripts\Networking\test.cs" />
+    <Compile Include="Assets\_Scripts\Menu\dataTransfer.cs" />
+    <Compile Include="Assets\_Scripts\Player\Singleplayer Versions\minimapCameraMovementSingleplayer.cs" />
+    <Compile Include="Assets\_Scripts\Animations\wallRaisingTmpAnim.cs" />
+    <Compile Include="Assets\_Scripts\Player\Singleplayer Versions\AISingleplayer.cs" />
+    <Compile Include="Assets\_Scripts\Networking\lobbyContinuer.cs" />
+    <Compile Include="Assets\_Scripts\Camera\minimapZoom.cs" />
+    <Compile Include="Assets\_Scripts\UI\playerRotate.cs" />
+    <Compile Include="Assets\_Scripts\Menu\lobby\lobbyData.cs" />
+    <Compile Include="Assets\_Scripts\Player\cameraRotation.cs" />
+    <Compile Include="Assets\_Scripts\Menu\test\test1.cs" />
+    <Compile Include="Assets\_Scripts\Networking\lobbyHandler.cs" />
+    <Compile Include="Assets\Ultimate 10 Plus Shaders\Scripts\U10PS_MouseRotation.cs" />
+    <Compile Include="Assets\_Scripts\Menu\addMaterialsToPlayerInMenu.cs" />
+    <Compile Include="Assets\_Scripts\Networking\testRelyForLobby.cs" />
+    <Compile Include="Assets\_Scripts\UI\readInput.cs" />
+    <Compile Include="Assets\_Scripts\Player\DisableCamera.cs" />
+    <Compile Include="Assets\_Scripts\Player\hideLocalPlayerHead.cs" />
+    <Compile Include="Assets\_Scripts\UI\showFps.cs" />
+    <Compile Include="Assets\_Scripts\Menu\exit.cs" />
+    <Compile Include="Assets\_Scripts\Player\Singleplayer Versions\playerMovementSingleplayer.cs" />
+    <Compile Include="Assets\_Scripts\Networking\testRelay.cs" />
+    <Compile Include="Assets\_Scripts\Player\Singleplayer Versions\TargetSingleplayer.cs" />
+    <Compile Include="Assets\_Scripts\Player\Singleplayer Versions\escMenu.cs" />
+    <Compile Include="Assets\_Scripts\Menu\lobby\playerData.cs" />
+    <Compile Include="Assets\_Scripts\Player\Singleplayer Versions\weaponsHandlerSingleplayer.cs" />
+    <Compile Include="Assets\Ultimate 10 Plus Shaders\Scripts\U10PS_ExampleReview.cs" />
+    <Compile Include="Assets\_Scripts\Guns\Fire.cs" />
+    <Compile Include="Assets\_Scripts\UI\displayHealth.cs" />
+    <Compile Include="Assets\Ultimate 10 Plus Shaders\Scripts\U10PS_SnowOverTime.cs" />
+    <Compile Include="Assets\Ultimate 10 Plus Shaders\Scripts\U10PS_DissolveOverTime.cs" />
+    <Compile Include="Assets\_Scripts\Player\healthPointsOperator.cs" />
+    <Compile Include="Assets\_Scripts\Player\colorManager.cs" />
+    <Compile Include="Assets\_Scripts\Menu\targetMovement.cs" />
+    <Compile Include="Assets\_Scripts\UI\New UI\mainMenuUI.cs" />
+    <Compile Include="Assets\_Scripts\Player\shootingWithRaycasts.cs" />
     <Compile Include="Assets\Data\Guns\GunStats.cs" />
-    <Compile Include="Assets\Scripts\Player\shootingWithRaycasts.cs" />
-    <Compile Include="Assets\Scripts\UI\New UI\mainMenuUI.cs" />
-    <Compile Include="Assets\Scripts\UI\healthBar.cs" />
-    <Compile Include="Assets\Scripts\Player\shootingHandler.cs" />
-    <Compile Include="Assets\Scripts\Player\Singleplayer Versions\AISingleplayer.cs" />
+    <Compile Include="Assets\_Scripts\UI\healthBar.cs" />
+    <Compile Include="Assets\_Scripts\Camera\minimapCameraMovement.cs" />
+    <Compile Include="Assets\_Scripts\Menu\buttonCheck.cs" />
+    <Compile Include="Assets\_Scripts\Menu\menuPlayerMaterials.cs" />
     <Compile Include="Assets\Data\Weapon.cs" />
-    <Compile Include="Assets\Scripts\Camera\minimapZoom.cs" />
-    <Compile Include="Assets\Scripts\Networking\test.cs" />
-    <Compile Include="Assets\Scripts\Player\spownPoint.cs" />
-    <Compile Include="Assets\Scripts\Menu\inLobbyPlayerPreviews.cs" />
-    <Compile Include="Assets\Scripts\Menu\lobby\lobbyData.cs" />
+    <Compile Include="Assets\_Scripts\Player\playerMovement.cs" />
+    <Compile Include="Assets\_Scripts\Menu\test\test2.cs" />
+    <Compile Include="Assets\Ultimate 10 Plus Shaders\Shaders\Plexus\Plexus.cs" />
+    <Compile Include="Assets\_Scripts\Player\weaponsHandler.cs" />
+    <Compile Include="Assets\_Scripts\Player\AnimationHandler.cs" />
+    <Compile Include="Assets\_Scripts\Networking\NetworkUI.cs" />
+    <Compile Include="Assets\_Scripts\Menu\menuPlayerAnimation.cs" />
+    <Compile Include="Assets\_Scripts\Menu\inLobbyPlayerPreviews.cs" />
+    <Compile Include="Assets\_Scripts\Menu\menuButtons.cs" />
     <Compile Include="Assets\Data\Player\Hitbox.cs" />
-    <Compile Include="Assets\Scripts\UI\displayHealth.cs" />
-    <Compile Include="Assets\Scripts\Player\ClientNetworkBehaviour.cs" />
+    <Compile Include="Assets\_Scripts\Player\AnimationQualifier.cs" />
+    <Compile Include="Assets\_Scripts\Networking\disableNotLocal.cs" />
+    <Compile Include="Assets\_Scripts\Player\Target.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Edge Detection.shader" />
     <None Include="Assets\Materials\Surface\SimpleIridescence.shader" />
+    <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Grass Sway.shader" />
+    <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Blur.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\Materials\Dissolve.shader" />
+    <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Plexus\Plexus.compute" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\Menu\Materials\Surface\SimpleIridescence.shader" />
+    <None Include="Assets\Materials\Lava3D.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\Materials\Surface\Iridescence_other.shader" />
+    <None Include="Assets\Materials\Ocean.shader" />
+    <None Include="Assets\Materials\Edge Detection.shader" />
+    <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Depth Mask Edge Detection.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Ocean.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Dissolve.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Plasma.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\Materials\Depth Mask Edge Detection.shader" />
+    <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Outline.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Plexus\Plexus Line.shader" />
+    <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Snow.shader" />
+    <None Include="Assets\Materials\Grass Sway.shader" />
+    <None Include="Assets\Materials\Blur.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Lava3D.shader" />
+    <None Include="Assets\Materials\Outline.shader" />
+    <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Force Field.shader" />
+    <None Include="Assets\Materials\Force Field.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\Materials\Plasma.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\Materials\Simple Sine Wave.shader" />
+    <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Simple Sine Wave.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\Materials\Snow.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
@@ -791,6 +833,9 @@
     <Reference Include="Unity.AI.Navigation">
       <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Animation.Rigging.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Animation.Rigging.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Services.Core">
       <HintPath>Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
     </Reference>
@@ -871,6 +916,9 @@
     </Reference>
     <Reference Include="Unity.Profiling.Core">
       <HintPath>Library\ScriptAssemblies\Unity.Profiling.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Animation.Rigging">
+      <HintPath>Library\ScriptAssemblies\Unity.Animation.Rigging.dll</HintPath>
     </Reference>
     <Reference Include="Unity.EditorCoroutines.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>

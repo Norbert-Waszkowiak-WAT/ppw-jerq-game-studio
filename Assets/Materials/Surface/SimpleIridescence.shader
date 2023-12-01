@@ -1,5 +1,5 @@
 
-Shader "Smkgames/Fragment/Iridescence/SimpleIridescence" {
+Shader "SimpleIridescence" {
     Properties {
         _RainBow ("RainBow", 2D) = "white" {}
     }

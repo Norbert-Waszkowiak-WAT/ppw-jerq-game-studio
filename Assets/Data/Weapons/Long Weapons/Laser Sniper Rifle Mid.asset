@@ -13,10 +13,16 @@ MonoBehaviour:
   m_Name: Laser Sniper Rifle Mid
   m_EditorClassIdentifier: 
   weaponName: 
-  damage: 0
-  range: 0
-  fireRate: 0
-  reloadTime: 0
-  magazineSize: 0
-  weaponPrefab: {fileID: 0}
-  bulletPrefab: {fileID: 0}
+  damage: 22
+  fireRate: 10
+  reloadSpeed: 2
+  magazineSize: 30
+  range: 20
+  bulletsPerShot: 1
+  headshotMultiplier: 1.45
+  legshotMultiplier: 0.75
+  weaponIndex: 2
+  muzzlePosition: {x: 0, y: 0, z: 0}
+  weaponPosition: {x: 0.03, y: 0.39, z: 0.32}
+  weaponRotation: {x: -159.4, y: 9.59, z: 74.8}
+  weaponScale: {x: 0.65, y: 0.65, z: 0.65}

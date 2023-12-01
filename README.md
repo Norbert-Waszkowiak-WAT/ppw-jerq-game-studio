@@ -2,7 +2,7 @@
 
 Future Warriors is a fast-paced 1vs1 first-person shooter game featuring unique abilities and an arsenal of futuristic weapons. With the inclusion of these abilities, the camera dynamically switches to a third-person perspective to showcase stunning animations.
 
-![Player Preview](https://github.com/Pablo-PL/Materials_for_game/blob/main/images/untitled.png)
+![Game Screenshot](https://i.imgur.com/qDHDQHc.png)
 
 ## Abilities
 
@@ -166,3 +166,4 @@ We are a two-person indie game development studio consisting of myself (Jerq) an
   - Uploaded initial game files.
   - Began working with Unity.
   - Updated README.md.
+# Future-Warriors

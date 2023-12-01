@@ -16,11 +16,12 @@ MonoBehaviour:
   fireRate: 0.66
   reloadSpeed: 3
   magazineSize: 6
-  range: Infinity
+  range: 1000
   bulletsPerShot: 1
   headshotMultiplier: 1.45
   legshotMultiplier: 0.75
-  WeaponIndex: 0
+  weaponIndex: 0
   muzzlePosition: {x: 0, y: 0, z: 0}
-  weaponPosition: {x: 0.622, y: 0.24, z: 1.348}
-  weaponRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  weaponPosition: {x: 0.03, y: 0.39, z: 0.32}
+  weaponRotation: {x: -159.4, y: 9.59, z: 74.8}
+  weaponScale: {x: 0.65, y: 0.65, z: 0.65}

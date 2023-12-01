@@ -19,5 +19,6 @@ public class Weapon : ScriptableObject
 
     public Vector3 muzzlePosition;
     public Vector3 weaponPosition;
-    public Quaternion weaponRotation;
+    public Vector3 weaponRotation;
+    public Vector3 weaponScale;
 }

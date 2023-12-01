@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: c531dd4561ae61b4994112b749ff36db
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _RainBow: {fileID: 2800000, guid: 1c09d46c36a86284093fe31517666761, type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
