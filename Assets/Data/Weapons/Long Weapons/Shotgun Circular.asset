@@ -12,11 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dc3818db953e9d4898250c08019e9fc, type: 3}
   m_Name: Shotgun Circular
   m_EditorClassIdentifier: 
-  weaponName: 
   damage: 0
-  range: 0
   fireRate: 0
-  reloadTime: 0
+  reloadSpeed: 0
   magazineSize: 0
-  weaponPrefab: {fileID: 0}
-  bulletPrefab: {fileID: 0}
+  range: 0
+  bulletsPerShot: 0
+  headshotMultiplier: 0
+  legshotMultiplier: 0
+  weaponIndex: 5
+  muzzlePosition: {x: 0, y: 0, z: 0}
+  weaponPosition: {x: 0.036, y: 0.787, z: 0.153}
+  weaponRotation: {x: -12.77, y: -172.222, z: -92.778}
+  weaponScale: {x: 0, y: 0, z: 0}

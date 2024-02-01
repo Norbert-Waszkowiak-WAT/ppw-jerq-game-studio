@@ -12,11 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dc3818db953e9d4898250c08019e9fc, type: 3}
   m_Name: Laser Sniper Rifle Heavy
   m_EditorClassIdentifier: 
-  weaponName: 
   damage: 0
-  range: 0
   fireRate: 0
-  reloadTime: 0
+  reloadSpeed: 0
   magazineSize: 0
-  weaponPrefab: {fileID: 0}
-  bulletPrefab: {fileID: 0}
+  range: 0
+  bulletsPerShot: 0
+  headshotMultiplier: 0
+  legshotMultiplier: 0
+  weaponIndex: 4
+  muzzlePosition: {x: 0, y: 0, z: 0}
+  weaponPosition: {x: 0, y: 0, z: 0}
+  weaponRotation: {x: 0, y: 0, z: 0}
+  weaponScale: {x: 0, y: 0, z: 0}

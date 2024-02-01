@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dc3818db953e9d4898250c08019e9fc, type: 3}
   m_Name: Laser Sniper Rifle Mid
   m_EditorClassIdentifier: 
-  weaponName: 
   damage: 22
   fireRate: 10
   reloadSpeed: 2
@@ -21,7 +20,7 @@ MonoBehaviour:
   bulletsPerShot: 1
   headshotMultiplier: 1.45
   legshotMultiplier: 0.75
-  weaponIndex: 2
+  weaponIndex: 3
   muzzlePosition: {x: 0, y: 0, z: 0}
   weaponPosition: {x: 0.03, y: 0.39, z: 0.32}
   weaponRotation: {x: -159.4, y: 9.59, z: 74.8}

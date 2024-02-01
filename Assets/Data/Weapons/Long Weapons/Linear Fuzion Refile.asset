@@ -20,8 +20,8 @@ MonoBehaviour:
   bulletsPerShot: 1
   headshotMultiplier: 1.45
   legshotMultiplier: 0.75
-  weaponIndex: 0
+  weaponIndex: 1
   muzzlePosition: {x: 0, y: 0, z: 0}
-  weaponPosition: {x: 0.03, y: 0.39, z: 0.32}
-  weaponRotation: {x: -159.4, y: 9.59, z: 74.8}
+  weaponPosition: {x: 0.04, y: 0.53, z: 0.32}
+  weaponRotation: {x: -159.4, y: 9.58, z: 95.905}
   weaponScale: {x: 0.65, y: 0.65, z: 0.65}
