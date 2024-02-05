@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Singleplayer Scene.unity
     guid: 10a47e6847edef241ac7fcb471f64640
+  - enabled: 1
+    path: Assets/Scenes/Training Shooting Scene.unity
+    guid: 8a038900a7efb0744981f6cb854282df
+  - enabled: 1
+    path: Assets/Scenes/ConsoleComputerScene.unity
+    guid: f6bb135acfc41214babacf9f54f19642
   m_configObjects: {}

@@ -74,3 +74,8 @@ crashlytics-build.properties
 
 #LODS
 /[Aa]ssets/UMS_LODs/
+
+#heavy maps
+/Assets/Models/Maps/map_v1*1.blend
+/Assets/Models/Maps/map_v1.blend1
+/Assets/Models/Maps/untitled.blend

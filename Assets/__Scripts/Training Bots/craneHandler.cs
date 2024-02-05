@@ -35,6 +35,14 @@ public class craneHandler : MonoBehaviour
 
     IEnumerator MoveBot(float position)
     {
+        if (position > craneMax)
+        {
+            position = craneMax;
+        }
+        if (position < craneMin)
+        {
+            position = craneMin;
+        }
         lastMovePosition = position;
         while (Mathf.Abs(bot.transform.position.z - position) > accuracy)
         {

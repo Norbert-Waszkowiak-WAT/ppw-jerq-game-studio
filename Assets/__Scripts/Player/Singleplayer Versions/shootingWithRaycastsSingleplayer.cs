@@ -140,9 +140,14 @@ public class shootingWithRaycastsSingleplayer : MonoBehaviour
 
             TargetSingleplayer target = hit.transform.GetComponent<TargetSingleplayer>();
 
+
             if (target != null)
             {
                 target.TakeDamage(Mathf.Round(damage * damageMultiplier));
+            }
+            else
+            {
+                Debug.Log("Target ");
             }
         }
         else

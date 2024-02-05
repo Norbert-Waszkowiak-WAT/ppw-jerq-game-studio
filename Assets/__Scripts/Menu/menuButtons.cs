@@ -110,6 +110,12 @@ public class menuButtons : MonoBehaviour
         SceneManager.LoadScene("Multiplayer Scene");
     }
 
+    public void StartTraining()
+    {
+        LogWriter.WriteLog("StartTraining");
+        SceneManager.LoadScene("Training Shooting Scene");
+    } 
+
     public void OpenUrl()
     {
         LogWriter.WriteLog("OpenUrl");

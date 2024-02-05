@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{66FE54CD-37B3-2955-B8C8-205FFCE5B898}</ProjectGuid>
+    <ProjectGuid>{4A746A75-38A7-E681-3FD0-552A1057A47F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -73,6 +73,7 @@
     <Compile Include="Assets\__Scripts\Player\Singleplayer Versions\playerMovementSingleplayer.cs" />
     <Compile Include="Assets\__Scripts\Networking\disableNotLocal.cs" />
     <Compile Include="Assets\__Scripts\UI\menuButtonsForESCMenu.cs" />
+    <Compile Include="Assets\__Scripts\Training Bots\saveLoadShootingRange.cs" />
     <Compile Include="Assets\__Scripts\Player\Singleplayer Versions\AnimationHandlerSingleplayer.cs" />
     <Compile Include="Assets\__Scripts\Player\weaponsHandlerHolder.cs" />
     <Compile Include="Assets\__Scripts\Player\Singleplayer Versions\TargetSingleplayer.cs" />
@@ -86,6 +87,7 @@
     <Compile Include="Assets\__Scripts\Menu\menuPlayerAnimation.cs" />
     <Compile Include="Assets\__Scripts\Training Bots\craneHandler.cs" />
     <Compile Include="Assets\__Scripts\Training Bots\BotMovement.cs" />
+    <Compile Include="Assets\__Scripts\Training Bots\inConsoleButtonHandler.cs" />
     <Compile Include="Assets\__Scripts\Player\Singleplayer Versions\AIMovement.cs" />
     <Compile Include="Assets\__Scripts\Menu\test\test1.cs" />
     <Compile Include="Assets\Ultimate 10 Plus Shaders\Scripts\U10PS_MouseRotation.cs" />
@@ -99,8 +101,10 @@
     <Compile Include="Assets\__Scripts\Animations\wallRaisingTmpAnim.cs" />
     <Compile Include="Assets\__Scripts\Logs\LogWriter.cs" />
     <Compile Include="Assets\__Scripts\UI\playerRotate.cs" />
+    <Compile Include="Assets\QuickOutline\Scripts\Outline.cs" />
     <Compile Include="Assets\__Scripts\Networking\ClientNetworkTransform.cs" />
     <Compile Include="Assets\__Scripts\Player\Singleplayer Versions\weaponsHandlerSingleplayer.cs" />
+    <Compile Include="Assets\__Scripts\Training Bots\inConsoleComputer.cs" />
     <Compile Include="Assets\__Scripts\Menu\menuAudio.cs" />
     <Compile Include="Assets\__Scripts\UI\showFps.cs" />
     <Compile Include="Assets\__Scripts\Menu\savingAndLoadnigWeaponsLoadout.cs" />
@@ -110,6 +114,7 @@
     <Compile Include="Assets\__Scripts\Networking\testRelay.cs" />
     <Compile Include="Assets\__Scripts\Menu\optionsHandler.cs" />
     <Compile Include="Assets\__Scripts\Player\Singleplayer Versions\minimapCameraMovementSingleplayer.cs" />
+    <Compile Include="Assets\__Scripts\Training Bots\consoleComputerHandler.cs" />
     <Compile Include="Assets\__Scripts\Networking\test.cs" />
     <Compile Include="Assets\Ultimate 10 Plus Shaders\Scripts\U10PS_ExampleReview.cs" />
     <Compile Include="Assets\Ultimate 10 Plus Shaders\Scripts\U10PS_SnowOverTime.cs" />
@@ -161,6 +166,7 @@
     <None Include="Assets\Menu\Materials\Surface\SimpleIridescence.shader" />
     <None Include="Assets\Materials\Lava3D.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\QuickOutline\Resources\Shaders\OutlineMask.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\Materials\Surface\Iridescence_other.shader" />
     <None Include="Assets\Materials\Ocean.shader" />
@@ -176,6 +182,7 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Plasma.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\QuickOutline\Readme.txt" />
     <None Include="Assets\Materials\Depth Mask Edge Detection.shader" />
     <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Outline.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
@@ -192,6 +199,7 @@
     <None Include="Assets\Materials\Plasma.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\QuickOutline\Resources\Shaders\OutlineFill.shader" />
     <None Include="Assets\Materials\Simple Sine Wave.shader" />
     <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Simple Sine Wave.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
