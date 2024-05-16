@@ -101,7 +101,7 @@ public class menuButtons : MonoBehaviour
     public void StartSingleplayer()
     {
         LogWriter.WriteLog("StartSingleplayer");
-        SceneManager.LoadScene("Singleplayer Scene");
+        SceneManager.LoadScene("Training Shooting Scene");
     }
 
     public void StartMultiplayer()
